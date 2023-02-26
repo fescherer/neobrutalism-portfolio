@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
@@ -27,7 +28,33 @@ module.exports = {
       '5xl': '2.5rem', // 40px
       '6xl': '4rem' // 64px
     },
-    extend: {}
+    extend: {
+      rotate: {
+        '-4': '-4deg'
+      },
+      lineHeight: {
+        11: '2.75rem',
+        12: '3rem',
+        13: '3.25rem',
+        14: '3.5rem',
+        15: '3.75rem'
+      },
+      dropShadow: {
+        'neo-1': '1px 1px 0px var(--primary)',
+        'neo-2': '2px 2px 0px var(--primary-dark)',
+        'neo-3': '3px 3px 0px var(--primary-dark)',
+        'neo-5': '5px 5px 0px var(--primary-dark)'
+      },
+      keyframes: {
+        scale: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' }
+        }
+      },
+      animation: {
+        scale: 'scale 8s ease-in-out infinite'
+      }
+    }
   },
   plugins: []
 }

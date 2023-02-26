@@ -26,9 +26,9 @@ export default function ThemeButton() {
   return (
     <button onClick={handleTheme}>
       {theme === 'light' ? (
-        <SunDim size={32} weight="fill" />
+        <SunDim size={15} weight="fill" />
       ) : (
-        <Moon size={32} weight="fill" />
+        <Moon size={15} weight="fill" />
       )}
     </button>
   )

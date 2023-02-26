@@ -2,12 +2,13 @@
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import Home from '@/features/Home'
 
-export default function Home() {
+export default function Index() {
   return (
-    <main className="bg-background text-primary grid grid-rows-[auto,_1fr,auto] min-h-screen">
+    <main className="text-primary grid grid-rows-[auto,_1fr,auto] min-h-screen bg-background">
       <Header />
-      <h1 className="font-bold">Logo</h1>
+      <Home />
       <Footer />
     </main>
   )
