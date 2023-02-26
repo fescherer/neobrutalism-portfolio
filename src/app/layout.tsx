@@ -1,3 +1,5 @@
+import { ThemeProvider } from '@/context/theme.context'
+import Script from 'next/script'
 import './globals.css'
 
 export const metadata = {
@@ -13,6 +15,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
+      <Script>
+        {`
+        if (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme:dark)').matches)
+        {
+          document.documentElement.setAttribute("data-theme", "dark")
+        }
+        else {
+          document.documentElement.setAttribute("data-theme", "light")
+        }
+  `}
+      </Script>
     </html>
   )
 }
