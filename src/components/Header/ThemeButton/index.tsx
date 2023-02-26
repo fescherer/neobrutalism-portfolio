@@ -1,9 +1,18 @@
 'use client'
 
-import { useState } from 'react'
+import { SunDim, Moon } from 'phosphor-react'
+import { useEffect, useState } from 'react'
 
 export default function ThemeButton() {
   const [theme, setTheme] = useState('light')
+
+  useEffect(() => {
+    setTheme(
+      window.matchMedia('(prefers-color-scheme:dark)').matches
+        ? 'dark'
+        : 'light'
+    )
+  }, [])
 
   function handleTheme() {
     console.log('theme')
@@ -15,13 +24,12 @@ export default function ThemeButton() {
   }
 
   return (
-    <div>
-      <button
-        className="border border-zinc-800 hover:bg-slate-300"
-        onClick={handleTheme}
-      >
-        Change Theme
-      </button>
-    </div>
+    <button onClick={handleTheme}>
+      {theme === 'light' ? (
+        <SunDim size={32} weight="fill" />
+      ) : (
+        <Moon size={32} weight="fill" />
+      )}
+    </button>
   )
 }

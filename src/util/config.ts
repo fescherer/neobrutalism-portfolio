@@ -1,3 +1,5 @@
 export const appConfig = {
-  appName: 'portifolio-ofelipescherer'
+  appName: 'portifolio-ofelipescherer',
+  name: 'Felipe Scherer',
+  githubName: 'ofelipescherer'
 }
