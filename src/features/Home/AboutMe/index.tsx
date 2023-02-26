@@ -1,7 +1,9 @@
+import HomeTitle from '../components/HomeTile'
+
 export default function AboutMe() {
   return (
     <div className="flex flex-col gap-5">
-      <h2 className="text-5xl font-bold uppercase">About me</h2>
+      <HomeTitle>About me</HomeTitle>
 
       <div className="flex flex-col gap-5">
         <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
