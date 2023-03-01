@@ -8,14 +8,16 @@ const currentYear = date.getFullYear()
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center m-1">
-      <div className="flex gap-2 opacity-80">
-        <div className="flex items-center">
-          <span>Copyright</span>
-          <Copyright size={12} weight="light" />
+      <div className="flex flex-wrap justify-center gap-2 opacity-80">
+        <div className="flex gap-2">
+          <div className="flex items-center">
+            <span>Copyright</span>
+            <Copyright size={12} weight="light" />
+          </div>
+          <span>{`2023 - ${currentYear}`}</span>
         </div>
-        <span>
-          2023 - {currentYear} {appConfig.githubName} | {appConfig.name}
-        </span>
+
+        <span>{` ${appConfig.githubName} | ${appConfig.name}`}</span>
       </div>
 
       <div className=" flex gap-1">
