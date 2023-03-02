@@ -1,22 +1,17 @@
-import Image from 'next/image'
-import HomeTitle from '../components/HomeTile'
+import ItemWrapper from '../components/ItemWrapper'
+
+const snippetsColors = ['#ff0000', '#00ff00', '#0000ff', '#ffaa00']
 
 export default function Snippets() {
   return (
-    <div className="flex items-center gap-10">
-      <div>
-        <HomeTitle>Snippets</HomeTitle>
+    <ItemWrapper buttonNextItem="projects" title="Snippets">
+      <span className="font-bold text-2xl">Find all my snippets</span>
 
-        <span className="font-bold text-2xl">Find all my snippets</span>
+      <div className="grid grid-rows-3 grid-flow-col gap-4">
+        <div className="row-span-3">01</div>
+        <div className="col-span-2">02</div>
+        <div className="row-span-2 col-span-2">03</div>
       </div>
-
-      <Image
-        src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
-        width={296}
-        height={350}
-        alt="profile-image"
-        className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
-      />
-    </div>
+    </ItemWrapper>
   )
 }

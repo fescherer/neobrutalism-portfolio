@@ -1,6 +1,6 @@
 import { appConfig } from '@/util/config'
 import Image from 'next/image'
-import { ArrowCircleDown } from 'phosphor-react'
+import ButtonNextItem from '../components/ButtonNextItem'
 
 export default function Introduction() {
   return (
@@ -43,9 +43,8 @@ export default function Introduction() {
             <span>ABOUT ME</span>
           </div>
         </div>
-        <button className="hover:scale-110 transition-all opacity-60">
-          <ArrowCircleDown size={32} weight="light" />
-        </button>
+
+        <ButtonNextItem nextItem="about-me" />
       </div>
     </div>
   )

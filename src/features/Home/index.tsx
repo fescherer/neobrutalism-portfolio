@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <Introduction />
-      {/* <AboutMe />
+      <AboutMe />
       <Snippets />
-      <Projects /> */}
+      {/* <Projects /> */}
     </>
   )
 }
