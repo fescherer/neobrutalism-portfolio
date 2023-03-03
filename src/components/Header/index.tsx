@@ -1,10 +1,13 @@
+import Link from 'next/link'
 import ThemeButton from './ThemeButton'
 
 export default function Header() {
   return (
-    <nav className="flex items-center justify-between w-100 px-4 py-2 max-w-[1000px]">
+    <nav className="flex items-center justify-between w-100 px-4 py-2 max-w-[1000px] m-auto">
       <div className="container flex flex-wrap items-center justify-between mx-auto">
-        <h1 className="text-title">Logo</h1>
+        <h1 className="text-title">
+          <Link href="/">Logo</Link>
+        </h1>
 
         <button
           data-collapse-toggle="navbar-default"
@@ -33,7 +36,9 @@ export default function Header() {
           <ul className="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-2xl">
             <li>SNIPPETS</li>
             <li>PROJECTS</li>
-            <li>ABOUT ME</li>
+            <li>
+              <Link href="/about">ABOUT ME</Link>
+            </li>
 
             <li>
               <ThemeButton></ThemeButton>
