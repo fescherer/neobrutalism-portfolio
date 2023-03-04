@@ -10,7 +10,7 @@ export default function Introduction() {
           <div className="sm:text-6xl sm:leading-15 flex flex-col text-4xl font-bold animate-scale">
             <span className="sm:drop-shadow-neo-2">Meet</span>
             <span className="sm:drop-shadow-neo-2">{appConfig.name}</span>
-            <span className="text-xl  sm:text-4xl opacity-80 drop-shadow-neo-1">
+            <span className="text-xl  sm:text-4xl opacity-80 drop-shadow-neo-1-ligth">
               Web developer
             </span>
           </div>

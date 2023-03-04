@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-5 w-100 px-4 py-2 max-w-[1000px] m-auto">
+    <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-[1000px] m-auto">
       <h1 className="text-6xl font-bold -rotate-2">About me</h1>
 
       <div className="flex md:flex-row flex-col gap-12 mb-6">
@@ -34,7 +34,7 @@ export default function About() {
             eleifend rhoncus nisi, ut
           </p>
 
-          <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-100 mt-10">
+          <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
             <span>Skills and Experience</span>
             <span>My History</span>
           </div>

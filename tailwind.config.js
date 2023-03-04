@@ -29,6 +29,9 @@ module.exports = {
       '6xl': '4rem' // 64px
     },
     extend: {
+      height: {
+        0.063: '0.063rem'
+      },
       rotate: {
         '-4': '-4deg'
       },
@@ -40,7 +43,9 @@ module.exports = {
         15: '3.75rem'
       },
       dropShadow: {
-        'neo-1': '1px 1px 0px var(--primary)',
+        'neo-1-light': '1px 1px 0px var(--primary)',
+        'neo-5-foreground': '5px 5px 0px var(--foreground)',
+        'neo-1': '1px 1px 0px var(--primary-dark)',
         'neo-2': '2px 2px 0px var(--primary-dark)',
         'neo-3': '3px 3px 0px var(--primary-dark)',
         'neo-5': '5px 5px 0px var(--primary-dark)'
