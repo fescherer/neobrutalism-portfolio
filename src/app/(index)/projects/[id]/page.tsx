@@ -4,6 +4,7 @@ import Slider from '@/components/Slider'
 import GithubIcon from '@/Icons/Github'
 import { projects } from '@/util/Projects'
 import * as Separator from '@radix-ui/react-separator'
+import Link from 'next/link'
 
 const project = projects[0]
 
@@ -16,12 +17,19 @@ const images = [
 
 export default function Project() {
   return (
-    <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-[1000px] m-auto font-bold">
-      <p>College Project</p>
+    <div className="flex flex-col items-start gap-5 w-full px-4 py-2 max-w-[1000px] m-auto font-bold">
+      <div className="flex flex-col  w-full items-start">
+        <p className="opacity-70 mb-2">Home - Projects - Project 1</p>
+        <p className="uppercase drop-shadow-neo-2 bg-background border border-primary-dark rounded p-0.5 text-base">
+          College Project
+        </p>
 
-      <div className="flex justify-between text-5xl uppercase">
-        <h1>{project.title}</h1>
-        <GithubIcon />
+        <div className="flex justify-between text-5xl uppercase w-full items-center">
+          <h1>{project.title}</h1>
+          <Link href={''} className="hover:scale-105">
+            <GithubIcon />
+          </Link>
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-5">

@@ -35,8 +35,8 @@ export default function About() {
           </p>
 
           <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
-            <span>Skills and Experience</span>
-            <span>My History</span>
+            <button className="btn-base">Skills and Experience</button>
+            <button className="btn-base">My History</button>
           </div>
         </div>
 

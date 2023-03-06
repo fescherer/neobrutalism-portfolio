@@ -31,3 +31,9 @@
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
 }
+
+@layer components {
+  .btn-base {
+    @apply hover:scale-105 transition-all;
+  }
+}
