@@ -1,20 +1,12 @@
 'use client'
 
 import ImageSlider from '@/components/ImageSlider'
-import Slider from '@/components/Slider'
 import GithubIcon from '@/Icons/Github'
 import { projects } from '@/util/Projects'
 import * as Separator from '@radix-ui/react-separator'
 import Link from 'next/link'
 
 const project = projects[0]
-
-const images = [
-  'https://user-images.githubusercontent.com/62115215/222925034-ae62b1bb-2c23-41d7-9acf-6ac36ab7bb19.png',
-  'https://user-images.githubusercontent.com/62115215/222925050-937c853c-200a-48b3-95fd-9f55b0c03858.png',
-  'https://user-images.githubusercontent.com/62115215/222925081-30c890d3-d2db-4ea3-9875-f6c9f1c09467.png',
-  'https://user-images.githubusercontent.com/62115215/222925096-94945fd0-5fa5-4928-a5a8-fc33773e60cb.png'
-]
 
 export default function Project() {
   return (
@@ -55,8 +47,6 @@ export default function Project() {
       </p>
 
       <Separator.Root className="bg-primary h-0.063 w-full my-3 opacity-70" />
-
-      <Slider></Slider>
 
       <ImageSlider></ImageSlider>
       <p>

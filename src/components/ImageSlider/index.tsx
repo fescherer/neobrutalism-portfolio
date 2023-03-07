@@ -25,8 +25,8 @@ export default function ImageSlider() {
   }
 
   return (
-    <div className="h-[780px] transition-all w-full drop-shadow-neo-5-foreground relative bg-background border-2 border-foreground rounded">
-      <div className="top-1/2 w-full flex justify-between relative -translate-y-[50%] px-3">
+    <div className="h-[200px] md:h-[600px] transition-all w-full drop-shadow-neo-5-foreground relative bg-background border-2 border-foreground rounded">
+      <div className="top-1/2 w-full flex justify-between absolute -translate-y-[50%] px-3">
         <button
           className="btn-base hover:opacity-100 opacity-60"
           onClick={() => handleImageIndex(true)}
@@ -43,10 +43,8 @@ export default function ImageSlider() {
 
       <div
         style={{ backgroundImage: `url(${slides[imageIndex]})` }}
-        className="bg-primary-dark transition-all h-full bg-contain bg-no-repeat duration-500 bg-center"
-      >
-        {imageIndex}
-      </div>
+        className="transition-[background-image] bg-primary-dark h-full bg-contain bg-no-repeat duration-500 bg-center"
+      ></div>
     </div>
   )
 }
