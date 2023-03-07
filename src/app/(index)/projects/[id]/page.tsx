@@ -1,5 +1,6 @@
 'use client'
 
+import ImageSlider from '@/components/ImageSlider'
 import Slider from '@/components/Slider'
 import GithubIcon from '@/Icons/Github'
 import { projects } from '@/util/Projects'
@@ -55,12 +56,9 @@ export default function Project() {
 
       <Separator.Root className="bg-primary h-0.063 w-full my-3 opacity-70" />
 
-      <div className="h-[780px] w-full drop-shadow-neo-5-foreground bg-background border-2 border-foreground rounded">
-        <div></div>
-      </div>
-
       <Slider></Slider>
 
+      <ImageSlider></ImageSlider>
       <p>
         Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent
         nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus
