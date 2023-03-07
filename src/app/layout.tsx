@@ -25,6 +25,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5364746991687638"
+          crossOrigin="anonymous"
+        ></script>
       </head>
 
       <body className="font-sans">{children}</body>
