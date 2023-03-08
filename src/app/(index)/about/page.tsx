@@ -1,4 +1,3 @@
-import ReactIcon from '@/Icons/brand/ReactIcon'
 import { data_skills } from '@/util/data/about'
 import Image from 'next/image'
 

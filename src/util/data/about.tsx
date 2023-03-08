@@ -7,6 +7,8 @@ import NextjsIcon from '@/Icons/brand/NextjsIcon'
 import PythonIcon from '@/Icons/brand/PythonIcon'
 import ReactIcon from '@/Icons/brand/ReactIcon'
 
+// https://www.figma.com/community/plugin/1149614463603005908/Simple-Icons---2400%2B-popular-brand-icons
+
 export const data_skills = [
   {
     title: 'html',
