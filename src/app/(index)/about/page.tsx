@@ -1,4 +1,5 @@
-import ReactIcon from '@/Icons/React'
+import ReactIcon from '@/Icons/brand/ReactIcon'
+import { data_skills } from '@/util/data/about'
 import Image from 'next/image'
 
 export default function About() {
@@ -66,15 +67,15 @@ export default function About() {
           <div className="flex flex-col gap-5">
             <h3 className="text-5xl font-bold">SKILLS</h3>
             <div className="flex flex-row flex-wrap justify-evenly gap-7">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((id) => (
+              {data_skills.map((skill) => (
                 <div
-                  key={id}
-                  className="flex flex-col gap-2 items-center font-bold tex-3xl uppercase "
+                  key={skill.title}
+                  className="flex flex-col gap-2 items-center font-bold tex-3xl uppercase"
                 >
-                  <div className="rounded-full bg-primary drop-shadow-neo-3">
-                    <ReactIcon />
+                  <div className="rounded-full bg-primary drop-shadow-neo-3 p-2">
+                    {skill.component}
                   </div>
-                  <span>React</span>
+                  <span>{skill.title}</span>
                 </div>
               ))}
             </div>
