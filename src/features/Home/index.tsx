@@ -6,10 +6,10 @@ import Snippets from './Snippets'
 export default function Home() {
   return (
     <>
-      <Introduction />
+      {/* <Introduction />
       <AboutMe />
       <Snippets />
-      <Projects />
+      <Projects /> */}
     </>
   )
 }

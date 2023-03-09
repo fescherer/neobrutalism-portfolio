@@ -1,9 +1,9 @@
-import { ProjectCardType } from '@/@types/Util'
+import { ProjectMetadata } from '@/@types/Metadata'
 import GithubIcon from '@/Icons/Github'
 import Link from 'next/link'
 
 type ProjectCardProps = {
-  card: ProjectCardType
+  card: ProjectMetadata
 }
 
 export default function ProjectCard({ card }: ProjectCardProps) {
@@ -19,7 +19,7 @@ export default function ProjectCard({ card }: ProjectCardProps) {
         <span className="text-sm">May, 2023</span>
         <p className="text-justify text-base">{card.description}</p>
         <Link
-          href={`projects/${card.id}`}
+          href={`projects/${card.slug}`}
           className="underline-offset-1 underline font-extrabold uppercase transition-all tracking-widest self-end hover:scale-105 hover:text-primary-dark"
         >
           Read more

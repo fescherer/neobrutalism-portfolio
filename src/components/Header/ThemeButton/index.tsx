@@ -15,7 +15,6 @@ export default function ThemeButton() {
   }, [])
 
   function handleTheme() {
-    console.log('theme')
     window.document.documentElement.setAttribute(
       'data-theme',
       theme === 'light' ? 'dark' : 'light'

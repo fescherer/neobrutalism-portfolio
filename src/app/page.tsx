@@ -1,3 +1,5 @@
+import Home from '@/features/Home'
+
 export default function Index() {
-  return <></>
+  return <Home />
 }
