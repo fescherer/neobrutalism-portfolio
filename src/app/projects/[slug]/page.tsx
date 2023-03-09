@@ -8,6 +8,10 @@ import getProjectsMetadata from '@/util/functions/getProjectMetadata'
 // import * as Separator from '@radix-ui/react-separator'
 // import Link from 'next/link'
 
+type ProjectProps = {
+  params: { slug: string }
+}
+
 const getProjectContent = (slug: string) => {
   const folder = 'projects/'
   const file = `${folder}${slug}.md`
@@ -23,7 +27,7 @@ export const generateStaticParams = async () => {
   }))
 }
 
-export default function Project({ params }: any) {
+export default function Project({ params }: ProjectProps) {
   const slug = params.slug
   const project = getProjectContent(slug)
 

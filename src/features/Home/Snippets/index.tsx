@@ -1,7 +1,5 @@
 import ItemWrapper from '../components/ItemWrapper'
 
-const snippetsColors = ['#ff0000', '#00ff00', '#0000ff', '#ffaa00']
-
 export default function Snippets() {
   return (
     <ItemWrapper buttonNextItem="projects" title="Snippets">
