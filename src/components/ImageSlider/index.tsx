@@ -1,3 +1,5 @@
+'use client'
+
 import { ArrowCircleLeft, ArrowCircleRight } from 'phosphor-react'
 import React from 'react'
 

@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
 
-      <body className="font-sans text-primary min-h-screen bg-background ">
+      <body className="font-sans text-primary min-h-screen bg-background selection:bg-[#DA858C]">
         <Header></Header>
         <main className="min-h-[calc(100vh-170px)]">{children}</main>
         <Footer></Footer>

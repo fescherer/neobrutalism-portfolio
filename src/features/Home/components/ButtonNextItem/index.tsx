@@ -1,3 +1,5 @@
+'use client'
+
 import { ArrowCircleDown } from 'phosphor-react'
 
 type ButtonNextItemProps = {
