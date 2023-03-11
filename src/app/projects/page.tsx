@@ -10,7 +10,7 @@ export default function Projects() {
     </div>
   ))
   return (
-    <div className="flex columns-2 md:grid md:grid-cols-3 m-3 md:m-10">
+    <div className="flex gap-5 flex-wrap justify-center max-w-project m-auto">
       {postPreviews}
     </div>
   )

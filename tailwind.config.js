@@ -18,8 +18,8 @@ module.exports = {
       sans: ["'Darker Grotesque', sans-serif", ...defaultTheme.fontFamily.sans]
     },
     fontSize: {
-      xs: '0.5rem', // 8px
-      sm: '0.625rem', // 10px
+      xs: '0.625rem', // 10px
+      sm: '0.75rem', //12px
       base: '0.875rem', // 14px
       xl: '1rem', // 16px
       '2xl': '1.125rem', // 18px
@@ -34,6 +34,9 @@ module.exports = {
       },
       rotate: {
         '-4': '-4deg'
+      },
+      maxWidth: {
+        project: '1050px'
       },
       lineHeight: {
         11: '2.75rem',

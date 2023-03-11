@@ -5,6 +5,7 @@ import getProjectsMetadata from '@/util/functions/getProjectMetadata'
 import Link from 'next/link'
 import GithubIcon from '@/Icons/Github'
 import ImageSlider from '@/components/ImageSlider'
+import RouteStepper from '@/components/RouteStepper'
 
 type ProjectProps = {
   params: { slug: string }
@@ -48,9 +49,9 @@ export default function Project({ params }: ProjectProps) {
   const bg = getTypeColor(project.data.type)
 
   return (
-    <div className="flex flex-col items-start gap-5 w-full px-4 py-2 max-w-[1000px] m-auto font-bold">
+    <div className="flex flex-col items-start gap-5 w-full px-4 py-2 max-w-project m-auto font-bold">
       <div className="flex flex-col  w-full items-start">
-        <p className="opacity-70 mb-2">Home - Projects - Project 1</p>
+        <RouteStepper />
         <p
           className={`uppercase ${bg} drop-shadow-neo-2  border border-primary-dark rounded p-0.5 text-primary-dark text-base`}
         >

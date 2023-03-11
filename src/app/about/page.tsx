@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-[1000px] m-auto">
+    <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-project m-auto">
       <h1 className="text-6xl font-bold -rotate-2">About me</h1>
 
       <div className="flex md:flex-row flex-col gap-12 mb-6">

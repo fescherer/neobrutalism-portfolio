@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ card }: ProjectCardProps) {
   return (
-    <div className="drop-shadow-neo-5 border-primary-dark border-2 bg-background">
+    <div className="drop-shadow-neo-5 border-primary-dark border-2 bg-background w-[245px]">
       <div className="flex items-center justify-between px-3 border-b-2 py-1 bg-foreground text-primary-dark">
         <h3 className="text-4xl uppercase font-bold">{card.title}</h3>
         <Link href={card.github} target="_blank">
