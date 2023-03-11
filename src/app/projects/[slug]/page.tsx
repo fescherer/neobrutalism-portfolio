@@ -94,7 +94,7 @@ export default function Project({ params }: ProjectProps) {
 
       <ImageSlider></ImageSlider>
 
-      <article className="prose text-justify font-bold text-primary prose-headings:text-primary-dark">
+      <article className="prose text-justify font-bold text-primary prose-headings:text-primary-dark max-w-none">
         <Markdown>{project.content}</Markdown>
       </article>
     </div>

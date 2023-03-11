@@ -1,6 +1,8 @@
 import { ProjectMetadata } from '@/@types/Metadata'
 import GithubIcon from '@/Icons/Github'
+import { getDateFormated } from '@/util/functions/getDateFormated'
 import Link from 'next/link'
+import ImageAspectRatio from '../ImageAspectRatio'
 
 type ProjectCardProps = {
   card: ProjectMetadata
@@ -11,12 +13,15 @@ export default function ProjectCard({ card }: ProjectCardProps) {
     <div className="drop-shadow-neo-5 border-primary-dark border-2 bg-background">
       <div className="flex items-center justify-between px-3 border-b-2 py-1 bg-foreground text-primary-dark">
         <h3 className="text-4xl uppercase font-bold">{card.title}</h3>
-        <div>
+        <Link href={card.github} target="_blank">
           <GithubIcon />
-        </div>
+        </Link>
       </div>
+
+      <ImageAspectRatio image={card.image} />
+
       <div className="flex flex-col gap-3 px-5 py-3 font-bold">
-        <span className="text-sm">May, 2023</span>
+        <span className="text-sm">{getDateFormated(card.date)}</span>
         <p className="text-justify text-base">{card.description}</p>
         <Link
           href={`projects/${card.slug}`}

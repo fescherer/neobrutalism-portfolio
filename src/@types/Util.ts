@@ -12,6 +12,6 @@ export type ProjectCardType = {
   title: string
   tags: string[]
   url: string
-  date: number
+  date: string
   description: string
 }

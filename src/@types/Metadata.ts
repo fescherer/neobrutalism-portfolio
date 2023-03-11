@@ -4,7 +4,7 @@ export interface ProjectMetadata {
   type: string
   image: string
   description: string
-  date: number
+  date: string
   github: string
   tags: string[]
   slug: string
