@@ -1,12 +1,8 @@
 import 'server-only'
 import type { Locale } from './i18n-config'
 
-// We enumerate all dictionaries here for better linting and typescript support
-// We also get the defalt import for cleaner types
 const dictionaries = {
-  en: () => import('../../../i18n/en.json').then((module) => module.default),
-  de: () => import('../../../i18n/de.json').then((module) => module.default),
-  cs: () => import('../../../i18n/cs.json').then((module) => module.default)
+  pt: () => import('../../../i18n/pt.json').then((module) => module.default)
 }
 
 export const getDictionary = async (locale: Locale) => dictionaries[locale]()

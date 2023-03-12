@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ItemWrapper from '../components/ItemWrapper'
 
-export default function AboutMe() {
+export default async function AboutMe() {
   return (
     <ItemWrapper buttonNextItem="snippets" title="About Me">
       <div className="flex flex-col md:flex-row justify-between w-full items-center ">
@@ -11,7 +11,7 @@ export default function AboutMe() {
           </span>
 
           <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
-            22 anos
+            {/* {`${} ${}`} */}
           </span>
 
           <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">

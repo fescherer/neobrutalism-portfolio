@@ -1,9 +1,14 @@
 'use client'
 
+import { ThemeButtonTranslation } from '@/@types/translations/header'
 import { SunDim, Moon } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 
-export default function ThemeButton() {
+type ThemeButtonProps = {
+  translation: ThemeButtonTranslation
+}
+
+export default function ThemeButton({ translation }: ThemeButtonProps) {
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
@@ -23,12 +28,22 @@ export default function ThemeButton() {
   }
 
   return (
-    <button onClick={handleTheme}>
+    <>
       {theme === 'light' ? (
-        <SunDim size={15} weight="fill" />
+        <button
+          onClick={handleTheme}
+          aria-label={translation['aria-button-light']}
+        >
+          <Moon size={15} weight="fill" />
+        </button>
       ) : (
-        <Moon size={15} weight="fill" />
+        <button
+          onClick={handleTheme}
+          aria-label={translation['aria-button-dark']}
+        >
+          <SunDim size={15} weight="fill" />
+        </button>
       )}
-    </button>
+    </>
   )
 }

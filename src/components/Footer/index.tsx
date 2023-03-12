@@ -1,3 +1,5 @@
+'use client'
+
 import GithubIcon from '@/Icons/Github'
 import { appConfig } from '@/util/config'
 import { Copyright, LinkedinLogo, YoutubeLogo } from 'phosphor-react'
