@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.2.32",
     "@radix-ui/react-aspect-ratio": "^1.0.2",
+    "@radix-ui/react-popover": "^1.0.5",
     "@radix-ui/react-separator": "^1.0.1",
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",
@@ -18,15 +20,18 @@
     "eslint-config-next": "13.2.1",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.1.9",
+    "negotiator": "^0.6.3",
     "next": "13.2.1",
     "phosphor-icons": "^1.4.2",
     "phosphor-react": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "server-only": "^0.0.1",
     "typescript": "4.9.5"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
+    "@types/negotiator": "^0.6.1",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.6.0",

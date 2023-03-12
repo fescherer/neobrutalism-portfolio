@@ -1,5 +1,6 @@
 import FSLogo from '@/Icons/FSLogo'
 import Link from 'next/link'
+import LangSelector from './LangSelector'
 import ThemeButton from './ThemeButton'
 
 export default function Header() {
@@ -48,7 +49,7 @@ export default function Header() {
             <li>
               <ThemeButton></ThemeButton>
             </li>
-            <li>eng</li>
+            <LangSelector />
           </ul>
         </div>
       </div>
