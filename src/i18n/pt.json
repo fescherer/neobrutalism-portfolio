@@ -23,7 +23,34 @@
   "project": {
     "type": {
       "college": "Projeto da faculdade",
-      "draw": "Desenoh"
+      "draw": "Desenho"
+    }
+  },
+  "home": {
+    "introduction": {
+      "aria-next-item": "Próximo item",
+      "meet": "Conheça",
+      "author": "Felipe Scherer",
+      "profession": "Web developer",
+      "explore": "Explore",
+      "menu": {
+        "snippets": "Snippets",
+        "projects": "Projects",
+        "aboutme": "About me"
+      },
+      "alt-image": "Foto de perfil"
+    },
+    "aboutme": {
+      "title": "Sobre mim",
+      "author": "Felipe Scherer",
+      "aria-next-item": "Próximo item",
+      "years-old": "anos",
+      "college-course": "Ciência da Computação",
+      "profession": "Frontend",
+      "alt-image": "Foto de Felipe Scherer"
+    },
+    "snippets": {
+      "aria-next-item": "Próximo item"
     }
   }
 }

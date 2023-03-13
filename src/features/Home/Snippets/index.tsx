@@ -1,8 +1,17 @@
+import { SnippetsTranslation } from '@/@types/translations/HomeTranslation'
 import ItemWrapper from '../components/ItemWrapper'
 
-export default function Snippets() {
+type SnippetsProps = {
+  translation: SnippetsTranslation
+}
+
+export default function Snippets({ translation }: SnippetsProps) {
   return (
-    <ItemWrapper buttonNextItem="projects" title="Snippets">
+    <ItemWrapper
+      buttonNextItem="projects"
+      aria={translation['aria-next-item']}
+      title="Snippets"
+    >
       <span className="font-bold text-2xl">Find all my snippets</span>
 
       <div className="grid grid-rows-3 grid-flow-col gap-4">
