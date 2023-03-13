@@ -16,4 +16,5 @@ export type ProjectTranslation = {
 
 export type TypeTranslation = {
   college: string
+  draw: string
 }

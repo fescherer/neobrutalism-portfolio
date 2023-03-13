@@ -9,6 +9,7 @@ import RouteStepper from '@/components/RouteStepper'
 import { getDateFormated } from '@/util/functions/getDateFormated'
 import { getDictionary } from '@/util/functions/i18n/get-dictionary'
 import { Locale } from '@/util/functions/i18n/i18n-config'
+import { TypeTranslation } from '@/@types/translations/Translation'
 
 type ProjectProps = {
   params: { slug: string; lang: Locale }
@@ -60,7 +61,7 @@ export default async function Project({ params }: ProjectProps) {
         <p
           className={`uppercase ${bg} drop-shadow-neo-2 border border-primary-dark rounded p-0.5 text-primary-dark text-base`}
         >
-          {dictionary.project.type[project.data.type]}
+          {dictionary.project.type[project.data.type as keyof TypeTranslation]}
         </p>
 
         <div className="flex justify-between text-5xl uppercase w-full items-center text-primary-dark">

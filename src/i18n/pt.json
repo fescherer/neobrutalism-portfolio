@@ -22,7 +22,8 @@
   },
   "project": {
     "type": {
-      "college": "Projeto da faculdade"
+      "college": "Projeto da faculdade",
+      "draw": "Desenoh"
     }
   }
 }

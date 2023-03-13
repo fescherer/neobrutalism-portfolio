@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ItemWrapper from '../components/ItemWrapper'
 
-export default async function AboutMe() {
+export default function AboutMe() {
   return (
     <ItemWrapper buttonNextItem="snippets" title="About Me">
       <div className="flex flex-col md:flex-row justify-between w-full items-center ">
