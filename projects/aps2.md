@@ -1,13 +1,14 @@
 ---
 id: 2
+slug: aps-2
 type: computerScienceCollegeProjects
+tags: [html, css]
+date: "2023-03-10T16:31:38.578Z"
 title: APS 2
+github: https://github.com/ofelipescherer/APS-4Semestre
 image: https://user-images.githubusercontent.com/62115215/224490200-0195149a-6b89-4459-8105-36e6b57a9241.jpg
 description: Projeto APS do 2º semestre de Ciência da Computação
-date: 1654007218000
-github: https://github.com/ofelipescherer/APS-4Semestre
-tags: [html, css]
-slug: aps-2
+images: []
 ---
 
 # APS 2º Semestre

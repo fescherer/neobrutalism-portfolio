@@ -19,5 +19,10 @@
       "en": "English",
       "pt": "Português"
     }
+  },
+  "project": {
+    "type": {
+      "college": "Projeto da faculdade"
+    }
   }
 }

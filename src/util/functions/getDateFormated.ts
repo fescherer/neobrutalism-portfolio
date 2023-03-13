@@ -13,8 +13,23 @@ const months = [
   'Dec'
 ]
 
-export function getDateFormated(date: string) {
-  const dateobj = new Date(date)
+const fullMonth = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
 
-  return `${months[dateobj.getMonth()]}, ${dateobj.getFullYear()}`
+export function getDateFormated(date: string, isFullMonth?: boolean) {
+  const dateobj = new Date(date)
+  const m = isFullMonth ? fullMonth : months
+  return `${m[dateobj.getMonth()]}, ${dateobj.getFullYear()}`
 }

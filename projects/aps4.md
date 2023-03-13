@@ -1,13 +1,14 @@
 ---
 id: 4
+slug: aps-4
 type: computerScienceCollegeProjects
+tags: [java]
+date: "2023-03-10T16:31:38.578Z"
 title: APS 4
+github: https://github.com/ofelipescherer/APS-4Semestre
 image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
 description: Projeto APS do 4º semestre de Ciência da Computação
-date: 1654007218000
-github: https://github.com/ofelipescherer/APS-4Semestre
-tags: [java]
-slug: aps-4
+images: []
 ---
 
 # APS 4º Semestre

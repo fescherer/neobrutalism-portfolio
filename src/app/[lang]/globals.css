@@ -10,6 +10,8 @@
   --primary: #85586f;
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 [data-theme='light'] {
@@ -20,6 +22,8 @@
   --primary: #85586f;
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 [data-theme='dark'] {
@@ -30,6 +34,8 @@
   --primary: #85586f;
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 @layer components {

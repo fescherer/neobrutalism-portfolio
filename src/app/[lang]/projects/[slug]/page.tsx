@@ -6,9 +6,12 @@ import Link from 'next/link'
 import GithubIcon from '@/Icons/Github'
 import ImageSlider from '@/components/ImageSlider'
 import RouteStepper from '@/components/RouteStepper'
+import { getDateFormated } from '@/util/functions/getDateFormated'
+import { getDictionary } from '@/util/functions/i18n/get-dictionary'
+import { Locale } from '@/util/functions/i18n/i18n-config'
 
 type ProjectProps = {
-  params: { slug: string }
+  params: { slug: string; lang: Locale }
 }
 
 const getProject = (slug: string) => {
@@ -42,7 +45,9 @@ const getTypeColor = (type: string): string => {
   return 'bg-background'
 }
 
-export default function Project({ params }: ProjectProps) {
+export default async function Project({ params }: ProjectProps) {
+  const dictionary = await getDictionary(params.lang)
+
   const slug = params.slug
   const project = getProject(slug)
 
@@ -53,9 +58,9 @@ export default function Project({ params }: ProjectProps) {
       <div className="flex flex-col  w-full items-start">
         <RouteStepper />
         <p
-          className={`uppercase ${bg} drop-shadow-neo-2  border border-primary-dark rounded p-0.5 text-primary-dark text-base`}
+          className={`uppercase ${bg} drop-shadow-neo-2 border border-primary-dark rounded p-0.5 text-primary-dark text-base`}
         >
-          College Project
+          {dictionary.project.type[project.data.type]}
         </p>
 
         <div className="flex justify-between text-5xl uppercase w-full items-center text-primary-dark">
@@ -71,7 +76,7 @@ export default function Project({ params }: ProjectProps) {
       </div>
 
       <div className="flex flex-wrap gap-5">
-        <p className="opacity-70">January, 2023</p>
+        <p className="opacity-70">{getDateFormated(project.data.date, true)}</p>
         <div className="flex flex-wrap gap-5 items-center">
           {project.data.tags.map((tag: string) => (
             <div
@@ -84,16 +89,11 @@ export default function Project({ params }: ProjectProps) {
         </div>
       </div>
 
-      <p className="opacity-70 text-base">
-        Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent
-        nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus
-        pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non
-        risus pretium
-      </p>
+      <p className="opacity-70 text-base">{project.data.description}</p>
 
       <div className="bg-primary h-0.063 w-full my-3 opacity-70" />
 
-      <ImageSlider></ImageSlider>
+      <ImageSlider slides={project.data.images}></ImageSlider>
 
       <article className="prose text-justify font-bold text-primary prose-headings:text-primary-dark max-w-none">
         <Markdown>{project.content}</Markdown>
