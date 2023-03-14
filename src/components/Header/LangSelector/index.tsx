@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { i18n } from '@/util/functions/i18n/i18n-config'
 import * as Popover from '@radix-ui/react-popover'
-import { LangTranslation } from '@/@types/translations/header'
+import { LangTranslation } from '@/@types/translations/HeaderTranslation'
 
 type LangSelectorProps = {
   translate: LangTranslation

@@ -1,4 +1,4 @@
-import { HeaderTranslation } from './header'
+import { HeaderTranslation } from './HeaderTranslation'
 import { HomeTranslation } from './HomeTranslation'
 
 export type Translation = {

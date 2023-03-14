@@ -1,4 +1,4 @@
-import { HeaderTranslation } from '@/@types/translations/header'
+import { HeaderTranslation } from '@/@types/translations/HeaderTranslation'
 import FSLogo from '@/Icons/FSLogo'
 import Link from 'next/link'
 import LangSelector from './LangSelector'

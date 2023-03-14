@@ -1,6 +1,6 @@
 'use client'
 
-import { ThemeButtonTranslation } from '@/@types/translations/header'
+import { ThemeButtonTranslation } from '@/@types/translations/HeaderTranslation'
 import { SunDim, Moon } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 
