@@ -7,9 +7,9 @@ import GithubIcon from '@/Icons/Github'
 import ImageSlider from '@/components/ImageSlider'
 import RouteStepper from '@/components/RouteStepper'
 import { getDateFormated } from '@/util/functions/getDateFormated'
-import { getDictionary } from '@/util/functions/i18n/get-dictionary'
 import { Locale } from '@/util/functions/i18n/i18n-config'
 import { TypeTranslation } from '@/@types/translations/Translation'
+import { getDictionaryProject } from '@/util/functions/i18n/get-dictionary'
 
 type ProjectProps = {
   params: { slug: string; lang: Locale }
@@ -47,7 +47,7 @@ const getTypeColor = (type: string): string => {
 }
 
 export default async function Project({ params }: ProjectProps) {
-  const dictionary = await getDictionary(params.lang)
+  const dictionary = await getDictionaryProject(params.lang)
 
   const slug = params.slug
   const project = getProject(slug)
@@ -61,7 +61,7 @@ export default async function Project({ params }: ProjectProps) {
         <p
           className={`uppercase ${bg} drop-shadow-neo-2 border border-primary-dark rounded p-0.5 text-primary-dark text-base`}
         >
-          {dictionary.project.type[project.data.type as keyof TypeTranslation]}
+          {dictionary.type[project.data.type as keyof TypeTranslation]}
         </p>
 
         <div className="flex justify-between text-5xl uppercase w-full items-center text-primary-dark">

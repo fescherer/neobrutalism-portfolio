@@ -6,6 +6,11 @@ export type Translation = {
   header: HeaderTranslation
   project: ProjectTranslation
   home: HomeTranslation
+  default: DefaultTranslation
+}
+
+export type DefaultTranslation = {
+  author: string
 }
 
 export type HeadTranslation = {

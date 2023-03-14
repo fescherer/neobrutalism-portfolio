@@ -2,7 +2,7 @@
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { getDictionary } from '@/util/functions/i18n/get-dictionary'
+import { getDictionaryHeader } from '@/util/functions/i18n/get-dictionary'
 import { i18n, Locale } from '@/util/functions/i18n/i18n-config'
 import Script from 'next/script'
 import './globals.css'
@@ -18,7 +18,7 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lang: Locale }
 }) {
-  const dictionary = await getDictionary(params.lang)
+  const dictionary = await getDictionaryHeader(params.lang)
 
   return (
     <html lang={params.lang}>
@@ -30,7 +30,7 @@ export default async function RootLayout({
       </head>
 
       <body className="font-sans text-primary min-h-screen bg-background selection:bg-[#DA858C]">
-        <Header translate={dictionary.header}></Header>
+        <Header translate={dictionary}></Header>
         <main className="min-h-[calc(100vh-170px)]">{children}</main>
         <Footer></Footer>
       </body>

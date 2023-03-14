@@ -1,4 +1,4 @@
-import { getDictionary } from '@/util/functions/i18n/get-dictionary'
+import { getDictionaryHead } from '@/util/functions/i18n/get-dictionary'
 import { Locale } from '@/util/functions/i18n/i18n-config'
 
 export default async function Head({
@@ -6,11 +6,11 @@ export default async function Head({
 }: {
   params: { lang: Locale }
 }) {
-  const dictionary = await getDictionary(lang)
+  const dictionary = await getDictionaryHead(lang)
 
   return (
     <>
-      <title>{dictionary.head.title}</title>
+      <title>{dictionary.title}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="My portifolio and personal blog" />
 
