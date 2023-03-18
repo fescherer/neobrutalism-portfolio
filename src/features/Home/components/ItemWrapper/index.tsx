@@ -6,16 +6,18 @@ type ItemWrapperProps = {
   title: string
   buttonNextItem: string
   aria: string
+  id: string
 }
 
 export default function ItemWrapper({
   children,
   title,
   buttonNextItem,
-  aria
+  aria,
+  id
 }: ItemWrapperProps) {
   return (
-    <div className="flex flex-col gap-5 px-20 items-center">
+    <div className="flex flex-col gap-5 px-20 items-center" id={id}>
       <HomeTitle>{title}</HomeTitle>
       {children}
       <ButtonNextItem aria={aria} nextItem={buttonNextItem} />

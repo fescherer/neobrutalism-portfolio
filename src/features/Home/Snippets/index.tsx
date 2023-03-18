@@ -11,6 +11,7 @@ export default function Snippets({ translation }: SnippetsProps) {
       buttonNextItem="projects"
       aria={translation['aria-next-item']}
       title="Snippets"
+      id="snippets"
     >
       <span className="font-bold text-2xl">Find all my snippets</span>
 

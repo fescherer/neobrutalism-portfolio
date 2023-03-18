@@ -19,6 +19,7 @@ export default function AboutMe({ translation }: AboutMeProps) {
       buttonNextItem="snippets"
       aria={translation['aria-next-item']}
       title={translation.title}
+      id="about-me"
     >
       <div className="flex flex-col md:flex-row justify-between w-full items-center ">
         <div className="flex flex-col gap-5 items-center">
