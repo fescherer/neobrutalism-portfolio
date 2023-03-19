@@ -35,8 +35,12 @@ export default function About() {
           </p>
 
           <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
-            <button className="btn-base">Skills and Experience</button>
-            <button className="btn-base">My History</button>
+            <a href="#skills-experience" className="btn-base">
+              Skills and Experience
+            </a>
+            <a href="#my-history" className="btn-base">
+              My History
+            </a>
           </div>
         </div>
 
@@ -50,7 +54,7 @@ export default function About() {
       </div>
 
       {/* Skills and Experience */}
-      <div className="block md:grid grid-cols-2 gap-20">
+      <div className="block md:grid grid-cols-2 gap-20" id="skills-experience">
         <div className="flex flex-col gap-6">
           <h2 className="text-6xl font-bold leading-12 -rotate-2 mb-7">
             Skills and experience
@@ -98,7 +102,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col" id="my-history">
         {[
           'My History',
           'Itatiba, São Paulo, Brasil',

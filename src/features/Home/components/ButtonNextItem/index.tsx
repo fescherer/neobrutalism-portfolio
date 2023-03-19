@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { ArrowCircleDown } from 'phosphor-react'
 
 type ButtonNextItemProps = {
@@ -13,13 +12,12 @@ export default function ButtonNextItem({
   aria
 }: ButtonNextItemProps) {
   return (
-    <Link
+    <a
       href={`#${nextItem}`}
-      scroll={true}
       className="hover:scale-110 transition-all opacity-60"
       aria-label={aria}
     >
       <ArrowCircleDown size={32} weight="light" />
-    </Link>
+    </a>
   )
 }
