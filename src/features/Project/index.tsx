@@ -2,7 +2,7 @@ import Markdown from 'markdown-to-jsx'
 import Link from 'next/link'
 import GithubIcon from '@/Icons/Github'
 import ImageSlider from '@/features/Project/components/ImageSlider'
-import RouteStepper from '@/components/RouteStepper'
+import RouteStepper from '@/features/Project/components/RouteStepper'
 import { getDateFormated } from '@/util/functions/getDateFormated'
 import {
   ProjectTranslation,
