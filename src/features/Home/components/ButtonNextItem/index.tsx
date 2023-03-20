@@ -14,7 +14,7 @@ export default function ButtonNextItem({
   return (
     <a
       href={`#${nextItem}`}
-      className="hover:scale-110 transition-all opacity-60"
+      className="hover:scale-110 transition-all opacity-60 m-4"
       aria-label={aria}
     >
       <ArrowCircleDown size={32} weight="light" />

@@ -21,7 +21,10 @@ function ExploreSite({ translation }: IntroductionProps) {
 
 export default function Introduction({ translation }: IntroductionProps) {
   return (
-    <div className="flex flex-col gap-5 items-center" id="home-introduction">
+    <div
+      className="flex flex-col gap-5 items-center h-screen"
+      id="home-introduction"
+    >
       <div className="flex flex-col gap-5 sm:flex-row sm:gap-12 m-5">
         <div className="flex flex-col items-center gap-5">
           <div className="sm:text-6xl sm:leading-15 flex flex-col text-4xl font-bold animate-scale">
