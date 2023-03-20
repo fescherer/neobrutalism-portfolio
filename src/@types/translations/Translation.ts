@@ -1,5 +1,6 @@
 import { HeaderTranslation } from './HeaderTranslation'
 import { HomeTranslation } from './HomeTranslation'
+import { ProjectTranslation } from './ProjectTranslation'
 
 export type Translation = {
   head: HeadTranslation
@@ -15,13 +16,4 @@ export type DefaultTranslation = {
 
 export type HeadTranslation = {
   title: string
-}
-
-export type ProjectTranslation = {
-  type: TypeTranslation
-}
-
-export type TypeTranslation = {
-  college: string
-  draw: string
 }
