@@ -22,12 +22,6 @@ export default async function Head({
         crossOrigin="anonymous"
       />
 
-      <link
-        rel="preload"
-        href="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
-        as="image"
-      />
-
       <link rel="preconnect" href="https://user-images.githubusercontent.com" />
       <link
         rel="dns-prefetch"
