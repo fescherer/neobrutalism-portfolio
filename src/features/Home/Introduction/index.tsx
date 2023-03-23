@@ -46,6 +46,7 @@ export default function Introduction({ translation }: IntroductionProps) {
           height={350}
           alt={translation['alt-image']}
           className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+          unoptimized={true}
         />
       </div>
 
