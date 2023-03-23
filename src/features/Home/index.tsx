@@ -12,9 +12,15 @@ export default function Home({ translation }: HomeProps) {
   return (
     <>
       <Introduction translation={translation.introduction} />
-      <AboutMe translation={translation.aboutme} />
+      <div className="bg-background-accent">
+        <AboutMe translation={translation.aboutme} />
+      </div>
+
       <Snippets translation={translation.snippets} />
-      <Projects />
+
+      <div className="bg-background-accent">
+        <Projects />
+      </div>
     </>
   )
 }
