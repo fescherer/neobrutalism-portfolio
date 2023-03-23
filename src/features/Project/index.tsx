@@ -8,40 +8,11 @@ import {
   ProjectTranslation,
   TypeTranslation
 } from '@/@types/translations/ProjectTranslation'
-import fs from 'fs'
-import matter, { GrayMatterFile } from 'gray-matter'
+import { GrayMatterFile } from 'gray-matter'
 
 type ProjectProps = {
   translate: ProjectTranslation
-  slug: string
-}
-
-export async function getBodyRequest(project: string, lang = 'pt') {
-  return fetch(
-    `https://api.github.com/repos/ofelipescherer/utils/contents/portifolio_projects/${lang}/${project}.md`
-  ).then((response) => {
-    return response
-      .json()
-      .then((data) => {
-        return data
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-  })
-}
-
-async function getProject(slug: string): Promise<GrayMatterFile<string>> {
-  const folder = 'projects/'
-  const file = `${folder}${slug}.md`
-  const content = fs.readFileSync(file, 'utf8')
-
-  const a = await getBodyRequest(slug, 'pt')
-  const deco = Buffer.from(a.content, 'base64').toString('utf-8')
-  const matterResult = matter(deco)
-  console.log(matterResult)
-  const matterResult2 = matter(content)
-  return matterResult2
+  project: GrayMatterFile<string>
 }
 
 const getTypeColor = (type: string): string => {
@@ -60,8 +31,7 @@ const getTypeColor = (type: string): string => {
   return 'bg-background'
 }
 
-export default async function Project({ translate, slug }: ProjectProps) {
-  const project = await getProject(slug)
+export default function Project({ translate, project }: ProjectProps) {
   const bg = getTypeColor(project.data.type)
 
   return (
