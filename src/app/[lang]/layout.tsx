@@ -7,6 +7,7 @@ import {
   getDictionaryHeader
 } from '@/util/functions/i18n/get-dictionary'
 import { i18n, Locale } from '@/util/functions/i18n/i18n-config'
+import { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 
@@ -18,15 +19,17 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
-export async function generateMetadata({ params }: LocaleParams) {
+export async function generateMetadata({
+  params
+}: LocaleParams): Promise<Metadata> {
   const dictionary = await getDictionaryHead(params.lang)
 
   {
-    /* 
+    /*
   Esses daqui são metadados padrões quando usamos esse tipo de abordagem
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"> / 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> /
 */
   }
 
@@ -115,10 +118,10 @@ export async function generateMetadata({ params }: LocaleParams) {
       ]
     },
 
-    themeColor: [
-      { media: '(prefers-color-scheme: light)', color: '#85586f' },
-      { media: '(prefers-color-scheme: dark)', color: '#613f58' }
-    ],
+    // themeColor: [
+    //   { media: '(prefers-color-scheme: light)', color: '#85586f' },
+    //   { media: '(prefers-color-scheme: dark)', color: '#613f58' }
+    // ],
 
     twitter: {
       card: 'app',
@@ -233,6 +236,17 @@ export default async function RootLayout({
         <link
           rel="dns-prefetch"
           href="https://user-images.githubusercontent.com"
+        />
+
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content="cyan"
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content="black"
         />
       </head>
 
