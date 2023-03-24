@@ -38,7 +38,11 @@ export async function generateMetadata({
       default: dictionary.title,
       template: `%s | ${dictionary.title}` // Todos os títulos serão: "alguma | Felipe Sc..."
     },
+
+    // Muito util
+    // LER https://developers.google.com/search/docs/appearance/snippet?hl=pt-br
     description: 'Portifolio do Felipe Scherer',
+
     generator: 'Next.js',
     applicationName: 'Portifolio Felipe Scherer',
     referrer: 'origin-when-cross-origin',
@@ -158,11 +162,13 @@ export async function generateMetadata({
     // PROCURAR MAIS SOBRE
     verification: {
       google: 'google',
-      yandex: 'yandex',
+      yandex: 'fe8b4fba9e9ba684',
       yahoo: 'yahoo',
       other: {
-        me: ['my-email', 'my-link']
+        me: ['felipescherer25@gmail.com']
       }
+
+      // https://www.bing.com/webmasters/home Adicionar mais esse
     },
 
     // PROCURAR MAIS SOBRE
@@ -198,11 +204,16 @@ export async function generateMetadata({
       }
     },
 
+    // Esse aqui é adicionado se o post é antigo
+    // archives: ['https://nextjs.org/13'],
+
     // PROCURAR MAIS SOBRE
-    archives: ['https://nextjs.org/13'],
     assets: ['https://nextjs.org/assets'],
-    bookmarks: ['https://nextjs.org/13'],
     category: 'technology'
+
+    // Esse não é mt usado, mais usado é o bookmark
+    //https://www.w3.org/TR/2011/WD-html5-20110113/links.html#link-type-bookmark
+    // bookmarks: ['https://nextjs.org/13'],
   }
 }
 
@@ -215,9 +226,25 @@ export default async function RootLayout({
 }) {
   const dictionary = await getDictionaryHeader(params.lang)
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Portifolio Felipe Scherer',
+    image: '',
+    description: 'descrição Portifolio do felipe scherer'
+  }
+
   return (
     <html lang={params.lang}>
       <head>
+        {/* verificar */}
+        {/* https://www.devmedia.com.br/html-meta-tags-entendendo-o-uso-de-meta-tags/30328 */}
+        <meta http-equiv="content-language" content="pt-br, en-US, fr" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="copyright" content="© 2019 DevMedia" />
+        <meta name="rating" content="general" />
+        <meta http-equiv="refresh" content="3;url=https://www.mozilla.org" />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
@@ -254,6 +281,12 @@ export default async function RootLayout({
         <Header translate={dictionary}></Header>
         <main className="min-h-[calc(100vh-170px)]">{children}</main>
         <Footer></Footer>
+        <section>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+        </section>
       </body>
       <Script id="theme-script-load">
         {`
