@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ card }: ProjectCardProps) {
   return (
-    <div className="drop-shadow-neo-5 border-primary-dark border-2 bg-background w-[245px]">
+    <div className="flex flex-col drop-shadow-neo-5 border-primary-dark border-2 bg-background w-[230px] h-[320px]">
       <div className="flex items-center justify-between px-3 border-b-2 py-1 bg-foreground text-primary-dark">
         <h3
           title={card.title}
@@ -18,19 +18,30 @@ export default function ProjectCard({ card }: ProjectCardProps) {
         >
           {card.title}
         </h3>
-        <Link href={card.github} target="_blank">
+        <Link
+          href={card.github}
+          target="_blank"
+          className="transition-all tracking-widest hover:scale-105"
+        >
           <GithubIcon />
         </Link>
       </div>
+      {/* overflow-hidden overflow-ellipsis whitespace-nowrap max-h-[100px]  */}
+      <div>
+        <ImageAspectRatio image={card.image} />
+      </div>
 
-      <ImageAspectRatio image={card.image} />
-
-      <div className="flex flex-col gap-3 px-5 py-3 font-bold">
+      <div className="flex flex-col gap-3 px-5 py-3 font-bold h-full">
         <span className="text-sm">{getDateFormated(card.date)}</span>
-        <p className="text-justify text-base">{card.description}</p>
+        <p
+          title={card.description}
+          className="text-justify text-base vertical-ellipsis h-full"
+        >
+          {card.description}
+        </p>
         <Link
           href={`projects/${card.slug}`}
-          className="underline-offset-1 underline font-extrabold uppercase transition-all tracking-widest self-end hover:scale-105 hover:text-primary-dark"
+          className="underline-offset-1 self-end underline font-extrabold uppercase transition-all tracking-widest hover:scale-105 hover:text-primary-dark"
         >
           Read more
         </Link>
