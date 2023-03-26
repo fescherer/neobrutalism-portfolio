@@ -12,7 +12,8 @@ module.exports = {
       'foreground-accent': 'var(--foreground-accent)',
       primary: 'var(--primary)',
       'primary-dark': 'var(--primary-dark)',
-      'primary-contrast': 'var(--primary-contrast)'
+      'primary-contrast': 'var(--primary-contrast)',
+      overlay: 'var(--black-overlay)'
     },
     fontFamily: {
       sans: ["'Darker Grotesque', sans-serif", ...defaultTheme.fontFamily.sans]
@@ -31,6 +32,9 @@ module.exports = {
     extend: {
       height: {
         0.063: '0.063rem'
+      },
+      transitionProperty: {
+        width: 'width'
       },
       rotate: {
         '-4': '-4deg'
@@ -57,10 +61,16 @@ module.exports = {
         scale: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)' }
+        },
+        grow: {
+          '0%': { width: '0' },
+          '50%': { width: '50%' },
+          '100%': { width: '100%' }
         }
       },
       animation: {
-        scale: 'scale 8s ease-in-out infinite'
+        scale: 'scale 8s ease-in-out infinite',
+        grow: 'grow 1s ease-in-out '
       }
     }
   },
