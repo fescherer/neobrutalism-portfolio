@@ -25,11 +25,11 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   const dictionary = await getDictionaryHead(params.lang)
 
   {
-    /* 
+    /*
   Esses daqui são metadados padrões quando usamos esse tipo de abordagem
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"> / 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> /
 */
   }
 

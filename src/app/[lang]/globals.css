@@ -14,6 +14,7 @@ html {
   --primary: #85586f;
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
+  --black-overlay: #ffffff4b;
   --black: #000000;
   --white: #ffffff;
 }
@@ -26,6 +27,7 @@ html {
   --primary: #85586f;
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
+  --black-overlay: #ffffff4b;
   --black: #000000;
   --white: #ffffff;
 }
@@ -38,6 +40,7 @@ html {
   --primary: #85586f;
   --primary-dark: #613f58;
   --primary-contrast: #ffffff;
+  --black-overlay: #0000004b;
   --black: #000000;
   --white: #ffffff;
 }
@@ -53,5 +56,10 @@ html {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  html {
+    min-height: 100%;
+    position: relative;
   }
 }
