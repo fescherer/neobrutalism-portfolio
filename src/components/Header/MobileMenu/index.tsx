@@ -1,6 +1,7 @@
 'use client'
+
 import { HeaderTranslation } from '@/@types/translations/HeaderTranslation'
-import FSLogo from '@/Icons/FSLogo'
+import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import LangSelector from '../LangSelector'
@@ -39,20 +40,33 @@ export default function MobileMenu({ translate }: HeaderProps) {
             className="absolute top-0 left-0 bg-overlay h-full w-full z-50"
             onClick={handleIsHidden}
           ></div>
-          <div className="absolute top-0 left-0 bg-background-accent h-full z-50 min-w-[35%] animate-grow ">
+          <div className="absolute top-0 left-0 bg-background-accent h-full z-50 w-[35vw] animate-grow overflow-hidden">
             <ul className="flex flex-col text-2xl  md:flex-row md:space-x-8 md:mt-0 md:text-2xl">
-              <Link href="/" className="mb-6 p-5">
-                <FSLogo></FSLogo>
+              <Link href="/">
+                <figure className="p-4">
+                  <Image
+                    width={250}
+                    height={50}
+                    alt=""
+                    src="https://user-images.githubusercontent.com/62115215/227785736-a779e491-88c5-450e-a955-758329385d9c.svg"
+                  />
+                </figure>
               </Link>
 
-              <li className="px-5 py-2 cursor-pointer ">
-                {translate.menu.snippets}
+              <li className="cursor-pointer flex hover:bg-background">
+                <Link href="/" className="flex w-full px-5 py-2">
+                  {translate.menu.snippets}
+                </Link>
               </li>
-              <li className="px-5 py-2 cursor-pointer">
-                <Link href="/projects">{translate.menu.projects}</Link>
+              <li className="cursor-pointer flex hover:bg-background">
+                <Link href="/projects" className="flex w-full px-5 py-2">
+                  {translate.menu.projects}
+                </Link>
               </li>
-              <li className="px-5 py-2 cursor-pointer">
-                <Link href="/about">{translate.menu.aboutme}</Link>
+              <li className="cursor-pointer flex hover:bg-background">
+                <Link href="/about" className="flex w-full px-5 py-2">
+                  {translate.menu.aboutme}
+                </Link>
               </li>
 
               <li className="px-5 py-2 cursor-pointer">
