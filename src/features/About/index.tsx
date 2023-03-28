@@ -1,22 +1,30 @@
+import { AboutTranslation } from '@/@types/translations/AboutTranslation'
+import { DefaultTranslation } from '@/@types/translations/Translation'
 import { data_skills } from '@/util/data/about'
+import { Locale } from '@/util/functions/i18n/i18n-config'
 import Image from 'next/image'
 
-export default function About() {
+type AboutProps = {
+  translation: AboutTranslation
+  translationDefault: DefaultTranslation
+}
+
+export default function About({ translation, translationDefault }: AboutProps) {
   return (
     <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-project m-auto">
-      <h1 className="text-6xl font-bold -rotate-2">About me</h1>
+      <h1 className="text-6xl font-bold -rotate-2">{translation.title}</h1>
 
       <div className="flex md:flex-row flex-col gap-12 mb-6">
         <Image
           src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
           width={296}
           height={350}
-          alt="profile-image"
+          alt={translation.introduction['alt-image']}
           className="hidden md:block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
         />
 
         <div className="font-bold">
-          <h2 className="text-4xl">Felipe Scherer</h2>
+          <h2 className="text-4xl">{translationDefault.author}</h2>
 
           <p className="text-base">
             Sed sit amet ipsum eu orci placerat blandit ac efficitur neque.
@@ -36,10 +44,10 @@ export default function About() {
 
           <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
             <a href="#skills-experience" className="btn-base">
-              Skills and Experience
+              {translation.introduction['skills-experience']}
             </a>
             <a href="#my-history" className="btn-base">
-              My History
+              {translation.introduction['my-history']}
             </a>
           </div>
         </div>
@@ -48,7 +56,7 @@ export default function About() {
           src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
           width={296}
           height={350}
-          alt="profile-image"
+          alt={translation.introduction['alt-image']}
           className="md:hidden block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
         />
       </div>
