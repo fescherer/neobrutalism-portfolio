@@ -1,7 +1,6 @@
 import { AboutTranslation } from '@/@types/translations/AboutTranslation'
 import { DefaultTranslation } from '@/@types/translations/Translation'
 import { data_skills } from '@/util/data/about'
-import { Locale } from '@/util/functions/i18n/i18n-config'
 import Image from 'next/image'
 
 type AboutProps = {
@@ -76,7 +75,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
           </p>
 
           <div className="flex flex-col gap-5">
-            <h3 className="text-5xl font-bold">SKILLS</h3>
+            <h3 className="text-5xl font-bold">{translation.skills.title}</h3>
             <div className="flex flex-row flex-wrap justify-evenly gap-7">
               {data_skills.map((skill) => (
                 <div
