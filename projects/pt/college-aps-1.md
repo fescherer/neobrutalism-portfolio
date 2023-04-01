@@ -5,7 +5,7 @@ type: college
 tags: [html, css]
 date: '2023-03-10T16:31:38.578Z'
 title: APS 1
-github: 'https://github.com/ofelipescherer/project-studies/tree/main/alura/alura-quiz'
+github: https://github.com/ofelipescherer/project-studies/tree/main/alura/alura-quiz
 site: alura-quiz.ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
 description: Projeto

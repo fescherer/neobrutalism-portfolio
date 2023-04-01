@@ -2,6 +2,7 @@ import { AboutTranslation } from '@/@types/translations/AboutTranslation'
 import { DefaultTranslation } from '@/@types/translations/Translation'
 import { data_skills } from '@/util/data/about'
 import Image from 'next/image'
+import History from './components/History'
 
 type AboutProps = {
   translation: AboutTranslation
@@ -18,35 +19,21 @@ export default function About({ translation, translationDefault }: AboutProps) {
           src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
           width={296}
           height={350}
-          alt={translation.introduction['alt-image']}
+          alt={translation.introduction.alt_image}
           className="hidden md:block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
         />
 
         <div className="font-bold">
           <h2 className="text-4xl">{translationDefault.author}</h2>
 
-          <p className="text-base">
-            Sed sit amet ipsum eu orci placerat blandit ac efficitur neque.
-            Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor
-            elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut
-            Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu
-            orci placerat blandit ac efficitur neque. Praesent nec auctor odio.
-            Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium
-            facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non
-            risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit
-            amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec
-            auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus
-            pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit
-            non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin
-            eleifend rhoncus nisi, ut
-          </p>
+          <p className="text-base">{translation.first_description}</p>
 
           <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
             <a href="#skills-experience" className="btn-base">
-              {translation.introduction['skills-experience']}
+              {translation.introduction.skills_experience}
             </a>
             <a href="#my-history" className="btn-base">
-              {translation.introduction['my-history']}
+              {translation.introduction.my_history}
             </a>
           </div>
         </div>
@@ -55,7 +42,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
           src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
           width={296}
           height={350}
-          alt={translation.introduction['alt-image']}
+          alt={translation.introduction.alt_image}
           className="md:hidden block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
         />
       </div>
@@ -110,55 +97,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
       </div>
 
       <div className="flex flex-col" id="my-history">
-        {[
-          'My History',
-          'Itatiba, São Paulo, Brasil',
-          'High School, College',
-          'My Future Plans'
-        ].map((title, index) => (
-          <div key={title} className="flex md:flex-row flex-col gap-12 mb-6">
-            <Image
-              src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
-              width={296}
-              height={350}
-              alt="profile-image"
-              className={`${
-                index % 2 === 0 ? '' : 'md:block'
-              } hidden drop-shadow-neo-5 border-primary-dark border-4 rounded-sm`}
-            />
-
-            <div className="font-bold">
-              <h2 className="text-4xl">{title}</h2>
-
-              <p className="text-base">
-                Sed sit amet ipsum eu orci placerat blandit ac efficitur neque.
-                Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla
-                auctor elit non risus pretium facilisis. Proin eleifend rhoncus
-                nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit
-                amet ipsum eu orci placerat blandit ac efficitur neque. Praesent
-                nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit
-                non risus pretium facilisis. Proin eleifend rhoncus nisi, ut
-                Nulla auctor elit non risus pretium facilisis. Proin eleifend
-                rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac
-                efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum
-                lorem. Nulla auctor elit non risus pretium facilisis. Proin
-                eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium
-                facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend
-                rhoncus nisi, ut
-              </p>
-            </div>
-
-            <Image
-              src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
-              width={296}
-              height={350}
-              alt="profile-image"
-              className={`${
-                index % 2 === 0 ? '' : 'md:hidden block'
-              } drop-shadow-neo-5 border-primary-dark border-4 rounded-sm`}
-            />
-          </div>
-        ))}
+        <History translation={translation.my_history} />
       </div>
     </div>
   )

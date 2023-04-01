@@ -1,6 +1,6 @@
 ---
 id: 1
-slug: college-ellipse-transformation
+slug: rocketseat-nlw-04
 type: college
 tags: [html, css]
 date: '2023-03-10T16:31:38.578Z'
