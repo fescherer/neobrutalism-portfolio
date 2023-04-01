@@ -26,6 +26,11 @@ const dictionariesProject = {
     import('../../../i18n/pt/project.json').then((module) => module.default)
 }
 
+const dictionariesAbout = {
+  pt: () =>
+    import('../../../i18n/pt/about.json').then((module) => module.default)
+}
+
 export const getDictionaryHeader = async (locale: Locale) =>
   dictionariesHeader[locale]()
 
@@ -40,3 +45,6 @@ export const getDictionaryHead = async (locale: Locale) =>
 
 export const getDictionaryProject = async (locale: Locale) =>
   dictionariesProject[locale]()
+
+export const getDictionaryAbout = async (locale: Locale) =>
+  dictionariesAbout[locale]()

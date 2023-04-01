@@ -40,14 +40,20 @@ export default function Introduction({ translation }: IntroductionProps) {
           </div>
         </div>
 
-        <Image
-          src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
-          width={296}
-          height={350}
-          alt={translation['alt-image']}
-          className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
-          unoptimized={true}
-        />
+        <figure className="relative">
+          <Image
+            src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
+            width={296}
+            height={350}
+            alt={translation['alt-image']}
+            className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+            unoptimized={true}
+          />
+
+          <div className="drop-shadow-neo-3 border-primary-dark border-4 rounded-sm absolute bottom-10 -left-12 bg-foreground px-6 py-2 font-extrabold text-4xl">
+            HELLO!
+          </div>
+        </figure>
       </div>
 
       <div className="flex flex-col items-center gap-1">

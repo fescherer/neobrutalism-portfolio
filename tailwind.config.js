@@ -63,14 +63,13 @@ module.exports = {
           '50%': { transform: 'scale(1.05)' }
         },
         grow: {
-          '0%': { width: '0' },
-          '50%': { width: '50%' },
-          '100%': { width: '100%' }
+          '0%': { width: '0%' },
+          '100%': { width: '35vw' }
         }
       },
       animation: {
         scale: 'scale 8s ease-in-out infinite',
-        grow: 'grow 1s ease-in-out '
+        grow: 'grow 0.5s ease'
       }
     }
   },
