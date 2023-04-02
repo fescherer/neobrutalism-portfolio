@@ -4,6 +4,7 @@ export type AboutTranslation = {
   introduction: IntroductionAboutTranslation
   skills: SkillsTranslation
   my_history: TypeMyHistory
+  experience: ExperienceTranslation
 }
 
 export type IntroductionAboutTranslation = {
@@ -26,4 +27,18 @@ export type TextBlock = {
 
 export type SkillsTranslation = {
   title: string
+}
+
+export type ExperienceTranslation = {
+  central_informatica_aprendice: Experience
+  central_informatica: Experience
+  playscores_aprendice: Experience
+  playscores: Experience
+}
+
+export type Experience = {
+  title: string
+  short_desc: string
+  desc: string
+  job: string
 }
