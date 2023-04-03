@@ -2,6 +2,7 @@ import { AboutTranslation } from '@/@types/translations/AboutTranslation'
 import { DefaultTranslation } from '@/@types/translations/Translation'
 import { data_skills } from '@/util/data/about'
 import Image from 'next/image'
+import Experience from './components/Experience'
 import History from './components/History'
 
 type AboutProps = {
@@ -81,18 +82,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
 
         <div className="flex flex-col gap-5">
           <h3 className="text-5xl font-bold">Experience</h3>
-          {[1, 2, 3, 4].map((id) => (
-            <div key={id} className="">
-              <h4 className="tex-3xl font-extrabold uppercase">experience</h4>
-              <p className="text-base font-bold">
-                Sed sit amet ipsum eu orci placerat blandit ac efficitur neque.
-                Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla
-                auctor elit non risus pretium facilisis. Proin eleifend rhoncus
-                nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA
-                CITAÇÃO)
-              </p>
-            </div>
-          ))}
+          <Experience translation={translation.experience}></Experience>
         </div>
       </div>
 

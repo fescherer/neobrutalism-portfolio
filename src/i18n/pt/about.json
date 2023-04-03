@@ -29,5 +29,31 @@
       "title": "My Future Plans",
       "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
     }
+  },
+  "experience": {
+    "central_informatica_aprendice": {
+      "title": "Central Informática Itatiba",
+      "short_desc": "Uma empresa de manutenção de computadores",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Menor Aprendiz"
+    },
+    "central_informatica": {
+      "title": "Central Informática Itatiba",
+      "short_desc": "Uma empresa de manutenção de computadores",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Técnico de Informática"
+    },
+    "playscores_aprendice": {
+      "title": "Sports Analytics And Technology",
+      "short_desc": "Uma empresa de apostas esportivas",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Estagiário de Programação"
+    },
+    "playscores": {
+      "title": "Sports Analytics And Technology",
+      "short_desc": "Uma empresa de apostas esportivas",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Programador"
+    }
   }
 }
