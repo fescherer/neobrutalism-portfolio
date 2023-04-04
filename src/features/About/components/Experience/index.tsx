@@ -4,8 +4,8 @@ import { ExperienceTranslation } from '@/@types/translations/AboutTranslation'
 import { ExperienceData } from '@/@types/About'
 import ExperienceFragment from './ExperienceFragment'
 import { useState } from 'react'
-import * as Dialog from '@radix-ui/react-dialog'
 import DialogExperience from './DialogExperience'
+import ResponsiveDialog from '@/components/ResponsiveDialog'
 
 type ExperienceProps = {
   translation: ExperienceTranslation
@@ -58,21 +58,10 @@ export default function Experiences({ translation }: ExperienceProps) {
         ></ExperienceFragment>
       ))}
 
-      <Dialog.Root open={!!dialog}>
-        <Dialog.Trigger></Dialog.Trigger>
-        <Dialog.Portal>
-          <Dialog.Overlay
-            onClick={() => setDialog('')}
-            className="fixed bg-background h-full w-full inset-0"
-          />
-          <Dialog.Content className="fixed bg-primary w-16 h-16 top-0 bottom-0">
-            <Dialog.Title>AAAAAAAAAAAAA</Dialog.Title>
-            <Dialog.Description />
-            <Dialog.Close />
-            <DialogExperience />
-          </Dialog.Content>
-        </Dialog.Portal>
-      </Dialog.Root>
+      <ResponsiveDialog state={dialog} setState={setDialog}>
+        <DialogExperience />
+      </ResponsiveDialog>
     </div>
   )
 }
+
