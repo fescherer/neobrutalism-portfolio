@@ -2,9 +2,9 @@
   "title": "Sobre mim",
   "first_description": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut",
   "introduction": {
-    "skills-experience": "Skills and Experience",
-    "my-history": "My History",
-    "alt-image": "Foto de Felipe Scherer"
+    "skills_experience": "Skills and Experience",
+    "my_history": "My History",
+    "alt_image": "Foto de Felipe Scherer"
   },
   "skills": {
     "title": "SKILLS",
