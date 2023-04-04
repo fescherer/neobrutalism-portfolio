@@ -28,7 +28,7 @@ export default function Experiences({ translation }: ExperienceProps) {
       img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png'
     },
     {
-      id: 'sports-at',
+      id: 'sports-at-aprendice',
       info: translation.playscores_aprendice,
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
@@ -45,10 +45,13 @@ export default function Experiences({ translation }: ExperienceProps) {
 
   const [dialog, setDialog] = useState<string>('')
 
+  console.log(dialog)
+
   return (
     <div className="flex flex-col gap-5">
       {data.map((experience) => (
         <ExperienceFragment
+          key={experience.id}
           dialog={dialog}
           setDialog={setDialog}
           experience={experience}
@@ -58,8 +61,11 @@ export default function Experiences({ translation }: ExperienceProps) {
       <Dialog.Root open={!!dialog}>
         <Dialog.Trigger></Dialog.Trigger>
         <Dialog.Portal>
-          <Dialog.Overlay onClick={() => setDialog('')} />
-          <Dialog.Content className="bg-primary w-16 h-16 top-0 bottom-0">
+          <Dialog.Overlay
+            onClick={() => setDialog('')}
+            className="fixed bg-background h-full w-full inset-0"
+          />
+          <Dialog.Content className="fixed bg-primary w-16 h-16 top-0 bottom-0">
             <Dialog.Title>AAAAAAAAAAAAA</Dialog.Title>
             <Dialog.Description />
             <Dialog.Close />
@@ -70,4 +76,3 @@ export default function Experiences({ translation }: ExperienceProps) {
     </div>
   )
 }
-

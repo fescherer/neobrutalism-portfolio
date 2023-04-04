@@ -1,5 +1,3 @@
-'use client'
-
 import { ExperienceData } from '@/@types/About'
 import { getDateFormated } from '@/util/functions/getDateFormated'
 import Image from 'next/image'
