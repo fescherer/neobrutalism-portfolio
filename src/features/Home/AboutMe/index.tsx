@@ -1,5 +1,4 @@
 import { AboutMeHomeTranslation } from '@/@types/translations/HomeTranslation'
-import Image from 'next/image'
 import ItemWrapper from '../components/ItemWrapper'
 
 type AboutMeProps = {

@@ -1,6 +1,6 @@
 ---
 id: 163
-slug: aps-8
+slug: college-data-structures
 type: college
 tags: [java]
 date: '2023-03-10T17:31:38.778Z'
