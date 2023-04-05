@@ -16,7 +16,6 @@ export default function MobileMenu({ translate }: HeaderProps) {
 
   function handleIsHidden() {
     setIsHidden((prev) => !prev)
-    console.log(isHidden)
   }
 
   return (

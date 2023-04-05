@@ -28,7 +28,10 @@ export default function History({ translation }: HistoryProps) {
   return (
     <>
       {my_history.map((data, index) => (
-        <div key={data.title} className="flex md:flex-row flex-col gap-12 mb-6">
+        <div
+          key={data.title}
+          className="flex md:flex-row flex-col items-center gap-12 mb-6"
+        >
           <Image
             src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
             width={296}
@@ -52,7 +55,7 @@ export default function History({ translation }: HistoryProps) {
             alt="profile-image"
             className={`${
               index % 2 === 0 ? '' : 'md:hidden block'
-            } drop-shadow-neo-5 border-primary-dark border-4 rounded-sm`}
+            } drop-shadow-neo-5  border-primary-dark border-4 rounded-sm`}
           />
         </div>
       ))}
