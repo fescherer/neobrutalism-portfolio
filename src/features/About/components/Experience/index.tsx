@@ -18,50 +18,50 @@ export default function Experiences({ translation }: ExperienceProps) {
       info: translation.central_informatica_aprendice,
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png'
+      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img_desc: ''
     },
     {
       id: 'central-info-itatiba',
       info: translation.central_informatica,
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png'
+      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img_desc: ''
     },
     {
       id: 'sports-at-aprendice',
       info: translation.playscores_aprendice,
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png'
+      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img_desc: ''
     },
     {
       id: 'sports-at',
       info: translation.playscores,
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png'
+      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img_desc: ''
     }
   ]
 
-  const [dialog, setDialog] = useState<string>('')
-
-  console.log(dialog)
+  const [dialog, setDialog] = useState<ExperienceData | null>(null)
 
   return (
     <div className="flex flex-col gap-5">
       {data.map((experience) => (
         <ExperienceFragment
           key={experience.id}
-          dialog={dialog}
           setDialog={setDialog}
           experience={experience}
         ></ExperienceFragment>
       ))}
 
       <ResponsiveDialog state={dialog} setState={setDialog}>
-        <DialogExperience />
+        <DialogExperience data={dialog} setState={setDialog} />
       </ResponsiveDialog>
     </div>
   )
 }
-

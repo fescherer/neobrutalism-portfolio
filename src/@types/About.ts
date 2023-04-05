@@ -6,4 +6,5 @@ export type ExperienceData = {
   date_start: string
   date_end: string
   img: string
+  img_desc: string
 }

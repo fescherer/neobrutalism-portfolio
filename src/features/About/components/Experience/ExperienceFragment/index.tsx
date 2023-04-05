@@ -6,13 +6,11 @@ import { Dispatch, SetStateAction } from 'react'
 
 type ExperienceFragmentProps = {
   experience: ExperienceData
-  dialog: string
-  setDialog: Dispatch<SetStateAction<string>>
+  setDialog: Dispatch<SetStateAction<ExperienceData | null>>
 }
 
 export default function ExperienceFragment({
   experience,
-  dialog,
   setDialog
 }: ExperienceFragmentProps) {
   return (
@@ -41,7 +39,7 @@ export default function ExperienceFragment({
         <p className="text-base font-bold">{experience.info.short_desc}</p>
 
         <button
-          onClick={() => setDialog(experience.id)}
+          onClick={() => setDialog(experience)}
           className="self-end bg-background-accent min-w-[150px] rounded py-1 px-2 text-base font-bold drop-shadow-neo-2 border-primary-dark border-2"
         >
           MORE INFO

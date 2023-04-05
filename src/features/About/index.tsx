@@ -92,4 +92,3 @@ export default function About({ translation, translationDefault }: AboutProps) {
     </div>
   )
 }
-

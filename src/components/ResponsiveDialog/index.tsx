@@ -2,8 +2,9 @@ import * as Dialog from '@radix-ui/react-dialog'
 import React, { Dispatch, SetStateAction } from 'react'
 
 type ResponsiveDialogProps = {
-  state: string
-  setState: Dispatch<SetStateAction<string>>
+  state: unknown
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  setState: Dispatch<SetStateAction<any>>
   children: JSX.Element
 }
 
@@ -19,9 +20,7 @@ export default function ResponsiveDialog({
           onClick={() => setState('')}
           className="fixed bg-overlay h-full w-full inset-0"
         />
-        <Dialog.Content className="fixed bg-primary top-1/2 right-1/2 ">
-          {children}
-        </Dialog.Content>
+        {children}
       </Dialog.Portal>
     </Dialog.Root>
   )
