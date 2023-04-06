@@ -45,7 +45,7 @@ export default function Introduction({ translation }: IntroductionProps) {
             src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
             width={296}
             height={350}
-            alt={translation['alt-image']}
+            alt={translation.alt_image}
             className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
             unoptimized={true}
           />
@@ -62,7 +62,7 @@ export default function Introduction({ translation }: IntroductionProps) {
         </div>
 
         <ButtonNextItem
-          aria={translation['aria-next-item']}
+          aria={translation.aria_next_item}
           nextItem="about-me"
         />
       </div>
