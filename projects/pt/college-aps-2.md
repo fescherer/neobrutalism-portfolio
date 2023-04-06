@@ -1,6 +1,6 @@
 ---
 id: 2
-slug: aps-2
+slug: college-aps-2
 type: college
 tags: [html, css]
 date: '2023-03-10T16:31:38.578Z'

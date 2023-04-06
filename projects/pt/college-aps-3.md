@@ -1,6 +1,6 @@
 ---
 id: 3
-slug: aps-3
+slug: college-aps-3
 type: college
 tags: [java]
 date: '2023-03-10T16:31:38.578Z'
