@@ -18,7 +18,7 @@ export default function Experiences({ translation }: ExperienceProps) {
       info: translation.central_informatica_aprendice,
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img: 'https://user-images.githubusercontent.com/62115215/230795839-b7968d0a-11f0-4a09-8cb2-094b1ee6e7c7.png',
       img_desc: ''
     },
     {
@@ -26,7 +26,7 @@ export default function Experiences({ translation }: ExperienceProps) {
       info: translation.central_informatica,
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img: 'https://user-images.githubusercontent.com/62115215/230795839-b7968d0a-11f0-4a09-8cb2-094b1ee6e7c7.png',
       img_desc: ''
     },
     {
@@ -34,7 +34,7 @@ export default function Experiences({ translation }: ExperienceProps) {
       info: translation.playscores_aprendice,
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img: 'https://user-images.githubusercontent.com/62115215/230795837-01b25a2a-6a2b-4923-b966-46544d517df3.png',
       img_desc: ''
     },
     {
@@ -42,7 +42,7 @@ export default function Experiences({ translation }: ExperienceProps) {
       info: translation.playscores,
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
-      img: 'https://user-images.githubusercontent.com/62115215/229382690-60e99ebb-82d1-4840-a07c-ba9a5abf5a02.png',
+      img: 'https://user-images.githubusercontent.com/62115215/230795837-01b25a2a-6a2b-4923-b966-46544d517df3.png',
       img_desc: ''
     }
   ]

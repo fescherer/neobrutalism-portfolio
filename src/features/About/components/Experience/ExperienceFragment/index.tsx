@@ -21,7 +21,7 @@ export default function ExperienceFragment({
             {experience.info.title}
           </h4>
           <div className="flex gap-3">
-            <Image src={experience.img} width={50} height={50} alt="dasdsa" />
+            <Image src={experience.img} width={100} height={50} alt="dasdsa" />
             <div className="flex flex-col gap-3">
               <div className="flex gap-3">
                 <Calendar size={24} />

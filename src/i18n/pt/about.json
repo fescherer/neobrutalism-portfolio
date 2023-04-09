@@ -1,16 +1,48 @@
 {
   "title": "Sobre mim",
-  "first_description": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut",
+  "first_description": "Olá, meu nome é Felipe Scherer e tenho diversos hobbies que me inspiram e me motivam a ser uma pessoa mais completa. A programação é uma das minhas grandes paixões, em especial Python, que me levou a buscar cada vez mais sobre o assunto. Atualmente, trabalho com Javascript como frontend web, mas meu objetivo é me especializar em linguagens de baixo nível, como C++, para desenvolvimento de jogos. Acredito que programação é uma arte, assim como qualquer outra produção humana, e a lógica matemática é fundamental para resolver problemas propostos. Além disso, também sou apaixonado pela arte gráfica, incluindo desenhos, layouts e composições. Meu desejo é estudar mais sobre a arte do desenho, já que esta é uma área que ainda não domino totalmente. Por último, mas não menos importe: jogos eletrônicos, gosto especialmente de jogos casuais de sandbox, como Stardew Valley, Terraria e Pokémon. Sou formado em Ciências da Computação e estou sempre em busca de novas oportunidades de aprendizado e aprimoramento.",
   "introduction": {
-    "skills_experience": "Skills and Experience",
-    "my_history": "My History",
+    "skills_experience": "Habilidades e experiência",
+    "my_history": "Minha história",
     "alt_image": "Foto de Felipe Scherer"
   },
+  "skills_experience": {
+    "title": "Habilidades e Experiência",
+    "description": "Nesta seção, apresento um resumo das minhas competências e experiências profissionais. Além de detalhar as tecnologias que tenho experiência e domínio, também compartilho informações sobre projetos e trabalhos que já realizei, destacando minhas habilidades e conquistas em cada um deles. Como profissional, estou sempre buscando expandir minha experiência, aprender novas tecnologias e técnicas e desafiar-me continuamente a fim de aprimorar minhas habilidades e contribuir cada vez mais para o sucesso dos projetos em que atuo.",
+    "quote": {
+      "quote_block": "A chave para o sucesso é continuar aprendendo.",
+      "author": "Branson, Richard"
+    }
+  },
   "skills": {
-    "title": "SKILLS",
-    "skills_experience": "Skills and Experience",
-    "my_history": "My History",
-    "alt_image": "Foto de Felipe Scherer"
+    "title": "Habilidades",
+    "description": "Estou em constante aprimoramento e dedicação aos estudos em diferentes áreas da programação. Acredito que é importante estar sempre atualizado e buscar novos conhecimentos para evoluir na carreira e crescer profissionalmente. Além disso, estou sempre em busca de novas oportunidades de aprendizado, cursos, treinamentos, eventos e experiências que possam agregar valor ao meu conhecimento e habilidades. Entre as áreas em que me dedico com entusiasmo e interesse estão:"
+  },
+  "experience": {
+    "central_informatica_aprendice": {
+      "title": "Central Informática Itatiba",
+      "short_desc": "Uma empresa de manutenção de computadores",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Menor Aprendiz"
+    },
+    "central_informatica": {
+      "title": "Central Informática Itatiba",
+      "short_desc": "Uma empresa de manutenção de computadores",
+      "desc": "Sed sit amet ipsum eu o    rci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Técnico de Informática"
+    },
+    "playscores_aprendice": {
+      "title": "Sports Analytics And Technology",
+      "short_desc": "Uma empresa de apostas esportivas",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Estagiário de Programação"
+    },
+    "playscores": {
+      "title": "Sports Analytics And Technology",
+      "short_desc": "Uma empresa de apostas esportivas",
+      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
+      "job": "Programador"
+    }
   },
   "my_history": {
     "my_history": {
@@ -28,32 +60,6 @@
     "future": {
       "title": "My Future Plans",
       "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
-    }
-  },
-  "experience": {
-    "central_informatica_aprendice": {
-      "title": "Central Informática Itatiba",
-      "short_desc": "Uma empresa de manutenção de computadores",
-      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
-      "job": "Menor Aprendiz"
-    },
-    "central_informatica": {
-      "title": "Central Informática Itatiba",
-      "short_desc": "Uma empresa de manutenção de computadores",
-      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
-      "job": "Técnico de Informática"
-    },
-    "playscores_aprendice": {
-      "title": "Sports Analytics And Technology",
-      "short_desc": "Uma empresa de apostas esportivas",
-      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
-      "job": "Estagiário de Programação"
-    },
-    "playscores": {
-      "title": "Sports Analytics And Technology",
-      "short_desc": "Uma empresa de apostas esportivas",
-      "desc": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)",
-      "job": "Programador"
     }
   }
 }

@@ -17,3 +17,8 @@ export type DefaultTranslation = {
 export type HeadTranslation = {
   title: string
 }
+
+export type QuoteTranslation = {
+  quote_block: string
+  author: string
+}
