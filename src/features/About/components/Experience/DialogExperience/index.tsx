@@ -25,16 +25,18 @@ export default function DialogExperience({
           </Dialog.Close>
         </div>
 
-        <Image
-          src={data?.img_desc || ''}
-          width="0"
-          height="0"
-          sizes="100vw"
-          className="w-full h-auto"
-          alt="Company Image"
-        />
+        <div className="flex flex-col ">
+          <Image
+            src={data?.img_desc || ''}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-full h-auto"
+            alt="Company Image"
+          />
 
-        <div className="p-3 text-justify">{data?.info.desc}</div>
+          <div className="p-3 text-justify">{data?.info.desc}</div>
+        </div>
       </div>
     </Dialog.Content>
   )

@@ -7,4 +7,5 @@ export type ExperienceData = {
   date_end: string
   img: string
   img_desc: string
+  logo: string
 }

@@ -6,6 +6,7 @@ import ExperienceFragment from './ExperienceFragment'
 import { useState } from 'react'
 import DialogExperience from './DialogExperience'
 import ResponsiveDialog from '@/components/ResponsiveDialog'
+import * as Separator from '@radix-ui/react-separator'
 
 type ExperienceProps = {
   translation: ExperienceTranslation
@@ -19,7 +20,8 @@ export default function Experiences({ translation }: ExperienceProps) {
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
       img: 'https://user-images.githubusercontent.com/62115215/230795839-b7968d0a-11f0-4a09-8cb2-094b1ee6e7c7.png',
-      img_desc: ''
+      img_desc: '',
+      logo: ''
     },
     {
       id: 'central-info-itatiba',
@@ -27,7 +29,8 @@ export default function Experiences({ translation }: ExperienceProps) {
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
       img: 'https://user-images.githubusercontent.com/62115215/230795839-b7968d0a-11f0-4a09-8cb2-094b1ee6e7c7.png',
-      img_desc: ''
+      img_desc: '',
+      logo: ''
     },
     {
       id: 'sports-at-aprendice',
@@ -35,7 +38,8 @@ export default function Experiences({ translation }: ExperienceProps) {
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
       img: 'https://user-images.githubusercontent.com/62115215/230795837-01b25a2a-6a2b-4923-b966-46544d517df3.png',
-      img_desc: ''
+      img_desc: '',
+      logo: ''
     },
     {
       id: 'sports-at',
@@ -43,7 +47,8 @@ export default function Experiences({ translation }: ExperienceProps) {
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
       img: 'https://user-images.githubusercontent.com/62115215/230795837-01b25a2a-6a2b-4923-b966-46544d517df3.png',
-      img_desc: ''
+      img_desc: '',
+      logo: ''
     }
   ]
 
@@ -51,12 +56,17 @@ export default function Experiences({ translation }: ExperienceProps) {
 
   return (
     <div className="flex flex-col gap-5">
-      {data.map((experience) => (
-        <ExperienceFragment
-          key={experience.id}
-          setDialog={setDialog}
-          experience={experience}
-        ></ExperienceFragment>
+      {data.map((experience, index) => (
+        <>
+          <ExperienceFragment
+            key={experience.id}
+            setDialog={setDialog}
+            experience={experience}
+          ></ExperienceFragment>
+          {index !== data.length && (
+            <Separator.Root className="bg-primary opacity-50 h-[1px] w-full" />
+          )}
+        </>
       ))}
 
       <ResponsiveDialog state={dialog} setState={setDialog}>
