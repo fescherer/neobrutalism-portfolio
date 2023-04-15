@@ -1,8 +1,8 @@
 export type HeaderTranslation = {
   title: string
   menu: {
-    'aria-button': string
-    'sr-button': string
+    aria_button: string
+    sr_button: string
     snippets: string
     aboutme: string
     projects: string
@@ -12,8 +12,8 @@ export type HeaderTranslation = {
 }
 
 export type ThemeButtonTranslation = {
-  'aria-button-light': string
-  'aria-button-dark': string
+  aria_button_light: string
+  aria_button_dark: string
 }
 
 export type LangTranslation = {

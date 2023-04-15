@@ -16,7 +16,7 @@ export default function AboutMe({ translation }: AboutMeProps) {
   return (
     <ItemWrapper
       buttonNextItem="snippets"
-      aria={translation['aria-next-item']}
+      aria={translation.aria_next_item}
       title={translation.title}
       id="about-me"
     >
@@ -27,11 +27,11 @@ export default function AboutMe({ translation }: AboutMeProps) {
           </span>
 
           <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
-            {`${getYearsOld()} ${translation['years-old']}`}
+            {`${getYearsOld()} ${translation.years_old}`}
           </span>
 
           <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
-            {translation['college-course']}
+            {translation.college_course}
           </span>
 
           <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">

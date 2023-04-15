@@ -45,7 +45,7 @@ export default function History({ translation }: HistoryProps) {
           <div className="font-bold">
             <h2 className="text-4xl">{data.title}</h2>
 
-            <p className="text-base">{data.text}</p>
+            <p className="text-base indent-8 text-justify">{data.text}</p>
           </div>
 
           <Image

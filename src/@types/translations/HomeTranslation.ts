@@ -5,7 +5,7 @@ export type HomeTranslation = {
 }
 
 export type IntroductionTranslation = {
-  'aria-next-item': string
+  aria_next_item: string
   meet: string
   author: string
   profession: string
@@ -15,19 +15,19 @@ export type IntroductionTranslation = {
     projects: string
     aboutme: string
   }
-  'alt-image': string
+  alt_image: string
 }
 
 export type AboutMeHomeTranslation = {
   title: string
   author: string
-  'aria-next-item': string
-  'years-old': string
-  'college-course': string
+  aria_next_item: string
+  years_old: string
+  college_course: string
   profession: string
-  'alt-image': string
+  alt_image: string
 }
 
 export type SnippetsTranslation = {
-  'aria-next-item': string
+  aria_next_item: string
 }

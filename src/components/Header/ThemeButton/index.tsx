@@ -32,14 +32,14 @@ export default function ThemeButton({ translation }: ThemeButtonProps) {
       {theme === 'light' ? (
         <button
           onClick={handleTheme}
-          aria-label={translation['aria-button-light']}
+          aria-label={translation.aria_button_light}
         >
           <Moon size={15} weight="fill" />
         </button>
       ) : (
         <button
           onClick={handleTheme}
-          aria-label={translation['aria-button-dark']}
+          aria-label={translation.aria_button_dark}
         >
           <SunDim size={15} weight="fill" />
         </button>

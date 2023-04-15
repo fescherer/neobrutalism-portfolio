@@ -1,7 +1,10 @@
+import { QuoteTranslation } from './Translation'
+
 export type AboutTranslation = {
   title: string
   first_description: string
   introduction: IntroductionAboutTranslation
+  skills_experience: SkillsExprienceTranslation
   skills: SkillsTranslation
   my_history: TypeMyHistory
   experience: ExperienceTranslation
@@ -25,8 +28,15 @@ export type TextBlock = {
   text: string
 }
 
+export type SkillsExprienceTranslation = {
+  title: string
+  description: string
+  quote: QuoteTranslation
+}
+
 export type SkillsTranslation = {
   title: string
+  description: string
 }
 
 export type ExperienceTranslation = {

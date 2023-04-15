@@ -24,9 +24,9 @@ export default function Header({ translate }: HeaderProps) {
           className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
           aria-controls="navbar-default"
           aria-expanded="false"
-          aria-label={translate.menu['aria-button']}
+          aria-label={translate.menu.aria_button}
         >
-          <span className="sr-only">{translate.menu['sr-button']}</span>
+          <span className="sr-only">{translate.menu.sr_button}</span>
           {/* <svg
             className="w-6 h-6"
             aria-hidden="true"
