@@ -23,10 +23,10 @@ export default function ExperienceFragment({
           <div className="flex gap-3">
             <div>
               <Image
-                src={experience.img}
+                src={experience.logo}
                 width={(35 * 3) / 2}
                 height={(35 * 2) / 3}
-                alt="dasdsa"
+                alt={'Logo da empresa ' + experience.info.title}
               />
             </div>
             <div className="flex flex-col">
