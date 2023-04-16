@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.2.32",
@@ -20,6 +21,8 @@
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "gray-matter": "^4.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "markdown-to-jsx": "^7.1.9",
     "negotiator": "^0.6.3",
     "next": "13.2.1",
