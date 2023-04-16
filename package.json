@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -18,10 +19,10 @@
     "@types/node": "18.14.1",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "clsx": "^1.2.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "gray-matter": "^4.0.3",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "markdown-to-jsx": "^7.1.9",
     "negotiator": "^0.6.3",
@@ -41,6 +42,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "postcss": "^8.4.21",
     "prettier": "2.8.4",
     "tailwindcss": "^3.2.7"
