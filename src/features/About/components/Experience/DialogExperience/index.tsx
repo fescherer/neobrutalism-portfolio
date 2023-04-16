@@ -28,13 +28,14 @@ export default function DialogExperience({
         <div className="flex flex-col ">
           {data.img_showcase.map((item) => (
             <Image
-              key={item}
-              src={item || ''}
-              width="0"
-              height="0"
+              key={item.title}
+              src={item.img || ''}
+              width={item.width}
+              height={item.height}
               sizes="100vw"
               className="w-full h-auto"
-              alt="Company Image"
+              alt={item.alt}
+              title={item.title}
             />
           ))}
 
