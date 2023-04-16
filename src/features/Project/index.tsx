@@ -74,7 +74,7 @@ export default function Project({ translate, project }: ProjectProps) {
 
       <div className="bg-primary h-0.063 w-full my-3 opacity-70" />
 
-      <ImageSlider slides={project.data.images}></ImageSlider>
+      <ImageSlider slides={project.data.images} />
 
       <article className="prose text-justify font-bold text-primary prose-headings:text-primary-dark max-w-none">
         <Markdown>{project.content}</Markdown>

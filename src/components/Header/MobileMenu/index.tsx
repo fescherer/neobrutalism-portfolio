@@ -32,13 +32,13 @@ export default function MobileMenu({ translate }: HeaderProps) {
         id="menu-toggle"
         type="checkbox"
         onChange={handleIsHidden}
-      ></input>
+      />
       {isHidden ? (
         <>
-          <div
+          <button
             className="absolute top-0 left-0 bg-overlay h-full w-full z-50"
             onClick={handleIsHidden}
-          ></div>
+          />
           <div className="absolute top-0 left-0 bg-background-accent h-full z-50 w-[35vw] animate-grow overflow-hidden">
             <ul className="flex flex-col text-2xl  md:flex-row md:space-x-8 md:mt-0 md:text-2xl">
               <Link href="/">
@@ -69,7 +69,7 @@ export default function MobileMenu({ translate }: HeaderProps) {
               </li>
 
               <li className="px-5 py-2 cursor-pointer">
-                <ThemeButton translation={translate.theme}></ThemeButton>
+                <ThemeButton translation={translate.theme} />
               </li>
 
               <li className="px-5 py-2 cursor-pointer">

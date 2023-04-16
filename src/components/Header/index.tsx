@@ -15,7 +15,7 @@ export default function Header({ translate }: HeaderProps) {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <h1 className="text-title">
           <Link href="/">
-            <FSLogo></FSLogo>
+            <FSLogo />
           </Link>
         </h1>
 
@@ -54,7 +54,7 @@ export default function Header({ translate }: HeaderProps) {
             </li>
 
             <li>
-              <ThemeButton translation={translate.theme}></ThemeButton>
+              <ThemeButton translation={translate.theme} />
             </li>
             <LangSelector translate={translate.lang} />
           </ul>

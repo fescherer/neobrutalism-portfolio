@@ -278,9 +278,9 @@ export default async function RootLayout({
       </head>
 
       <body className="font-sans text-primary min-h-screen bg-background selection:bg-[#DA858C]">
-        <Header translate={dictionary}></Header>
+        <Header translate={dictionary} />
         <main className="min-h-[calc(100vh-170px)]">{children}</main>
-        <Footer></Footer>
+        <Footer />
         <section>
           <script
             type="application/ld+json"

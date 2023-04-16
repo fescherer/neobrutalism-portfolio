@@ -11,7 +11,7 @@ export default function ImageAspectRatio({ image }: ImageAspectRatiProps) {
         style={{
           backgroundImage: `url(${image})`
         }}
-      ></div>
+      />
 
       <div
         role="img"

@@ -54,14 +54,14 @@ export default function ImageSlider({ slides }: ImageSliderProps) {
                 ? 'w-[20px] opacity-100'
                 : 'w-[15px] opacity-60'
             } h-[15px] bg-primary  rounded-full cursor-pointer hover:opacity-100 transition-all`}
-          ></button>
+          />
         ))}
       </div>
 
       <div
         style={{ backgroundImage: `url(${slides[imageIndex]})` }}
         className="bg-primary-dark h-full bg-contain bg-no-repeat duration-500 bg-center"
-      ></div>
+      />
     </div>
   )
 }

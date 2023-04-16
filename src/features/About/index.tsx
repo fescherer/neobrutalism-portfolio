@@ -78,7 +78,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
 
         <div className="flex flex-col gap-5">
           <h3 className="text-5xl font-bold">{translation.experience.title}</h3>
-          <Experience translation={translation.experience}></Experience>
+          <Experience translation={translation.experience} />
         </div>
       </div>
 
