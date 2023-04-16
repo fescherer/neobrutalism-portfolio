@@ -10,6 +10,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/features/**/*.{js,ts,jsx,tsx}',
     './src/icons/**/*.{js,ts,jsx,tsx}',
+    './src/i18n/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {

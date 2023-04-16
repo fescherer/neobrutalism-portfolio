@@ -20,7 +20,7 @@ export default function ResponsiveDialog({
           onClick={() => setState('')}
           className="fixed bg-overlay h-full w-full inset-0"
         />
-        {children}
+        <Dialog.Content>{children}</Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
   )

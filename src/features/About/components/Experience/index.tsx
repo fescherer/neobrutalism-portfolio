@@ -6,7 +6,7 @@ import ExperienceFragment from './ExperienceFragment'
 import { useState } from 'react'
 import DialogExperience from './DialogExperience'
 import ResponsiveDialog from '@/components/ResponsiveDialog'
-import * as Separator from '@radix-ui/react-separator'
+import { Divider } from '@/components/Primitives/Divider'
 
 type ExperienceProps = {
   translation: ExperienceTranslation
@@ -16,9 +16,10 @@ export default function Experiences({ translation }: ExperienceProps) {
   const data: ExperienceData[] = [
     {
       id: 'central-info-itatiba-aprendice',
-      info: translation.central_informatica_aprendice,
+      info: translation.jobs[0],
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
+      link: 'https://centralinformaticaitatiba.com.br',
       img_showcase: [
         {
           img: 'https://user-images.githubusercontent.com/62115215/232231991-fb6ba65d-0c87-4367-852c-c365ec9d7417.png',
@@ -32,9 +33,10 @@ export default function Experiences({ translation }: ExperienceProps) {
     },
     {
       id: 'central-info-itatiba',
-      info: translation.central_informatica,
+      info: translation.jobs[1],
       date_start: '2016-04-01T13:00:00.000Z',
       date_end: '2016-04-01T13:00:00.000Z',
+      link: 'https://centralinformaticaitatiba.com.br',
       img_showcase: [
         {
           img: 'https://user-images.githubusercontent.com/62115215/232231991-fb6ba65d-0c87-4367-852c-c365ec9d7417.png',
@@ -48,9 +50,10 @@ export default function Experiences({ translation }: ExperienceProps) {
     },
     {
       id: 'sports-at-aprendice',
-      info: translation.playscores_aprendice,
+      info: translation.jobs[2],
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
+      link: 'https://www.playscores.com',
       img_showcase: [
         {
           img: 'https://user-images.githubusercontent.com/62115215/232233087-76e87cd2-2c15-457b-8a85-a09591afac38.png',
@@ -71,9 +74,10 @@ export default function Experiences({ translation }: ExperienceProps) {
     },
     {
       id: 'sports-at',
-      info: translation.playscores,
+      info: translation.jobs[3],
       date_start: '2023-03-10T17:31:38.778Z',
       date_end: '2023-03-10T17:31:38.778Z',
+      link: 'https://www.playscores.com',
       img_showcase: [
         {
           img: 'https://user-images.githubusercontent.com/62115215/232233087-76e87cd2-2c15-457b-8a85-a09591afac38.png',
@@ -101,14 +105,16 @@ export default function Experiences({ translation }: ExperienceProps) {
       {data.map((experience, index) => (
         <div key={experience.id}>
           <ExperienceFragment setDialog={setDialog} experience={experience} />
-          {index !== data.length && (
-            <Separator.Root className="bg-primary opacity-50 h-[1px] w-full" />
-          )}
+          {index !== data.length && <Divider dataOrientation="horizontal" />}
         </div>
       ))}
 
       <ResponsiveDialog state={dialog} setState={setDialog}>
-        <DialogExperience data={dialog} setState={setDialog} />
+        <DialogExperience
+          data={dialog}
+          setState={setDialog}
+          dialogTranslation={translation.dialog}
+        />
       </ResponsiveDialog>
     </div>
   )

@@ -41,15 +41,20 @@ export type SkillsTranslation = {
 
 export type ExperienceTranslation = {
   title: string
-  central_informatica_aprendice: Experience
-  central_informatica: Experience
-  playscores_aprendice: Experience
-  playscores: Experience
+  dialog: DialogExperienceTranslation
+  jobs: Experience[]
+}
+
+export type DialogExperienceTranslation = {
+  company_name: string
+  contribution_period: string
+  role: string
+  company_about: string
 }
 
 export type Experience = {
   title: string
   short_desc: string
-  desc: string
+  desc: string[]
   job: string
 }
