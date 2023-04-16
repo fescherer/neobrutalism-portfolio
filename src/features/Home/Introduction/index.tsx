@@ -61,10 +61,7 @@ export default function Introduction({ translation }: IntroductionProps) {
           <ExploreSite translation={translation} />
         </div>
 
-        <ButtonNextItem
-          aria={translation.aria_next_item}
-          nextItem="about-me"
-        />
+        <ButtonNextItem aria={translation.aria_next_item} nextItem="about-me" />
       </div>
     </div>
   )
