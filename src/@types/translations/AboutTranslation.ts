@@ -40,6 +40,7 @@ export type SkillsTranslation = {
 }
 
 export type ExperienceTranslation = {
+  title: string
   central_informatica_aprendice: Experience
   central_informatica: Experience
   playscores_aprendice: Experience
