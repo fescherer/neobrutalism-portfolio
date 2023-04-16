@@ -15,7 +15,7 @@ export default function ExperienceFragment({
 }: ExperienceFragmentProps) {
   return (
     <>
-      <div key={experience.id} className="flex flex-col">
+      <div key={experience.id} className="flex flex-col mb-6">
         <div className="flex flex-col">
           <h4 className="tex-3xl font-extrabold uppercase">
             {experience.info.title}
