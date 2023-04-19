@@ -46,7 +46,15 @@ export async function generateMetadata({
     generator: 'Next.js',
     applicationName: 'Portifolio Felipe Scherer',
     referrer: 'origin-when-cross-origin',
-    keywords: ['Next.js', 'React', 'JavaScript'],
+    keywords: [
+      'Next.js',
+      'React',
+      'JavaScript',
+      'Portifolio',
+      'Neobrutalism',
+      'Brutalism',
+      'Coding'
+    ],
     authors: [
       { name: 'Felipe Scherer', url: 'https://github.com/ofelipescherer.com' }
     ],
@@ -69,15 +77,9 @@ export async function generateMetadata({
       siteName: 'Felipe Scherer',
       images: [
         {
-          url: 'https://felipescherer.com/example.png',
-          width: 800,
-          height: 600
-        },
-        {
-          url: 'https://felipescherer.com/example.png',
-          width: 1800,
-          height: 1600,
-          alt: 'My custom alt'
+          url: 'https://user-images.githubusercontent.com/62115215/232941735-a977bb19-8bd0-4a80-8973-7ab677cc2e00.png',
+          width: 1300,
+          height: 630
         }
       ],
       locale: 'pt-BR',
@@ -108,18 +110,15 @@ export async function generateMetadata({
 
     //  /favicon.ico
     icons: {
-      icon: [{ url: '/icon.png' }, new URL('/icon.png', 'https://example.com')],
-      shortcut: ['/shortcut-icon.png'],
-      apple: [
-        { url: '/apple-icon.png' },
-        { url: '/apple-icon-x3.png', sizes: '180x180', type: 'image/png' }
-      ],
-      other: [
-        {
-          rel: 'apple-touch-icon-precomposed',
-          url: '/apple-touch-icon-precomposed.png'
-        }
-      ]
+      icon: 'https://user-images.githubusercontent.com/62115215/232942205-6d7ae99f-0644-41d4-8b06-91022a1b3359.svg',
+      shortcut:
+        'https://user-images.githubusercontent.com/62115215/232942205-6d7ae99f-0644-41d4-8b06-91022a1b3359.svg',
+      apple:
+        'https://user-images.githubusercontent.com/62115215/232942205-6d7ae99f-0644-41d4-8b06-91022a1b3359.svg',
+      other: {
+        rel: 'apple-touch-icon-precomposed',
+        url: 'https://user-images.githubusercontent.com/62115215/232942205-6d7ae99f-0644-41d4-8b06-91022a1b3359.svg'
+      }
     },
 
     // themeColor: [
@@ -129,14 +128,14 @@ export async function generateMetadata({
 
     twitter: {
       card: 'app',
-      title: 'Next.js',
-      description: 'The React Framework for the Web',
+      title: 'Portifolio Felipe Scherer',
+      description: 'Conheça o mundo de Felipe Scherer',
       siteId: '1467726470533754880',
-      creator: '@nextjs',
+      creator: '@ofelipescherer',
       creatorId: '1467726470533754880',
       images: {
-        url: 'https://nextjs.org/og.png',
-        alt: 'Next.js Logo'
+        url: 'https://user-images.githubusercontent.com/62115215/232941735-a977bb19-8bd0-4a80-8973-7ab677cc2e00.png',
+        alt: 'Imagem do Portifolio do Felipe Scherer'
       },
       app: {
         name: 'twitter_app',
@@ -191,7 +190,7 @@ export async function generateMetadata({
     // PROCURAR MAIS SOBRE
     appLinks: {
       ios: {
-        url: 'https://nextjs.org/ios',
+        url: 'https://felipescherer.com',
         app_store_id: 'app_store_id'
       },
       android: {
@@ -199,7 +198,7 @@ export async function generateMetadata({
         app_name: 'app_name_android'
       },
       web: {
-        url: 'https://nextjs.org/web',
+        url: 'https://felipescherer.com',
         should_fallback: true
       }
     },
@@ -208,7 +207,7 @@ export async function generateMetadata({
     // archives: ['https://nextjs.org/13'],
 
     // PROCURAR MAIS SOBRE
-    assets: ['https://nextjs.org/assets'],
+    assets: ['https://nextjs.org/assets', 'user-images.githubusercontent.com'],
     category: 'technology'
 
     // Esse não é mt usado, mais usado é o bookmark
