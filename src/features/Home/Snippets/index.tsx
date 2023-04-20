@@ -9,7 +9,7 @@ export default function Snippets({ translation }: SnippetsProps) {
   return (
     <ItemWrapper
       buttonNextItem="projects"
-      aria={translation['aria-next-item']}
+      aria={translation.aria_next_item}
       title="Snippets"
       id="snippets"
     >

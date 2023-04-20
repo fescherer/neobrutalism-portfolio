@@ -1,15 +1,15 @@
 {
   "title": "",
   "menu": {
-    "aria-button": "Abir menu",
-    "sr-button": "Open main menu",
+    "aria_button": "Abir menu",
+    "sr_button": "Open main menu",
     "snippets": "Snippets",
     "aboutme": "About me",
     "projects": "Projects"
   },
   "theme": {
-    "aria-button-light": "Trocar para o modo claro",
-    "aria-button-dark": "Trocar para o modo escuro"
+    "aria_button_light": "Trocar para o modo claro",
+    "aria_button_dark": "Trocar para o modo escuro"
   },
   "lang": {
     "en": "English",

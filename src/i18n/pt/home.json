@@ -1,6 +1,6 @@
 {
   "introduction": {
-    "aria-next-item": "Próximo item",
+    "aria_next_item": "Próximo item",
     "meet": "Conheça",
     "author": "Felipe Scherer",
     "profession": "Web developer",
@@ -10,18 +10,18 @@
       "projects": "Projects",
       "aboutme": "About me"
     },
-    "alt-image": "Foto de perfil"
+    "alt_image": "Foto de perfil"
   },
   "aboutme": {
     "title": "Sobre mim",
     "author": "Felipe Scherer",
-    "aria-next-item": "Próximo item",
-    "years-old": "anos",
-    "college-course": "Ciência da Computação",
+    "aria_next_item": "Próximo item",
+    "years_old": "anos",
+    "college_course": "Ciência da Computação",
     "profession": "Frontend",
-    "alt-image": "Foto de Felipe Scherer"
+    "alt_image": "Foto de Felipe Scherer"
   },
   "snippets": {
-    "aria-next-item": "Próximo item"
+    "aria_next_item": "Próximo item"
   }
 }

@@ -15,7 +15,7 @@ export default function Header({ translate }: HeaderProps) {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <h1 className="text-title">
           <Link href="/">
-            <FSLogo></FSLogo>
+            <FSLogo />
           </Link>
         </h1>
 
@@ -24,9 +24,9 @@ export default function Header({ translate }: HeaderProps) {
           className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
           aria-controls="navbar-default"
           aria-expanded="false"
-          aria-label={translate.menu['aria-button']}
+          aria-label={translate.menu.aria_button}
         >
-          <span className="sr-only">{translate.menu['sr-button']}</span>
+          <span className="sr-only">{translate.menu.sr_button}</span>
           {/* <svg
             className="w-6 h-6"
             aria-hidden="true"
@@ -54,7 +54,7 @@ export default function Header({ translate }: HeaderProps) {
             </li>
 
             <li>
-              <ThemeButton translation={translate.theme}></ThemeButton>
+              <ThemeButton translation={translate.theme} />
             </li>
             <LangSelector translate={translate.lang} />
           </ul>

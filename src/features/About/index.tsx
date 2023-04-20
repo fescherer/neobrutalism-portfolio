@@ -1,9 +1,9 @@
 import { AboutTranslation } from '@/@types/translations/AboutTranslation'
 import { DefaultTranslation } from '@/@types/translations/Translation'
-import { data_skills } from '@/util/data/about'
 import Image from 'next/image'
 import Experience from './components/Experience'
 import History from './components/History'
+import Skills from './components/Skills'
 
 type AboutProps = {
   translation: AboutTranslation
@@ -27,7 +27,9 @@ export default function About({ translation, translationDefault }: AboutProps) {
         <div className="font-bold">
           <h2 className="text-4xl">{translationDefault.author}</h2>
 
-          <p className="text-base">{translation.first_description}</p>
+          <p className="text-base indent-8 text-justify">
+            {translation.first_description}
+          </p>
 
           <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
             <a href="#skills-experience" className="btn-base">
@@ -52,37 +54,31 @@ export default function About({ translation, translationDefault }: AboutProps) {
       <div className="block md:grid grid-cols-2 gap-20" id="skills-experience">
         <div className="flex flex-col gap-6">
           <h2 className="text-6xl font-bold leading-12 -rotate-2 mb-7">
-            Skills and experience
+            {translation.skills_experience.title}
           </h2>
 
-          <p className="font-bold text-base">
-            Sed sit amet ipsum eu orci placerat blandit ac efficitur neque.
-            Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor
-            elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut
-            Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)
+          <p className="font-bold text-base indent-8 text-justify">
+            {translation.skills_experience.description}
           </p>
+
+          <blockquote className="font-bold text-base indent-8 text-justify ">
+            <p className="italic text-xl">
+              {`"${translation.skills_experience.quote.quote_block}"`}
+            </p>
+            <p className="text-end uppercase">
+              {translation.skills_experience.quote.author}
+            </p>
+          </blockquote>
 
           <div className="flex flex-col gap-5">
             <h3 className="text-5xl font-bold">{translation.skills.title}</h3>
-            <div className="flex flex-row flex-wrap justify-evenly gap-7">
-              {data_skills.map((skill) => (
-                <div
-                  key={skill.title}
-                  className="flex flex-col gap-2 items-center font-bold tex-3xl uppercase"
-                >
-                  <div className="rounded-full bg-primary drop-shadow-neo-3 p-2">
-                    {skill.component}
-                  </div>
-                  <span>{skill.title}</span>
-                </div>
-              ))}
-            </div>
+            <Skills translation={translation.skills} />
           </div>
         </div>
 
         <div className="flex flex-col gap-5">
-          <h3 className="text-5xl font-bold">Experience</h3>
-          <Experience translation={translation.experience}></Experience>
+          <h3 className="text-5xl font-bold">{translation.experience.title}</h3>
+          <Experience translation={translation.experience} />
         </div>
       </div>
 

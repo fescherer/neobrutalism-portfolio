@@ -21,3 +21,11 @@ export type ProjectCardType = {
 export type ParamsLang = {
   lang: Locale
 }
+
+export type ImageProps = {
+  img: string
+  alt: string
+  title: string
+  width: number
+  height: number
+}

@@ -1,7 +1,10 @@
+import { QuoteTranslation } from './Translation'
+
 export type AboutTranslation = {
   title: string
   first_description: string
   introduction: IntroductionAboutTranslation
+  skills_experience: SkillsExprienceTranslation
   skills: SkillsTranslation
   my_history: TypeMyHistory
   experience: ExperienceTranslation
@@ -25,20 +28,33 @@ export type TextBlock = {
   text: string
 }
 
+export type SkillsExprienceTranslation = {
+  title: string
+  description: string
+  quote: QuoteTranslation
+}
+
 export type SkillsTranslation = {
   title: string
+  description: string
 }
 
 export type ExperienceTranslation = {
-  central_informatica_aprendice: Experience
-  central_informatica: Experience
-  playscores_aprendice: Experience
-  playscores: Experience
+  title: string
+  dialog: DialogExperienceTranslation
+  jobs: Experience[]
+}
+
+export type DialogExperienceTranslation = {
+  company_name: string
+  contribution_period: string
+  role: string
+  company_about: string
 }
 
 export type Experience = {
   title: string
   short_desc: string
-  desc: string
+  desc: string[]
   job: string
 }

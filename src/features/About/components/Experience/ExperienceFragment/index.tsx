@@ -1,7 +1,7 @@
 import { ExperienceData } from '@/@types/About'
 import { getDateFormated } from '@/util/functions/getDateFormated'
 import Image from 'next/image'
-import { Calendar } from 'phosphor-react'
+import { Calendar, UserSquare } from 'phosphor-react'
 import { Dispatch, SetStateAction } from 'react'
 
 type ExperienceFragmentProps = {
@@ -15,23 +15,33 @@ export default function ExperienceFragment({
 }: ExperienceFragmentProps) {
   return (
     <>
-      <div key={experience.id} className="flex flex-col">
+      <div key={experience.id} className="flex flex-col mb-6">
         <div className="flex flex-col">
           <h4 className="tex-3xl font-extrabold uppercase">
             {experience.info.title}
           </h4>
           <div className="flex gap-3">
-            <Image src={experience.img} width={50} height={50} alt="dasdsa" />
-            <div className="flex flex-col gap-3">
-              <div className="flex gap-3">
-                <Calendar size={24} />
+            <div>
+              <Image
+                src={experience.logo}
+                width={(35 * 3) / 2}
+                height={(35 * 2) / 3}
+                alt={'Logo da empresa ' + experience.info.title}
+              />
+            </div>
+            <div className="flex flex-col">
+              <div className="flex gap-3 text-base">
+                <Calendar size={18} />
                 <span>
                   {`${getDateFormated(
                     experience.date_start
                   )} - ${getDateFormated(experience.date_end)}`}
                 </span>
               </div>
-              <span>{experience.info.job}</span>
+              <div className="flex gap-3 text-base">
+                <UserSquare size={18} />
+                <span>{experience.info.job}</span>
+              </div>
             </div>
           </div>
         </div>

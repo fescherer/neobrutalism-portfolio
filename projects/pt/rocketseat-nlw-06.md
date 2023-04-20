@@ -17,7 +17,7 @@ images:
 
 ## Introdução
 
-Esse projeto nem sequer estava no Github até pouco tempo atrás, pois quando fiz, estava tão no começo de minha carreira e ainda nem sabia usar o Git ou o Github.
+Esse projeto nem sequer estava no Github até pouco tempo atrás, pois quando fiz, estava tão no começo de minha carreira e ainda nem sabia usar o Git ou o Github.top
 
 APS (Atividades Práticas Supervisionadas) é um projeto de final de semestre que precisava fazer na faculdade, ou seja, esse projeto foi feito na metade pro fim do primeiro semestre das minhas aulas de Ciência da Computação.
 
