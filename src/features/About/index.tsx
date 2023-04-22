@@ -17,11 +17,11 @@ export default function About({ translation, translationDefault }: AboutProps) {
 
       <div className="flex md:flex-row flex-col gap-12 mb-6">
         <Image
-          src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
+          src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
           width={296}
           height={350}
           alt={translation.introduction.alt_image}
-          className="hidden md:block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+          className="hidden md:block bg-primary drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
         />
 
         <div className="font-bold">
@@ -42,11 +42,11 @@ export default function About({ translation, translationDefault }: AboutProps) {
         </div>
 
         <Image
-          src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
+          src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
           width={296}
           height={350}
           alt={translation.introduction.alt_image}
-          className="md:hidden block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+          className="md:hidden block bg-primary drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
         />
       </div>
 

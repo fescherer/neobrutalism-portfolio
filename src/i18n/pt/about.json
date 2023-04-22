@@ -41,7 +41,9 @@
         "title": "Central Informática Itatiba",
         "short_desc": "Uma empresa de manutenção de computadores",
         "desc": [
-          "Sed sit amet ipsum eu o    rci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)"
+          "Antes de concluir o ensino médio, tomei a decisão de dedicar-me intensamente aos meus estudos, especialmente em relação à computação. Devido à isso e à pandemia, optei por não trabalhar durante alguns anos, concentrando-me exclusivamente em minha formação. Entretanto, em 2021, fui convidado por meu antigo empregador e amigo, proprietário da Central Informática Itatiba, a retornar à empresa como técnico de informática por um período determinado.",
+          "Nessa época, já havia iniciado meus estudos universitários em programação e estava cada vez mais apaixonado pela área. Contudo, trabalhar como técnico de informática novamente proporcionou-me inúmeras lembranças, bem como a oportunidade de adquirir novos conhecimentos, explorando peças de última geração e, consequentemente, desenvolvendo uma base sólida para a montagem de meus próprios computadores, com seleção minuciosa de peças. Além disso, aprendi consideravelmente sobre manutenção, limpeza e prolongamento da vida útil dos componentes.",
+          "Por fim, tive a chance de observar a empresa adentrar no universo de criação de sites Wordpress, o que me despertou ainda mais interesse pelo desenvolvimento de sistemas, especialmente na elaboração de layouts."
         ],
         "job": "Técnico de Informática"
       },
@@ -49,16 +51,16 @@
         "title": "Sports Analytics And Technology",
         "short_desc": "Uma empresa de apostas esportivas",
         "desc": [
-          "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)"
+          "Ao ingressar na faculdade de Ciências da Computação, despertei um forte interesse pela programação. Como o foco do curso não era especificamente voltado para essa área, mas sim para a computação matemática, busquei por materiais complementares e realizei diversos projetos para aprimorar meus conhecimentos. Durante meu emprego na Central Informática Itatiba, recebi uma oferta de estágio em programação pelo LinkedIn. Fiquei muito empolgado, claro que gostava muito de montar e arrumar computadores, porém, sempre tive meu objetivo como me tornar programador e por isso decidi aceitar a vaga.",
+          "A empresa desenvolvia um software para análise de jogos de futebol, no qual recebíamos dados de uma API externa, mas enfrentávamos o problema de muitos jogos não serem referenciados corretamente em nosso controle interno. Fui contratado para fazer o mapeamento dos times, ou seja, estabelecer a ligação manual entre a API externa e o nosso controle interno.",
+          "Embora o trabalho fosse repetitivo, era fundamental para a equipe de desenvolvimento de software. Durante um ano, realizei essa atividade e, ao mesmo tempo, comecei a programar, corrigindo bugs em outros produtos e colaborando com o desenvolvimento de novos projetos junto aos desenvolvedores da empresa. Eles sempre me auxiliaram e explicaram como se programa de forma profissional, o que me permitiu aprimorar minhas habilidades de programação."
         ],
         "job": "Estagiário de Programação"
       },
       {
         "title": "Sports Analytics And Technology",
         "short_desc": "Uma empresa de apostas esportivas",
-        "desc": [
-          "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)"
-        ],
+        "desc": [""],
         "job": "Programador"
       }
     ]
