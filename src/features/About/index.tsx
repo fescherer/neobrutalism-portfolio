@@ -15,7 +15,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
     <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-project m-auto">
       <h1 className="text-6xl font-bold -rotate-2">{translation.title}</h1>
 
-      <div className="flex md:flex-row flex-col gap-12 mb-6">
+      <div className="flex md:flex-row items-center flex-col gap-12 mb-6">
         <Image
           src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
           width={296}

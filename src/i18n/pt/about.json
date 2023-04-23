@@ -41,7 +41,7 @@
         "title": "Central Informática Itatiba",
         "short_desc": "Uma empresa de manutenção de computadores",
         "desc": [
-          "Antes de concluir o ensino médio, tomei a decisão de dedicar-me intensamente aos meus estudos, especialmente em relação à computação. Devido à isso e à pandemia, optei por não trabalhar durante alguns anos, concentrando-me exclusivamente em minha formação. Entretanto, em 2021, fui convidado por meu antigo empregador e amigo, proprietário da Central Informática Itatiba, a retornar à empresa como técnico de informática por um período determinado.",
+          "Antes de concluir o ensino médio, tomei a decisão de dedicar-me intensamente aos meus estudos, especialmente em relação à computação. Devido à isso, optei por não trabalhar durante alguns anos, concentrando-me exclusivamente em minha formação. Entretanto, em 2020 fui convidado por meu antigo empregador e amigo, proprietário da Central Informática Itatiba, a retornar à empresa como técnico de informática por um período determinado.",
           "Nessa época, já havia iniciado meus estudos universitários em programação e estava cada vez mais apaixonado pela área. Contudo, trabalhar como técnico de informática novamente proporcionou-me inúmeras lembranças, bem como a oportunidade de adquirir novos conhecimentos, explorando peças de última geração e, consequentemente, desenvolvendo uma base sólida para a montagem de meus próprios computadores, com seleção minuciosa de peças. Além disso, aprendi consideravelmente sobre manutenção, limpeza e prolongamento da vida útil dos componentes.",
           "Por fim, tive a chance de observar a empresa adentrar no universo de criação de sites Wordpress, o que me despertou ainda mais interesse pelo desenvolvimento de sistemas, especialmente na elaboração de layouts."
         ],
@@ -60,7 +60,11 @@
       {
         "title": "Sports Analytics And Technology",
         "short_desc": "Uma empresa de apostas esportivas",
-        "desc": [""],
+        "desc": [
+          "Após um ano de estágio como programador, fui promovido a desenvolvedor frontend em tempo integral. Essa oportunidade não só me proporcionou um ganho financeiro, mas também mais tempo para me dedicar à programação, além dos estudos complementares e a faculdade.",
+          "Assumi a responsabilidade pelo desenvolvimento do frontend web de todos os 4-5 projetos da empresa, o que me permitiu adquirir uma valiosa experiência no setor. Além disso, aprimorei minhas habilidades em engenharia reversa, analisando sites populares para entender como foram construídos e quais propriedades CSS foram usadas. Isso me permitiu avançar significativamente em padrões web, aumentando minha habilidade como desenvolvedor.",
+          "Além disso, nesse ponto, a empresa começou a produzir softwares personalizados- whitelabels para clientes. Isto é, adotamos padrões de código que podem ser aplicados em múltiplos projetos simultaneamente, por meio de bibliotecas, visando assim, reduzir a necessidade de manutenção. Estou entusiasmado em continuar aprendendo e explorando mais essa área que tanto amo."
+        ],
         "job": "Programador"
       }
     ]
@@ -68,11 +72,11 @@
   "my_history": {
     "my_history": {
       "title": "Minha história",
-      "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
+      "text": "Meu nome é Felipe. gosto de jogos"
     },
     "born": {
       "title": "Itatiba, São Paulo, Brasil",
-      "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
+      "text": "Eu venho de uma família gaúcha nascida em Rondinha, Rio Grande do Sul, mas eu nasci em São Paulo. Logo após o meu nascimento, meus pais se mudaram para Itatiba, que na época era considerada uma das cidades com a melhor qualidade do ar. Cresci nessa cidade e ainda moro lá atualmente. Embora seja uma cidade pequena, fica no centro de outras cidades maiores, como São Paulo, Jundiaí e Campinas, o que torna o acesso a elas bastante fácil. Muitas pessoas da cidade moram em Itatiba, mas trabalham em uma dessas cidades maiores, o que é ótimo, pois temos acesso a essas cidades para sair, estudar e trabalhar, mas sem precisar morar em um lugar tão movimentado."
     },
     "studies": {
       "title": "High School, College",

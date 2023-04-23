@@ -30,7 +30,7 @@ export default function DialogExperience({
           </Dialog.Close>
         </div>
 
-        <div className="flex flex-col overflow-scroll h-full p-3 ">
+        <div className="flex flex-col gap-2 overflow-scroll h-full p-3 ">
           {data.img_showcase.map((item, index) => (
             <Image
               key={index}
