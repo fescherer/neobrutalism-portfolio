@@ -30,23 +30,27 @@ export default function DialogExperience({
           </Dialog.Close>
         </div>
 
-        <div className="flex flex-col gap-2 overflow-scroll h-full p-3 ">
-          {data.img_showcase.map((item, index) => (
-            <Image
-              key={index}
-              src={item.img || ''}
-              width={item.width}
-              height={item.height}
-              className="self-center"
-              alt={item.alt}
-              title={item.title}
+        <div className="flex flex-col overflow-scroll h-full p-3 ">
+          <div className="flex flex-col items-center md:flex-row justify-between">
+            <DialogExperienceHeaderInfo
+              dialogTranslation={dialogTranslation}
+              data={data}
             />
-          ))}
 
-          <DialogExperienceHeaderInfo
-            dialogTranslation={dialogTranslation}
-            data={data}
-          />
+            <div className="flex flex-col items-center gap-5">
+              {data.img_showcase.map((item, index) => (
+                <Image
+                  key={index}
+                  src={item.img || ''}
+                  width={item.width}
+                  height={item.height}
+                  className="self-center"
+                  alt={item.alt}
+                  title={item.title}
+                />
+              ))}
+            </div>
+          </div>
 
           <Divider dataOrientation="horizontal" />
 
