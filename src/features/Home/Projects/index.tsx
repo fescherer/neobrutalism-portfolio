@@ -1,10 +1,14 @@
-import HomeTitle from '../components/HomeTile'
+import ItemWrapper from '../components/ItemWrapper'
 
 export default function Projects() {
   return (
-    <div id="projects">
-      <HomeTitle>Projects</HomeTitle>
+    <ItemWrapper
+      buttonNextItem="last"
+      aria={'translation.aria_next_item'}
+      title={'Projects'}
+      id="projects"
+    >
       <div className="grid grid-cols-5 m-10" />
-    </div>
+    </ItemWrapper>
   )
 }
