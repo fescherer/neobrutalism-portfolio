@@ -22,46 +22,51 @@ function ExploreSite({ translation }: IntroductionProps) {
 export default function Introduction({ translation }: IntroductionProps) {
   return (
     <div
-      className="flex flex-col gap-5 items-center h-screen"
+      className="flex justify-center items-center h-[calc(100vh-107px)]"
       id="home-introduction"
     >
-      <div className="flex flex-col gap-5 sm:flex-row sm:gap-12 m-5">
-        <div className="flex flex-col items-center gap-5">
-          <div className="sm:text-6xl sm:leading-15 flex flex-col text-4xl font-bold animate-scale">
-            <span className="sm:drop-shadow-neo-2">{translation.meet}</span>
-            <span className="sm:drop-shadow-neo-2">{translation.author}</span>
-            <span className="text-xl  sm:text-4xl opacity-80 drop-shadow-neo-1-ligth">
-              {translation.profession}
-            </span>
+      <div className="flex flex-col gap-5 items-center">
+        <div className="flex flex-col gap-5 sm:flex-row sm:gap-12 m-5">
+          <div className="flex flex-col items-center gap-5">
+            <div className="sm:text-6xl sm:leading-15 flex flex-col text-4xl font-bold animate-scale">
+              <span className="sm:drop-shadow-neo-2">{translation.meet}</span>
+              <span className="sm:drop-shadow-neo-2">{translation.author}</span>
+              <span className="text-xl  sm:text-4xl opacity-80 drop-shadow-neo-1-ligth">
+                {translation.profession}
+              </span>
+            </div>
+
+            <div className="hidden font-bold sm:flex flex-col items-center">
+              <ExploreSite translation={translation} />
+            </div>
           </div>
 
-          <div className="hidden font-bold sm:flex flex-col items-center">
+          <figure className="relative">
+            <Image
+              src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
+              width={296}
+              height={350}
+              alt={translation.alt_image}
+              className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+              unoptimized={true}
+            />
+
+            <div className="drop-shadow-neo-3 border-primary-dark border-4 rounded-sm absolute bottom-10 -left-12 bg-foreground px-6 py-2 font-extrabold text-4xl">
+              HELLO!
+            </div>
+          </figure>
+        </div>
+
+        <div className="flex flex-col items-center gap-1">
+          <div className="flex font-bold sm:hidden flex-col items-center">
             <ExploreSite translation={translation} />
           </div>
-        </div>
 
-        <figure className="relative">
-          <Image
-            src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
-            width={296}
-            height={350}
-            alt={translation.alt_image}
-            className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
-            unoptimized={true}
+          <ButtonNextItem
+            aria={translation.aria_next_item}
+            nextItem="about-me"
           />
-
-          <div className="drop-shadow-neo-3 border-primary-dark border-4 rounded-sm absolute bottom-10 -left-12 bg-foreground px-6 py-2 font-extrabold text-4xl">
-            HELLO!
-          </div>
-        </figure>
-      </div>
-
-      <div className="flex flex-col items-center gap-1">
-        <div className="flex font-bold sm:hidden flex-col items-center">
-          <ExploreSite translation={translation} />
         </div>
-
-        <ButtonNextItem aria={translation.aria_next_item} nextItem="about-me" />
       </div>
     </div>
   )

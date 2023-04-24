@@ -17,13 +17,12 @@ export default function ItemWrapper({
   id
 }: ItemWrapperProps) {
   return (
-    <div
-      className="flex flex-col gap-5 px-20 items-center max-w-project m-auto h-screen"
-      id={id}
-    >
-      <HomeTitle>{title}</HomeTitle>
-      {children}
-      <ButtonNextItem aria={aria} nextItem={buttonNextItem} />
+    <div className="flex justify-center items-center h-screen w-full" id={id}>
+      <div className="flex flex-col gap-5 px-20 items-center max-w-project m-auto w-full">
+        <HomeTitle>{title}</HomeTitle>
+        {children}
+        <ButtonNextItem aria={aria} nextItem={buttonNextItem} />
+      </div>
     </div>
   )
 }

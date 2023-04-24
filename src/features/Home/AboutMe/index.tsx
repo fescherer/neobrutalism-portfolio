@@ -1,4 +1,5 @@
 import { AboutMeHomeTranslation } from '@/@types/translations/HomeTranslation'
+import Image from 'next/image'
 import ItemWrapper from '../components/ItemWrapper'
 
 type AboutMeProps = {
@@ -15,7 +16,7 @@ function getYearsOld() {
 export default function AboutMe({ translation }: AboutMeProps) {
   return (
     <ItemWrapper
-      buttonNextItem="snippets"
+      buttonNextItem="projects"
       aria={translation.aria_next_item}
       title={translation.title}
       id="about-me"
@@ -39,13 +40,13 @@ export default function AboutMe({ translation }: AboutMeProps) {
           </span>
         </div>
 
-        {/* <Image
-          src="https://user-images.githubusercontent.com/62115215/221433922-02ebc877-4a47-44f4-8f3c-fd97ca2b1058.png"
+        <Image
+          src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
           width={296}
           height={350}
-          alt={translation['alt-image']}
-          className="hidden md:block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
-        /> */}
+          alt={translation['alt_image']}
+          className="hidden bg-primary md:block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+        />
       </div>
     </ItemWrapper>
   )

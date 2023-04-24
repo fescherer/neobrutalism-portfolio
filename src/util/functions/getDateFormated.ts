@@ -1,6 +1,6 @@
 const months = [
   'Jan',
-  'Fev',
+  'Feb',
   'Mar',
   'Apr',
   'May',
@@ -29,6 +29,7 @@ const fullMonth = [
 ]
 
 export function getDateFormated(date: string, isFullMonth?: boolean) {
+  if (date === 'present_day') return 'Data atual'
   const dateobj = new Date(date)
   const m = isFullMonth ? fullMonth : months
   return `${m[dateobj.getMonth()]}, ${dateobj.getFullYear()}`

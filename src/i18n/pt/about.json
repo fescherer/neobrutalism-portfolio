@@ -1,6 +1,6 @@
 {
   "title": "Sobre mim",
-  "first_description": "Olá, meu nome é Felipe Scherer e tenho diversos hobbies que me inspiram e me motivam a ser uma pessoa mais completa. A programação é uma das minhas grandes paixões, em especial Python, que me levou a buscar cada vez mais sobre o assunto. Atualmente, trabalho com Javascript como frontend web, mas meu objetivo é me especializar em linguagens de baixo nível, como C++, para desenvolvimento de jogos. Acredito que programação é uma arte, assim como qualquer outra produção humana, e a lógica matemática é fundamental para resolver problemas propostos. Além disso, também sou apaixonado pela arte gráfica, incluindo desenhos, layouts e composições. Meu desejo é estudar mais sobre a arte do desenho, já que esta é uma área que ainda não domino totalmente. Por último, mas não menos importe: jogos eletrônicos, gosto especialmente de jogos casuais de sandbox, como Stardew Valley, Terraria e Pokémon. Sou formado em Ciências da Computação e estou sempre em busca de novas oportunidades de aprendizado e aprimoramento.",
+  "first_description": "Olá, meu nome é Felipe Scherer e tenho diversos hobbies que me inspiram e me motivam a ser uma pessoa mais completa. A programação é uma das minhas grandes paixões, em especial Python, que me levou a buscar cada vez mais sobre o assunto. Atualmente, trabalho com Javascript como frontend web, mas meu objetivo é me especializar em linguagens de baixo nível, como C++, para desenvolvimento de jogos. Acredito que programação é uma arte, assim como qualquer outra produção humana, e a lógica matemática é fundamental para resolver problemas propostos. Além disso, também sou apaixonado pela arte gráfica, incluindo desenhos, layouts e composições. Meu desejo é estudar mais sobre a arte do desenho, já que esta é uma área que ainda não domino totalmente. Sou formado em Ciências da Computação e estou sempre em busca de novas oportunidades de aprendizado e aprimoramento.",
   "introduction": {
     "skills_experience": "Habilidades e experiência",
     "my_history": "Minha história",
@@ -41,7 +41,9 @@
         "title": "Central Informática Itatiba",
         "short_desc": "Uma empresa de manutenção de computadores",
         "desc": [
-          "Sed sit amet ipsum eu o    rci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)"
+          "Antes de concluir o ensino médio, tomei a decisão de dedicar-me intensamente aos meus estudos, especialmente em relação à computação. Devido à isso, optei por não trabalhar durante alguns anos, concentrando-me exclusivamente em minha formação. Entretanto, em 2020 fui convidado por meu antigo empregador e amigo, proprietário da Central Informática Itatiba, a retornar à empresa como técnico de informática por um período determinado.",
+          "Nessa época, já havia iniciado meus estudos universitários em programação e estava cada vez mais apaixonado pela área. Contudo, trabalhar como técnico de informática novamente proporcionou-me inúmeras lembranças, bem como a oportunidade de adquirir novos conhecimentos, explorando peças de última geração e, consequentemente, desenvolvendo uma base sólida para a montagem de meus próprios computadores, com seleção minuciosa de peças. Além disso, aprendi consideravelmente sobre manutenção, limpeza e prolongamento da vida útil dos componentes.",
+          "Por fim, tive a chance de observar a empresa adentrar no universo de criação de sites Wordpress, o que me despertou ainda mais interesse pelo desenvolvimento de sistemas, especialmente na elaboração de layouts."
         ],
         "job": "Técnico de Informática"
       },
@@ -49,7 +51,9 @@
         "title": "Sports Analytics And Technology",
         "short_desc": "Uma empresa de apostas esportivas",
         "desc": [
-          "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)"
+          "Ao ingressar na faculdade de Ciências da Computação, despertei um forte interesse pela programação. Como o foco do curso não era especificamente voltado para essa área, mas sim para a computação matemática, busquei por materiais complementares e realizei diversos projetos para aprimorar meus conhecimentos. Durante meu emprego na Central Informática Itatiba, recebi uma oferta de estágio em programação pelo LinkedIn. Fiquei muito empolgado, claro que gostava muito de montar e arrumar computadores, porém, sempre tive meu objetivo como me tornar programador e por isso decidi aceitar a vaga.",
+          "A empresa desenvolvia um software para análise de jogos de futebol, no qual recebíamos dados de uma API externa, mas enfrentávamos o problema de muitos jogos não serem referenciados corretamente em nosso controle interno. Fui contratado para fazer o mapeamento dos times, ou seja, estabelecer a ligação manual entre a API externa e o nosso controle interno.",
+          "Embora o trabalho fosse repetitivo, era fundamental para a equipe de desenvolvimento de software. Durante um ano, realizei essa atividade e, ao mesmo tempo, comecei a programar, corrigindo bugs em outros produtos e colaborando com o desenvolvimento de novos projetos junto aos desenvolvedores da empresa. Eles sempre me auxiliaram e explicaram como se programa de forma profissional, o que me permitiu aprimorar minhas habilidades de programação."
         ],
         "job": "Estagiário de Programação"
       },
@@ -57,7 +61,9 @@
         "title": "Sports Analytics And Technology",
         "short_desc": "Uma empresa de apostas esportivas",
         "desc": [
-          "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor  elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium (COLOCAR UMA CITAÇÃO)"
+          "Após um ano de estágio como programador, fui promovido a desenvolvedor frontend em tempo integral. Essa oportunidade não só me proporcionou um ganho financeiro, mas também mais tempo para me dedicar à programação, além dos estudos complementares e a faculdade.",
+          "Assumi a responsabilidade pelo desenvolvimento do frontend web de todos os 4-5 projetos da empresa, o que me permitiu adquirir uma valiosa experiência no setor. Além disso, aprimorei minhas habilidades em engenharia reversa, analisando sites populares para entender como foram construídos e quais propriedades CSS foram usadas. Isso me permitiu avançar significativamente em padrões web, aumentando minha habilidade como desenvolvedor.",
+          "Além disso, nesse ponto, a empresa começou a produzir softwares personalizados- whitelabels para clientes. Isto é, adotamos padrões de código que podem ser aplicados em múltiplos projetos simultaneamente, por meio de bibliotecas, visando assim, reduzir a necessidade de manutenção. Estou entusiasmado em continuar aprendendo e explorando mais essa área que tanto amo."
         ],
         "job": "Programador"
       }
@@ -66,19 +72,25 @@
   "my_history": {
     "my_history": {
       "title": "Minha história",
-      "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
+      "text": "Meu nome é Felipe Scherer e sou um programador frontend, atualmente trabalhando com React, tendo experiência anterior em Angular. Minha paixão pela programação começou quando ainda era criança, em um cursinho de Dreamweaver, onde meu professor identificou meu talento para a área e me incentivou a seguir esse caminho. Durante o ensino médio, acabei me afastando um pouco da programação, já que meu interesse principal era biologia e não matemática. No entanto, quando comecei um curso de eletrônica, voltei a me interessar por programação e comecei a desenvolver meus próprios códigos. Foi então que decidi entrar na faculdade de Ciência da Computação, onde aprofundei meus conhecimentos em matemática e tecnologias relacionadas à programação, consolidando ainda mais minha paixão pela área."
     },
     "born": {
       "title": "Itatiba, São Paulo, Brasil",
-      "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
+      "text": [
+        "Eu venho de uma família gaúcha nascida em Rondinha, Rio Grande do Sul, mas eu nasci em São Paulo. Logo após o meu nascimento, meus pais se mudaram para Itatiba, que na época era considerada uma das cidades com a melhor qualidade do ar. Cresci nessa cidade e ainda moro lá atualmente. Embora seja uma cidade pequena, fica no centro de outras cidades maiores, como São Paulo, Jundiaí e Campinas, o que torna o acesso a elas bastante fácil. Muitas pessoas da cidade moram em Itatiba, mas trabalham em uma dessas cidades maiores, o que é ótimo, pois temos acesso a essas cidades para sair, estudar e trabalhar, mas sem precisar morar em um lugar tão movimentado."
+      ]
     },
     "studies": {
-      "title": "High School, College",
-      "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
+      "title": "Vida escolar e acadêmica",
+      "text": [
+        "Cresci e estudei em Itatiba, desde o primário até o ensino médio, quando conheci ótimos professores e amigos no Colégio Objetivo Itatiba. Durante essa época fiz cursos complementares em computação, como Flash e Dreamweaver e também de inglês que duraria por 5 anos. Após o ensino médio, decidi fazer um curso técnico em eletrônica na ETEC Rosa Perrone enquanto se preparava para entrar em uma faculdade. Durante o segundo ano do curso técnico, decidi entrar na Universidade Paulista - UNIP de Campinas, onde cursei ciência da computação por 4 anos, me apaixonando pela área da computação e da matemática."
+      ]
     },
     "future": {
-      "title": "My Future Plans",
-      "text": "Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis.Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Sed sit amet ipsum eu orci placerat blandit ac efficitur neque. Praesent nec auctor odio. Suspendisse in ipsum lorem. Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Nulla auctor elit non risus pretium facilisis. Proin eleifend rhoncus nisi, ut Proin eleifend rhoncus nisi, ut"
+      "title": "Meus planos futuros",
+      "text": [
+        "Como já mencionei anteriormente, minha paixão pela programação me impulsiona a buscar constante aperfeiçoamento nessa área. Meus planos futuros incluem o aprofundamento do conhecimento em desenvolvimento de sites usando JavaScript, tanto no front-end quanto no back-end. Também me interesso pela área de design, especialmente em interface e experiência do usuário. Além disso, pretendo estudar tecnologias de criação de jogos, como C++, C#, Unity e Unreal, com o objetivo de criar meu próprio jogo."
+      ]
     }
   }
 }

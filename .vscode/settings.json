@@ -4,5 +4,19 @@
   "eslint.run": "onSave",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "eslint.validate": ["javascript"],
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.wordWrap": "on",
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "additionalClasses",
+    "color"
+  ]
 }
