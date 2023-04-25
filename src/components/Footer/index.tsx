@@ -23,13 +23,13 @@ export default function Footer() {
       </div>
 
       <div className=" flex gap-1">
-        <button className="hover:fill-[#000] hover:opacity-100 opacity-30">
+        <button className="opacity-30 hover:fill-[#000] hover:opacity-100">
           <GithubIcon />
         </button>
-        <button className="hover:bg-[#000] hover:opacity-100 opacity-30">
+        <button className="opacity-30 hover:bg-[#000] hover:opacity-100">
           <LinkedinLogo size={30} weight="fill" />
         </button>
-        <button className="hover:bg-[#000] hover:opacity-100 opacity-30">
+        <button className="opacity-30 hover:bg-[#000] hover:opacity-100">
           <YoutubeLogo size={30} weight="fill" />
         </button>
       </div>

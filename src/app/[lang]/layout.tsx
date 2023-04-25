@@ -276,7 +276,7 @@ export default async function RootLayout({
         />
       </head>
 
-      <body className="font-sans text-primary min-h-screen bg-background selection:bg-[#DA858C]">
+      <body className="min-h-screen bg-background font-sans text-primary selection:bg-[#DA858C]">
         <Header translate={dictionary} />
         <main className="min-h-[calc(100vh-170px)]">{children}</main>
         <Footer />

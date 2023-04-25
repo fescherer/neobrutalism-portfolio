@@ -17,8 +17,8 @@ export default function ItemWrapper({
   id
 }: ItemWrapperProps) {
   return (
-    <div className="flex justify-center items-center h-screen w-full" id={id}>
-      <div className="flex flex-col gap-5 px-20 items-center max-w-project m-auto w-full">
+    <div className="flex h-screen w-full items-center justify-center" id={id}>
+      <div className="m-auto flex w-full max-w-project flex-col items-center gap-5 px-20">
         <HomeTitle>{title}</HomeTitle>
         {children}
         <ButtonNextItem aria={aria} nextItem={buttonNextItem} />

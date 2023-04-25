@@ -3,7 +3,7 @@ export const projectsTypes = [
   'coding-lesson',
   'coding-week',
   'college-lesson',
-  'drawing',
-  'original',
-  'snippets'
+  // 'drawing',
+  'original'
+  // 'snippets'
 ]

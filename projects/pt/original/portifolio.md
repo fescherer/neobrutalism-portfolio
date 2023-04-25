@@ -1,5 +1,4 @@
 ---
-id: 16
 slug: portifolio
 type: original
 tags: [react, figma, javascript, next, angular, javascript, next, angular]
@@ -69,3 +68,4 @@ const a = 'espero que de certo'
 
 <https://www.markdownguide.org>
 <fake@example.com>
+

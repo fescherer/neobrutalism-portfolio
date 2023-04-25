@@ -12,9 +12,9 @@ export default function Projects({ data }: ProjectsProps) {
     </div>
   ))
   return (
-    <div className="flex flex-col gap-5 max-w-project m-auto p-1">
-      <div className="w-36 h-10 bg-primary" />
-      <div className="flex gap-5 flex-wrap justify-center">{postPreviews}</div>
+    <div className="m-auto flex max-w-project flex-col gap-5 p-1">
+      <div className="h-10 w-36 bg-primary" />
+      <div className="flex flex-wrap justify-center gap-5">{postPreviews}</div>
     </div>
   )
 }

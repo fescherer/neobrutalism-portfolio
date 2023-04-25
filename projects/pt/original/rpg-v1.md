@@ -1,5 +1,4 @@
 ---
-id: 14
 slug: rpg-v1
 type: original
 tags: [react, figma, javascript, next, angular, javascript, next, angular]
@@ -23,3 +22,4 @@ images:
 ---
 
 # STRING 2 PROJECT
+

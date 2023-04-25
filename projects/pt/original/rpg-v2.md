@@ -1,5 +1,4 @@
 ---
-id: 12
 slug: rpg-v2
 type: original
 tags: [react, figma, javascript, next, angular, javascript, next, angular]
@@ -29,3 +28,4 @@ images:
 ## Sobre
 
 ## Gifs, Imagens e Vídeos
+
