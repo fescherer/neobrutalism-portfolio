@@ -7,8 +7,8 @@ type ProjectsProps = {
 
 export default function Projects({ data }: ProjectsProps) {
   const postPreviews = data.map((project) => (
-    <div key={project.id}>
-      <ProjectCard key={project.id} card={project} />
+    <div>
+      <ProjectCard key={project.slug} card={project} />
     </div>
   ))
   return (
