@@ -1,9 +1,7 @@
 import { HeaderTranslation } from '@/@types/translations/HeaderTranslation'
 import FSLogo from '@/Icons/FSLogo'
 import Link from 'next/link'
-import LangSelector from './LangSelector'
 import MobileMenu from './MobileMenu'
-import ThemeButton from './ThemeButton'
 
 type HeaderProps = {
   translate: HeaderTranslation
@@ -30,25 +28,12 @@ export default function Header({ translate }: HeaderProps) {
           aria-label={translate.menu.aria_button}
         >
           <span className="sr-only">{translate.menu.sr_button}</span>
-          {/* <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clipRule="evenodd"
-            ></path>
-          </svg> */}
+
           <MobileMenu translate={translate} />
         </div>
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:text-2xl">
-            <li>{translate.menu.snippets}</li>
             <li>
               <Link href="/projects">{translate.menu.projects}</Link>
             </li>
@@ -56,10 +41,10 @@ export default function Header({ translate }: HeaderProps) {
               <Link href="/about">{translate.menu.aboutme}</Link>
             </li>
 
-            <li>
+            {/* <li>
               <ThemeButton translation={translate.theme} />
             </li>
-            <LangSelector translate={translate.lang} />
+            <LangSelector translate={translate.lang} /> */}
           </ul>
         </div>
       </div>

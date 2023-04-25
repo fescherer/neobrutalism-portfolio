@@ -26,7 +26,6 @@ export default function ProjectCard({ card }: ProjectCardProps) {
           <GithubIcon />
         </Link>
       </div>
-      {/* overflow-hidden overflow-ellipsis whitespace-nowrap max-h-[100px]  */}
       <div>
         <ImageAspectRatio image={card.image} />
       </div>
@@ -40,7 +39,7 @@ export default function ProjectCard({ card }: ProjectCardProps) {
           {card.description}
         </p>
         <Link
-          href={`projects/${card.slug}`}
+          href={`projects/${card.type}/${card.slug}`}
           className="underline-offset-1 self-end underline font-extrabold uppercase transition-all tracking-widest hover:scale-105 hover:text-primary-dark"
         >
           Read more
