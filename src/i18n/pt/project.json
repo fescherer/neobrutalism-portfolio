@@ -1,6 +1,11 @@
 {
   "type": {
-    "college": "Projeto da faculdade",
-    "draw": "Desenho"
+    "archived": "Arquivado",
+    "coding-lesson": "Estudo de código",
+    "coding-week": "Semana de código",
+    "college-lesson": "Projetos da faculdade",
+    "drawing": "Desenho",
+    "original": "Original",
+    "snippets": "Trechos de código"
   }
 }

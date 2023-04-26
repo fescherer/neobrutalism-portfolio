@@ -17,16 +17,20 @@ type ProjectHeaderProps = {
 
 const getTypeColor = (type: string): string => {
   switch (type) {
-    case 'college':
-      return 'bg-[#F0DF83]'
-    case 'drawing':
-      return 'bg-[#83C2F0]'
+    case 'archived':
+      return 'bg-[#FF9F8C]'
+    case 'coding-lesson':
+      return 'bg-[#FFCE94]'
     case 'coding-week':
-      return 'bg-[#F0A483]'
-    case 'course':
-      return 'bg-[#C0F083]'
+      return 'bg-[#FDD97C]'
+    case 'college-lesson':
+      return 'bg-[#C1F0B2]'
+    case 'drawing':
+      return 'bg-[#B2E4F0]'
     case 'original':
-      return 'bg-[#F08383]'
+      return 'bg-[#C7CEEA]'
+    case 'snippets':
+      return 'bg-[#D6B2F0]'
   }
   return 'bg-background'
 }

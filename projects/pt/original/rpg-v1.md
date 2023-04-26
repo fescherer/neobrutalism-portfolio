@@ -1,13 +1,13 @@
 ---
 slug: rpg-v1
 type: original
-tags: [react, figma, javascript, next, angular, javascript, next, angular]
-date: '2023-03-10T17:31:38.778Z'
-title: RPG Angular V1
+tags: [javascript, angular,]
+date: '2021-07-25T10:00:00.000Z'
+title: Ficha de RPG V1
 github: https://github.com/ofelipescherer/rpg-whitn
-site: alura-quiz.ofelipescherer.vercel.app
-image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
-description: Site do portifolio do felipe scherer
+site: https://ofelipescherer.github.io/rpg-whitn/
+image: https://user-images.githubusercontent.com/62115215/234442583-e06d768b-a576-402b-a65a-afae67b94d35.png
+description: Primeira versão da filha de RPG do sistema WHITN criado por Felipe Scherer
 images:
   [
     'https://user-images.githubusercontent.com/62115215/219414481-5e742828-8b76-45ef-8d0a-f98fdfba2aa1.gif',
