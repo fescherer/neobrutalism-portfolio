@@ -7,7 +7,7 @@ title: Ficha de RPG V1
 github: https://github.com/ofelipescherer/rpg-whitn
 site: https://ofelipescherer.github.io/rpg-whitn/
 image: https://user-images.githubusercontent.com/62115215/234442583-e06d768b-a576-402b-a65a-afae67b94d35.png
-description: Primeira versão da filha de RPG do sistema WHITN criado por Felipe Scherer
+description: Primeira versão da ficha de RPG do sistema WHITN criado por Felipe Scherer
 images:
   [
     'https://user-images.githubusercontent.com/62115215/219414481-5e742828-8b76-45ef-8d0a-f98fdfba2aa1.gif',
