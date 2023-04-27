@@ -15,7 +15,7 @@ export default function ExperienceFragment({
 }: ExperienceFragmentProps) {
   return (
     <>
-      <div key={experience.id} className="flex flex-col mb-6">
+      <div key={experience.id} className="mb-6 flex flex-col">
         <div className="flex flex-col">
           <h4 className="tex-3xl font-extrabold uppercase">
             {experience.info.title}
@@ -50,7 +50,7 @@ export default function ExperienceFragment({
 
         <button
           onClick={() => setDialog(experience)}
-          className="self-end bg-background-accent min-w-[150px] rounded py-1 px-2 text-base font-bold drop-shadow-neo-2 border-primary-dark border-2"
+          className="min-w-[150px] self-end rounded border-2 border-primary-dark bg-background-accent py-1 px-2 text-base font-bold drop-shadow-neo-2"
         >
           MORE INFO
         </button>

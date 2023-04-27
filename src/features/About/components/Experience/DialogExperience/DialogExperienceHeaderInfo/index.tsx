@@ -14,8 +14,8 @@ export function DialogExperienceHeaderInfo({
 }: DialogExperienceHeaderInfoProps) {
   return (
     <div className="flex flex-col gap-3 py-4">
-      <div className="flex items-center gap-2 leading-tight text-2xl">
-        <Buildings size={32} className="border rounded-full p-1 opacity-60" />
+      <div className="flex items-center gap-2 text-2xl leading-tight">
+        <Buildings size={32} className="rounded-full border p-1 opacity-60" />
 
         <div className="flex flex-col ">
           <span className="text-base">{`${dialogTranslation.company_name}`}</span>
@@ -23,8 +23,8 @@ export function DialogExperienceHeaderInfo({
         </div>
       </div>
 
-      <div className="flex items-center gap-2 leading-tight text-2xl">
-        <Calendar size={32} className="border rounded-full p-1 opacity-60" />
+      <div className="flex items-center gap-2 text-2xl leading-tight">
+        <Calendar size={32} className="rounded-full border p-1 opacity-60" />
 
         <div className="flex flex-col ">
           <span className="text-base">{`${dialogTranslation.contribution_period}`}</span>
@@ -36,8 +36,8 @@ export function DialogExperienceHeaderInfo({
         </div>
       </div>
 
-      <div className="flex items-center gap-2 leading-tight text-2xl">
-        <UserSquare size={32} className="border rounded-full p-1 opacity-60" />
+      <div className="flex items-center gap-2 text-2xl leading-tight">
+        <UserSquare size={32} className="rounded-full border p-1 opacity-60" />
 
         <div className="flex flex-col">
           <span className="text-base">{`${dialogTranslation.role}`}</span>

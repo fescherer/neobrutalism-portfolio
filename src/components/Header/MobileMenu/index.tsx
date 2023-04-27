@@ -21,7 +21,7 @@ export default function MobileMenu({ translate }: HeaderProps) {
   return (
     <nav className="group">
       <label
-        className="cursor-pointer text-base group"
+        className="group cursor-pointer text-base"
         aria-label="Open navigation menu"
         htmlFor="menu-toggle"
       >
@@ -36,11 +36,11 @@ export default function MobileMenu({ translate }: HeaderProps) {
       {isHidden ? (
         <>
           <button
-            className="absolute top-0 left-0 bg-overlay h-full w-full z-50"
+            className="absolute top-0 left-0 z-50 h-full w-full bg-overlay"
             onClick={handleIsHidden}
           />
-          <div className="absolute top-0 left-0 bg-background-accent h-full z-50 w-[35vw] animate-grow overflow-hidden">
-            <ul className="flex flex-col text-2xl  md:flex-row md:space-x-8 md:mt-0 md:text-2xl">
+          <div className="absolute top-0 left-0 z-50 h-full w-[35vw] animate-grow overflow-hidden bg-background-accent">
+            <ul className="flex flex-col text-2xl  md:mt-0 md:flex-row md:space-x-8 md:text-2xl">
               <Link href="/">
                 <figure className="p-4">
                   <Image
@@ -52,27 +52,27 @@ export default function MobileMenu({ translate }: HeaderProps) {
                 </figure>
               </Link>
 
-              <li className="cursor-pointer flex hover:bg-background">
+              <li className="flex cursor-pointer hover:bg-background">
                 <Link href="/" className="flex w-full px-5 py-2">
                   {translate.menu.snippets}
                 </Link>
               </li>
-              <li className="cursor-pointer flex hover:bg-background">
+              <li className="flex cursor-pointer hover:bg-background">
                 <Link href="/projects" className="flex w-full px-5 py-2">
                   {translate.menu.projects}
                 </Link>
               </li>
-              <li className="cursor-pointer flex hover:bg-background">
+              <li className="flex cursor-pointer hover:bg-background">
                 <Link href="/about" className="flex w-full px-5 py-2">
                   {translate.menu.aboutme}
                 </Link>
               </li>
 
-              <li className="px-5 py-2 cursor-pointer">
+              <li className="cursor-pointer px-5 py-2">
                 <ThemeButton translation={translate.theme} />
               </li>
 
-              <li className="px-5 py-2 cursor-pointer">
+              <li className="cursor-pointer px-5 py-2">
                 <LangSelector translate={translate.lang} />
               </li>
             </ul>

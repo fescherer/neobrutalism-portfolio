@@ -7,7 +7,7 @@ export default function ImageAspectRatio({ image }: ImageAspectRatiProps) {
     <div className="relative overflow-hidden">
       <div
         role="img"
-        className="h-[120px] blur-sm scale-110 relative"
+        className="relative h-[120px] scale-110 blur-sm"
         style={{
           backgroundImage: `url(${image})`
         }}
@@ -15,7 +15,7 @@ export default function ImageAspectRatio({ image }: ImageAspectRatiProps) {
 
       <div
         role="img"
-        className="w-full bg-contain bg-no-repeat bg-center h-[120px] absolute top-0 right-0 z-10"
+        className="absolute top-0 right-0 z-10 h-[120px] w-full bg-contain bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${image})`
         }}

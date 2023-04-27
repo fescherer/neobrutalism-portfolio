@@ -1,9 +1,10 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import { ProjectMetadata } from '@/@types/Metadata'
+import { projectsTypes } from '../projectTypes'
+import { i18n } from './i18n/i18n-config'
 
-const getProjectsMetadata = (lang: string): ProjectMetadata[] => {
-  const folder = `projects/${lang}`
+const getProjectsMetadata = (folder: string): ProjectMetadata[] => {
   const files = fs.readdirSync(folder)
   const markdownProjects = files.filter((file) => file.endsWith('.md'))
 
@@ -26,4 +27,15 @@ const getProjectsMetadata = (lang: string): ProjectMetadata[] => {
   return projects
 }
 
-export default getProjectsMetadata
+export function getAllProjects() {
+  let projects: ProjectMetadata[] = []
+
+  i18n.locales.map((locale) => {
+    projectsTypes.map((item) => {
+      const folder = getProjectsMetadata(`projects/${locale}/${item}`)
+      projects = [...projects, ...folder]
+    })
+  })
+
+  return projects
+}

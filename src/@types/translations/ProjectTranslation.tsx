@@ -3,6 +3,11 @@ export type ProjectTranslation = {
 }
 
 export type TypeTranslation = {
-  college: string
-  draw: string
+  archived: string
+  'coding-lesson': string
+  'coding-week': string
+  'college-lesson': string
+  drawing: string
+  original: string
+  snippets: string
 }

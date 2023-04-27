@@ -23,7 +23,7 @@ export default function LangSelector({ translate }: LangSelectorProps) {
     <Popover.Root>
       <Popover.Trigger>{pathName.split('/')[1]}</Popover.Trigger>
       <Popover.Portal>
-        <Popover.Content className="bg-foreground-accent min-w-[50px] p-3 rounded-sm">
+        <Popover.Content className="min-w-[50px] rounded-sm bg-foreground-accent p-3">
           <ul className="flex flex-col items-center gap-3">
             {i18n.locales.map((locale) => {
               return (

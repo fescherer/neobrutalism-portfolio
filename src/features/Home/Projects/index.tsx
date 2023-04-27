@@ -8,7 +8,7 @@ export default function Projects() {
       title={'Projects'}
       id="projects"
     >
-      <div className="grid grid-cols-5 m-10" />
+      <div className="m-10 grid grid-cols-5" />
     </ItemWrapper>
   )
 }

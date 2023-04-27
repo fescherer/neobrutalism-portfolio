@@ -1,13 +1,8 @@
 import Projects from '@/features/Projects'
-import getProjectsMetadata from '@/util/functions/getProjectMetadata'
-import { Locale } from '@/util/functions/i18n/i18n-config'
+import { getAllProjects } from '@/util/functions/getProjectMetadata'
 
-type ProjectsPageProps = {
-  params: { slug: string; lang: Locale }
-}
-
-export default function ProjectsPage({ params }: ProjectsPageProps) {
-  const postMetadata = getProjectsMetadata(params.lang)
+export default function ProjectsPage() {
+  const postMetadata = getAllProjects()
 
   return <Projects data={postMetadata} />
 }

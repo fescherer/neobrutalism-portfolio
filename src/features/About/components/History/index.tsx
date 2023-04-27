@@ -38,7 +38,7 @@ export default function History({ translation }: HistoryProps) {
       {my_history.map((data, index) => (
         <div
           key={data.title}
-          className="flex md:flex-row flex-col items-center gap-12 mb-6"
+          className="mb-6 flex flex-col items-center gap-12 md:flex-row"
         >
           <Image
             src={data.image}
@@ -47,13 +47,13 @@ export default function History({ translation }: HistoryProps) {
             alt="profile-image"
             className={`${
               index % 2 === 0 ? '' : 'md:block'
-            } hidden bg-primary drop-shadow-neo-5 border-primary-dark border-4 rounded-sm`}
+            } hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5`}
           />
 
           <div className="font-bold">
             <h2 className="text-4xl">{data.title}</h2>
 
-            <p className="text-base indent-8 text-justify">{data.text}</p>
+            <p className="text-justify indent-8 text-base">{data.text}</p>
           </div>
 
           <Image
@@ -62,8 +62,8 @@ export default function History({ translation }: HistoryProps) {
             height={350}
             alt="profile-image"
             className={`${
-              index % 2 === 0 ? '' : 'md:hidden block'
-            } bg-primary drop-shadow-neo-5  border-primary-dark border-4 rounded-sm`}
+              index % 2 === 0 ? '' : 'block md:hidden'
+            } rounded-sm border-4  border-primary-dark bg-primary drop-shadow-neo-5`}
           />
         </div>
       ))}

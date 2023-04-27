@@ -64,7 +64,7 @@ export const data_skills = [
 export default function Skills({ translation }: SkillsProps) {
   return (
     <div className="flex flex-row flex-wrap justify-evenly gap-7">
-      <p className="font-bold text-base indent-8 text-justify">
+      <p className="text-justify indent-8 text-base font-bold">
         {translation.description}
       </p>
       {data_skills.map((skill) => (
@@ -72,9 +72,9 @@ export default function Skills({ translation }: SkillsProps) {
           target="_blank"
           href={skill.link}
           key={skill.title}
-          className="flex flex-col gap-2 items-center font-bold tex-3xl uppercase btn-base"
+          className="tex-3xl btn-base flex flex-col items-center gap-2 font-bold uppercase"
         >
-          <div className="rounded-full bg-primary drop-shadow-neo-3 p-2">
+          <div className="rounded-full bg-primary p-2 drop-shadow-neo-3">
             {skill.component}
           </div>
           <span>{skill.title}</span>

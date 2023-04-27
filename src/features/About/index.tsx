@@ -12,26 +12,26 @@ type AboutProps = {
 
 export default function About({ translation, translationDefault }: AboutProps) {
   return (
-    <div className="flex flex-col gap-5 w-full px-4 py-2 max-w-project m-auto">
-      <h1 className="text-6xl font-bold -rotate-2">{translation.title}</h1>
+    <div className="m-auto flex w-full max-w-project flex-col gap-5 px-4 py-2">
+      <h1 className="-rotate-2 text-6xl font-bold">{translation.title}</h1>
 
-      <div className="flex md:flex-row items-center flex-col gap-12 mb-6">
+      <div className="mb-6 flex flex-col items-center gap-12 md:flex-row">
         <Image
           src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
           width={296}
           height={350}
           alt={translation.introduction.alt_image}
-          className="hidden md:block bg-primary drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+          className="hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:block"
         />
 
         <div className="font-bold">
           <h2 className="text-4xl">{translationDefault.author}</h2>
 
-          <p className="text-base indent-8 text-justify">
+          <p className="text-justify indent-8 text-base">
             {translation.first_description}
           </p>
 
-          <div className="flex justify-evenly font-extrabold uppercase underline underline-offset-3 w-full mt-10">
+          <div className="underline-offset-3 mt-10 flex w-full justify-evenly font-extrabold uppercase underline">
             <a href="#skills-experience" className="btn-base">
               {translation.introduction.skills_experience}
             </a>
@@ -46,23 +46,23 @@ export default function About({ translation, translationDefault }: AboutProps) {
           width={296}
           height={350}
           alt={translation.introduction.alt_image}
-          className="md:hidden block bg-primary drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+          className="block rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:hidden"
         />
       </div>
 
       {/* Skills and Experience */}
-      <div className="block md:grid grid-cols-2 gap-20" id="skills-experience">
+      <div className="block grid-cols-2 gap-20 md:grid" id="skills-experience">
         <div className="flex flex-col gap-6">
-          <h2 className="text-6xl font-bold leading-12 -rotate-2 mb-7">
+          <h2 className="mb-7 -rotate-2 text-6xl font-bold leading-12">
             {translation.skills_experience.title}
           </h2>
 
-          <p className="font-bold text-base indent-8 text-justify">
+          <p className="text-justify indent-8 text-base font-bold">
             {translation.skills_experience.description}
           </p>
 
-          <blockquote className="font-bold text-base indent-8 text-justify ">
-            <p className="italic text-xl">
+          <blockquote className="text-justify indent-8 text-base font-bold ">
+            <p className="text-xl italic">
               {`"${translation.skills_experience.quote.quote_block}"`}
             </p>
             <p className="text-end uppercase">

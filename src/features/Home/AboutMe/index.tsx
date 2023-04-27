@@ -21,21 +21,21 @@ export default function AboutMe({ translation }: AboutMeProps) {
       title={translation.title}
       id="about-me"
     >
-      <div className="flex flex-col md:flex-row justify-between w-full items-center ">
-        <div className="flex flex-col gap-5 items-center">
-          <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
+      <div className="flex w-full flex-col items-center justify-between md:flex-row ">
+        <div className="flex flex-col items-center gap-5">
+          <span className="w-[270px] rounded border-2 border-primary-dark bg-foreground py-1 px-2 text-3xl font-bold drop-shadow-neo-3">
             {translation.author}
           </span>
 
-          <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
+          <span className="w-[270px] rounded border-2 border-primary-dark bg-foreground py-1 px-2 text-3xl font-bold drop-shadow-neo-3">
             {`${getYearsOld()} ${translation.years_old}`}
           </span>
 
-          <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
+          <span className="w-[270px] rounded border-2 border-primary-dark bg-foreground py-1 px-2 text-3xl font-bold drop-shadow-neo-3">
             {translation.college_course}
           </span>
 
-          <span className="bg-foreground rounded w-[270px] py-1 px-2 text-3xl font-bold drop-shadow-neo-3 border-primary-dark border-2">
+          <span className="w-[270px] rounded border-2 border-primary-dark bg-foreground py-1 px-2 text-3xl font-bold drop-shadow-neo-3">
             {translation.profession}
           </span>
         </div>
@@ -45,7 +45,7 @@ export default function AboutMe({ translation }: AboutMeProps) {
           width={296}
           height={350}
           alt={translation['alt_image']}
-          className="hidden bg-primary md:block drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+          className="hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:block"
         />
       </div>
     </ItemWrapper>

@@ -13,11 +13,11 @@ export default function RouteStepper() {
       {routes.map((element, index) => (
         <p
           key={`${element}-${index}`}
-          className="opacity-70 mb-2 flex gap-3 uppercase items-center"
+          className="mb-2 flex items-center gap-3 uppercase opacity-70"
         >
           <Link
             href={''}
-            className="hover:text-primary-dark btn-base opacity-100"
+            className="btn-base opacity-100 hover:text-primary-dark"
           >
             {element}
           </Link>

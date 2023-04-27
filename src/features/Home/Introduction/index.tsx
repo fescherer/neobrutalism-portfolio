@@ -22,21 +22,21 @@ function ExploreSite({ translation }: IntroductionProps) {
 export default function Introduction({ translation }: IntroductionProps) {
   return (
     <div
-      className="flex justify-center items-center h-[calc(100vh-107px)]"
+      className="flex h-[calc(100vh-107px)] items-center justify-center"
       id="home-introduction"
     >
-      <div className="flex flex-col gap-5 items-center">
-        <div className="flex flex-col gap-5 sm:flex-row sm:gap-12 m-5">
+      <div className="flex flex-col items-center gap-5">
+        <div className="m-5 flex flex-col gap-5 sm:flex-row sm:gap-12">
           <div className="flex flex-col items-center gap-5">
-            <div className="sm:text-6xl sm:leading-15 flex flex-col text-4xl font-bold animate-scale">
+            <div className="flex animate-scale flex-col text-4xl font-bold sm:text-6xl sm:leading-15">
               <span className="sm:drop-shadow-neo-2">{translation.meet}</span>
               <span className="sm:drop-shadow-neo-2">{translation.author}</span>
-              <span className="text-xl  sm:text-4xl opacity-80 drop-shadow-neo-1-ligth">
+              <span className="drop-shadow-neo-1-ligth  text-xl opacity-80 sm:text-4xl">
                 {translation.profession}
               </span>
             </div>
 
-            <div className="hidden font-bold sm:flex flex-col items-center">
+            <div className="hidden flex-col items-center font-bold sm:flex">
               <ExploreSite translation={translation} />
             </div>
           </div>
@@ -47,18 +47,18 @@ export default function Introduction({ translation }: IntroductionProps) {
               width={296}
               height={350}
               alt={translation.alt_image}
-              className="drop-shadow-neo-5 border-primary-dark border-4 rounded-sm"
+              className="rounded-sm border-4 border-primary-dark drop-shadow-neo-5"
               unoptimized={true}
             />
 
-            <div className="drop-shadow-neo-3 border-primary-dark border-4 rounded-sm absolute bottom-10 -left-12 bg-foreground px-6 py-2 font-extrabold text-4xl">
+            <div className="absolute bottom-10 -left-12 rounded-sm border-4 border-primary-dark bg-foreground px-6 py-2 text-4xl font-extrabold drop-shadow-neo-3">
               HELLO!
             </div>
           </figure>
         </div>
 
         <div className="flex flex-col items-center gap-1">
-          <div className="flex font-bold sm:hidden flex-col items-center">
+          <div className="flex flex-col items-center font-bold sm:hidden">
             <ExploreSite translation={translation} />
           </div>
 

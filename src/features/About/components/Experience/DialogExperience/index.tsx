@@ -21,17 +21,17 @@ export default function DialogExperience({
   if (!data) return <></>
 
   return (
-    <div className="fixed top-1/2 right-1/2 w-[98%] bg-background sm:w-[80%] h-[80%] max-w-[50rem] translate-x-1/2 -translate-y-1/2">
-      <div className="h-full flex flex-col">
-        <div className="flex justify-between p-3 bg-background-accent">
+    <div className="fixed top-1/2 right-1/2 h-[80%] w-[98%] max-w-[50rem] translate-x-1/2 -translate-y-1/2 bg-background sm:w-[80%]">
+      <div className="flex h-full flex-col">
+        <div className="flex justify-between bg-background-accent p-3">
           <h2 className="text-2xl font-bold uppercase">{data?.info.title}</h2>
           <Dialog.Close onClick={() => setState(null)}>
             <X size={24} />
           </Dialog.Close>
         </div>
 
-        <div className="flex flex-col overflow-scroll h-full p-3 ">
-          <div className="flex flex-col items-center md:flex-row justify-between">
+        <div className="flex h-full flex-col overflow-scroll p-3 ">
+          <div className="flex flex-col items-center justify-between md:flex-row">
             <DialogExperienceHeaderInfo
               dialogTranslation={dialogTranslation}
               data={data}
@@ -57,7 +57,7 @@ export default function DialogExperience({
           {data?.info.desc.map((item: string, index: number) => (
             <div
               key={index}
-              className="text-justify whitespace-pre-wrap indent-6"
+              className="whitespace-pre-wrap text-justify indent-6"
             >
               {item}
             </div>

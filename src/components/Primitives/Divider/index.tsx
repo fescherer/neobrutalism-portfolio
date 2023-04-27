@@ -16,7 +16,7 @@ export function Divider({
   return (
     <Separator.Root
       data-orientation={dataOrientation}
-      className={`data-[orientation=horizontal]:h-[0.0625rem] data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-[0.0625rem] ${barColor} ${additionalClasses}`}
+      className={`data-[orientation=horizontal]:h-[0.0625rem] data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-[0.0625rem] ${barColor} ${additionalClasses}`}
     />
   )
 }

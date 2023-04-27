@@ -28,23 +28,23 @@ export default function ImageSlider({ slides }: ImageSliderProps) {
   }
 
   return (
-    <div className="h-[200px] md:h-[600px] transition-all w-full drop-shadow-neo-5-foreground relative bg-background border-2 border-foreground rounded">
-      <div className="top-1/2 w-full flex justify-between absolute -translate-y-[50%] px-3">
+    <div className="relative h-[200px] w-full rounded border-2 border-foreground bg-background drop-shadow-neo-5-foreground transition-all md:h-[600px]">
+      <div className="absolute top-1/2 flex w-full -translate-y-[50%] justify-between px-3">
         <button
-          className="btn-base hover:opacity-100 opacity-60"
+          className="btn-base opacity-60 hover:opacity-100"
           onClick={() => handleImageIndex('decrease')}
         >
           <ArrowCircleLeft size={32} weight="fill" />
         </button>
         <button
-          className="btn-base hover:opacity-100 opacity-60"
+          className="btn-base opacity-60 hover:opacity-100"
           onClick={() => handleImageIndex('increase')}
         >
           <ArrowCircleRight size={32} weight="fill" />
         </button>
       </div>
 
-      <div className="flex flex-wrap justify-center w-full gap-3 absolute bottom-5">
+      <div className="absolute bottom-5 flex w-full flex-wrap justify-center gap-3">
         {slides.map((image, index) => (
           <button
             key={image}
@@ -53,14 +53,14 @@ export default function ImageSlider({ slides }: ImageSliderProps) {
               imageIndex === index
                 ? 'w-[20px] opacity-100'
                 : 'w-[15px] opacity-60'
-            } h-[15px] bg-primary  rounded-full cursor-pointer hover:opacity-100 transition-all`}
+            } h-[15px] cursor-pointer  rounded-full bg-primary transition-all hover:opacity-100`}
           />
         ))}
       </div>
 
       <div
         style={{ backgroundImage: `url(${slides[imageIndex]})` }}
-        className="bg-primary-dark h-full bg-contain bg-no-repeat duration-500 bg-center"
+        className="h-full bg-primary-dark bg-contain bg-center bg-no-repeat duration-500"
       />
     </div>
   )

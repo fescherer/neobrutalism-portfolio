@@ -18,7 +18,7 @@ export default function ResponsiveDialog({
       <Dialog.Portal>
         <Dialog.Overlay
           onClick={() => setState('')}
-          className="fixed bg-overlay h-full w-full inset-0"
+          className="fixed inset-0 h-full w-full bg-overlay"
         />
         <Dialog.Content>{children}</Dialog.Content>
       </Dialog.Portal>
