@@ -3,7 +3,7 @@ id: 1
 slug: rocketseat-nlw-06
 type: coding-week
 tags: [html, css]
-date: '2023-03-10T16:31:38.578Z'
+date: '2021-01-01T10:00:00.000Z'
 title: APS 1
 github: https://github.com/ofelipescherer/project-studies/tree/main/alura/alura-quiz
 site: alura-quiz.ofelipescherer.vercel.app
@@ -34,3 +34,4 @@ No fim, deu certo, o projeto apesar de um pouco feio, funcionava e conseguiu faz
 O tema do projeto era algo relacionado ao meio ambiente
 
 O projeto se trata de um site em HTML e CSS sobre ONGs ambientais, locais de coleta de lixo em campinas- Eco Pontos
+

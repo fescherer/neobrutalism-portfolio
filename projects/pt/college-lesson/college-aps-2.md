@@ -3,7 +3,7 @@ id: 2
 slug: college-aps-2
 type: college-lesson
 tags: [html, css]
-date: '2023-03-10T16:31:38.578Z'
+date: '2021-01-01T10:00:00.000Z'
 title: APS 2
 github: https://github.com/ofelipescherer/GameDevImersaoAlura
 site: alura-quiz.ofelipescherer.vercel.app
@@ -39,3 +39,4 @@ O projeto não tem interface gráfica, por isso é feito utilizando apenas o con
 Digita-se uma localização, e oprograma calcula o melhor trajeto para o eco ponto em Campinas
 
 ## Gifs, Imagens e Vídeos
+

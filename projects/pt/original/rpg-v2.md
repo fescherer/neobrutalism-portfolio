@@ -2,7 +2,7 @@
 slug: rpg-v2
 type: original
 tags: [react, figma, javascript, next, angular, javascript, next, angular]
-date: '2023-03-10T17:31:38.778Z'
+date: '2021-01-01T10:00:00.000Z'
 title: RPG Angular V2
 github: https://github.com/ofelipescherer/rpg-angular-v2
 site: alura-quiz.ofelipescherer.vercel.app

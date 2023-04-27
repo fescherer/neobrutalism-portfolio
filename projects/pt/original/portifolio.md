@@ -2,7 +2,7 @@
 slug: portifolio
 type: original
 tags: [react, figma, javascript, next, angular, javascript, next, angular]
-date: '2023-03-10T17:31:38.778Z'
+date: '2021-01-01T10:00:00.000Z'
 title: Portifolio
 github: https://github.com/ofelipescherer/APS-4Semestre
 site: alura-quiz.ofelipescherer.vercel.app

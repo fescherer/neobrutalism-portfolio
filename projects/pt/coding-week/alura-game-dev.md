@@ -3,7 +3,7 @@ id: 13
 slug: alura-game-dev
 type: coding-week
 tags: [figma]
-date: '2023-03-10T16:31:38.578Z'
+date: '2021-01-01T10:00:00.000Z'
 title: Alura Game Dev JS
 github: https://github.com/ofelipescherer/GameDevImersaoAlura
 site: alura-quiz.ofelipescherer.vercel.app
@@ -23,3 +23,4 @@ images:
 ---
 
 # STRING PROJECT
+

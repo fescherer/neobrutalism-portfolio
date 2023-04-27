@@ -1,7 +1,7 @@
 ---
 slug: rpg-v1
 type: original
-tags: [javascript, angular,]
+tags: [javascript, angular]
 date: '2021-07-25T10:00:00.000Z'
 title: Ficha de RPG V1
 github: https://github.com/ofelipescherer/rpg-whitn

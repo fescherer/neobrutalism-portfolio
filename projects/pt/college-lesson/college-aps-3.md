@@ -3,7 +3,7 @@ id: 3
 slug: college-aps-3
 type: college-lesson
 tags: [java]
-date: '2023-03-10T16:31:38.578Z'
+date: '2021-01-01T10:00:00.000Z'
 title: APS 3
 github: https://github.com/ofelipescherer/GameDevImersaoAlura
 site: alura-quiz.ofelipescherer.vercel.app
@@ -33,3 +33,4 @@ Naquele semestre, a matéria principal estudada, foi programação orientada a o
 ## Sobre
 
 ## Gifs, Imagens e Vídeos
+

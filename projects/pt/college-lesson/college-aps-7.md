@@ -3,7 +3,7 @@ id: 7
 slug: college-aps-7
 type: college-lesson
 tags: [java]
-date: '2023-03-10T17:31:38.778Z'
+date: '2021-01-01T10:00:00.000Z'
 title: APS 7 Engenharia de software
 github: https://github.com/ofelipescherer/APS-4Semestre
 site: alura-quiz.ofelipescherer.vercel.app
@@ -37,3 +37,4 @@ O trabalho era desenvolver diagrama de classes, UML e outras coisas relacionada 
 ## Sobre
 
 ## Gifs, Imagens e Vídeos
+
