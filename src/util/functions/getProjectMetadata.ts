@@ -19,6 +19,7 @@ const getProjectsMetadata = (folder: string): ProjectMetadata[] => {
       description: matterResults.data.description,
       date: matterResults.data.date,
       github: matterResults.data.github,
+      figma: matterResults.data.figma,
       tags: matterResults.data.tags,
       slug: matterResults.data.slug
     }
