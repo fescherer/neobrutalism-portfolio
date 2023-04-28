@@ -1,7 +1,4 @@
-'use client'
-
 import RouteStepper from '../RouteStepper'
-import { Browser } from 'phosphor-react'
 import Link from 'next/link'
 import GithubIcon from '@/Icons/Github'
 import {
@@ -9,6 +6,8 @@ import {
   TypeTranslation
 } from '@/@types/translations/ProjectTranslation'
 import { GrayMatterFile } from 'gray-matter'
+import { Browser } from '@/Icons/Browser'
+import { FigmaLogo } from '@/Icons/FigmaLogo'
 
 type ProjectHeaderProps = {
   translate: ProjectTranslation
@@ -53,19 +52,34 @@ export default function ProjectHeader({
       <div className="flex w-full items-center justify-between text-5xl uppercase text-primary-dark">
         <h1>{project.data.title}</h1>
         <div className="flex gap-2">
-          {project.data.github && (
+          {project.data?.github && (
             <Link
               href={project.data.github}
               target="_blank"
-              className="hover:scale-105"
+              className="hover:scale-105 transition-all"
             >
               <GithubIcon />
             </Link>
           )}
 
-          {project.data.site && (
-            <Link href={project.data.site}>
-              <Browser size={20} />
+          {project.data?.site && (
+            <Link
+              href={project.data.site}
+              target="_blank"
+              className="hover:scale-105 transition-all flex flex-col items-center"
+            >
+              <div className="w-2 h-2 bg-primary-dark rounded-full animate-bounce-fast " />
+              <Browser />
+            </Link>
+          )}
+
+          {project.data?.figma && (
+            <Link
+              href={project.data.figma}
+              target="_blank"
+              className="hover:scale-105 transition-all"
+            >
+              <FigmaLogo />
             </Link>
           )}
         </div>

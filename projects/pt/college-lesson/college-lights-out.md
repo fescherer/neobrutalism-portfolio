@@ -1,11 +1,11 @@
 ---
-id: 122
 slug: college-lights-out
 type: college-lesson
 tags: [java]
-date: '2023-03-10T17:31:38.778Z'
+date: '2021-01-01T10:00:00.000Z'
 title: APS 8 Engenharia de software
 github: https://github.com/ofelipescherer/APS-4Semestre
+figma: ''
 site: alura-quiz.ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
 description: Projeto APS do 8º semestre de Ciência da Computação
@@ -21,3 +21,4 @@ images:
     'https://user-images.githubusercontent.com/62115215/219412706-125e60de-96f6-4af6-8afb-de8ad085b0ff.png'
   ]
 ---
+

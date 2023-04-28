@@ -1,11 +1,11 @@
 ---
-id: 11
 slug: alura-courses
 type: coding-lesson
 tags: [react, nextjs, html, css, javascript]
-date: '2023-03-10T16:31:38.578Z'
+date: '2021-01-01T10:00:00.000Z'
 title: Cursos da Alura
 github: https://github.com/ofelipescherer/courses-alura
+figma: ''
 site: alura-quiz.ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
 description: lorem lorem lorem
@@ -31,3 +31,4 @@ Durante a graduação, eu precisava de cursos ou livros extra curriculares para 
 ## Sobre
 
 ## Gifs, Imagens e Vídeos
+

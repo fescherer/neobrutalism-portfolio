@@ -10,7 +10,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ card }: ProjectCardProps) {
   return (
-    <div className="flex h-[320px] w-[230px] flex-col border-2 border-primary-dark bg-background drop-shadow-neo-5">
+    <div className="flex animate-pop h-[320px] w-[230px] flex-col border-2 border-primary-dark bg-background drop-shadow-neo-5">
       <div className="flex items-center justify-between border-b-2 bg-foreground px-3 py-1 text-primary-dark">
         <h3
           title={card.title}

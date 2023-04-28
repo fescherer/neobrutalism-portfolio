@@ -1,7 +1,7 @@
 import Markdown from 'markdown-to-jsx'
 
 import ImageSlider from '@/features/Project/components/ImageSlider'
-import { getDateFormated } from '@/util/functions/getDateFormated'
+import { getDateFormatedWithDay } from '@/util/functions/getDateFormated'
 import { ProjectTranslation } from '@/@types/translations/ProjectTranslation'
 import { GrayMatterFile } from 'gray-matter'
 import ProjectHeader from './components/ProjectHeader'
@@ -17,7 +17,9 @@ export default function Project({ translate, project }: ProjectProps) {
       <ProjectHeader translate={translate} project={project} />
 
       <div className="flex flex-wrap gap-5">
-        <p className="opacity-70">{getDateFormated(project.data.date, true)}</p>
+        <p className="opacity-70">
+          {getDateFormatedWithDay(project.data.date, true)}
+        </p>
         <div className="flex flex-wrap items-center gap-5">
           {project.data.tags.map((tag: string) => (
             <div
