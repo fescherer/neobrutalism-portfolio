@@ -1,5 +1,5 @@
 export const projectsTypes = [
-  'archived',
+  // 'archived',
   'coding-lesson',
   'coding-week',
   'college-lesson',
@@ -7,3 +7,4 @@ export const projectsTypes = [
   'original'
   // 'snippets'
 ]
+
