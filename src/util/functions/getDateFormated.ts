@@ -34,3 +34,12 @@ export function getDateFormated(date: string, isFullMonth?: boolean) {
   const m = isFullMonth ? fullMonth : months
   return `${m[dateobj.getMonth()]}, ${dateobj.getFullYear()}`
 }
+
+export function getDateFormatedWithDay(date: string, isFullMonth?: boolean) {
+  if (date === 'present_day') return 'Data atual'
+  const dateobj = new Date(date)
+  const m = isFullMonth ? fullMonth : months
+  return `${
+    m[dateobj.getMonth()]
+  }, ${dateobj.getDate()}, ${dateobj.getFullYear()}`
+}
