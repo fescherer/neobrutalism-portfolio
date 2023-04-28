@@ -1,12 +1,12 @@
 ---
-id: 10
 slug: alura-animal-quiz
 type: coding-week
 tags: [react, nextjs, html, css, javascript]
 date: '2021-01-01T10:00:00.000Z'
 title: Alura Animal Quiz
-github: https://github.com/ofelipescherer/alura-quiz
-site: alura-quiz.ofelipescherer.vercel.app
+github: https://github.com/ofelipescherer/project-studies/tree/main/alura/alura-quiz
+figma: ''
+site: https://alura-quiz-ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/234919046-1496d5c3-44a3-4c0e-913d-97559b0cae9a.png
 description: Projeto de um quiz sobre animais desenvolvido na semana intensiva react 2ªEdição Next.js elaborada pela equipe da Alura
 images:

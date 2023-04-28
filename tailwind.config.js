@@ -74,11 +74,17 @@ module.exports = {
         grow: {
           '0%': { width: '0%' },
           '100%': { width: '35vw' }
+        },
+        pop: {
+          from: { opacity: 0, transform: 'scale(0.5, 0.5)' },
+          to: { opacity: 1, transform: 'scale(1, 1)' }
         }
       },
       animation: {
         scale: 'scale 8s ease-in-out infinite',
-        grow: 'grow 0.5s ease'
+        grow: 'grow 0.5s ease',
+        pop: 'pop 350ms cubic-bezier(0.27,0.53,0.59,1.00)',
+        'bounce-fast': 'bounce 500ms linear infinite'
       }
     }
   },

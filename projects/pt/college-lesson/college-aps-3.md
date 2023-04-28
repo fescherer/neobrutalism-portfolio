@@ -1,11 +1,11 @@
 ---
-id: 3
 slug: college-aps-3
 type: college-lesson
 tags: [java]
 date: '2021-01-01T10:00:00.000Z'
 title: APS 3
 github: https://github.com/ofelipescherer/GameDevImersaoAlura
+figma: ''
 site: alura-quiz.ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
 description: Projeto APS do 3º semestre de Ciência da Computação

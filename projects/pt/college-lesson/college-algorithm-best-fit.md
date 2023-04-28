@@ -1,11 +1,11 @@
 ---
-id: 1
 slug: college-algorithm-best-fit
 type: college-lesson
 tags: [html, css]
 date: '2021-01-01T10:00:00.000Z'
 title: APS 1
 github: https://github.com/ofelipescherer/project-studies/tree/main/alura/alura-quiz
+figma: ''
 site: alura-quiz.ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
 description: Projeto
