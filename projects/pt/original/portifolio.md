@@ -1,25 +1,15 @@
 ---
 slug: portifolio
 type: original
-tags: [react, figma, javascript, next, angular, javascript, next, angular]
-date: '2021-01-01T10:00:00.000Z'
-title: Portifolio
-github: https://github.com/ofelipescherer/APS-4Semestre
-figma: ''
-site: alura-quiz.ofelipescherer.vercel.app
-image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
-description: Site do portifolio do felipe scherer
-images:
-  [
-    'https://user-images.githubusercontent.com/62115215/219414481-5e742828-8b76-45ef-8d0a-f98fdfba2aa1.gif',
-    'https://user-images.githubusercontent.com/62115215/219412486-cc05d257-6e7a-4c3f-b0c7-9ea58169fbeb.png',
-    'https://user-images.githubusercontent.com/62115215/219412526-7d154ee9-a50a-42cc-bc03-d4a1ed9bb78c.png',
-    'https://user-images.githubusercontent.com/62115215/219412571-adeed80b-7312-42d7-8168-c9fedda435c3.png',
-    'https://user-images.githubusercontent.com/62115215/219412604-9b51845a-e2ff-47ab-b455-6e5385436bb9.png',
-    'https://user-images.githubusercontent.com/62115215/219412638-af593bc1-0bd8-41e2-b9d6-012aee99146d.png',
-    'https://user-images.githubusercontent.com/62115215/219412678-a7654024-8cef-41e2-a0cd-011ab7daa3a3.png',
-    'https://user-images.githubusercontent.com/62115215/219412706-125e60de-96f6-4af6-8afb-de8ad085b0ff.png'
-  ]
+tags: [react, figma, javascript, next, css, html]
+date: '2023-02-25T10:00:00.000Z'
+title: '* Portifolio'
+github: https://github.com/ofelipescherer/portifolio
+figma: https://www.figma.com/file/9LKjRjHQrDtWNbydqZygxf/Project?t=zyrOwueQfx7S4WIN-1
+site: https://www.felipescherer.com/pt
+image: https://user-images.githubusercontent.com/62115215/235323285-26329f44-6ee0-48d8-a990-f3eeba84120f.png
+description: Site de portifolio, onde você encontra meus projetos e sobre mim.
+images: []
 ---
 
 # TITULO 1 BEM GRANDE PARA VER COMO VAI FICAR SE TIVER POUCO ESPACAÇO
