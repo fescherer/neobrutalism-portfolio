@@ -1,28 +1,18 @@
 ---
 slug: college-aps-6
 type: college-lesson
-tags: [java]
-date: '2021-01-01T10:00:00.000Z'
-title: APS 6 Sistemas Operacionais
-github: https://github.com/ofelipescherer/APS-4Semestre
+tags: [linux]
+date: '2021-10-01T10:00:00.000Z'
+title: '* APS 6 | Sistema de gerenciamento restaurante'
+github: https://github.com/ofelipescherer/college-projects/tree/main/aps/aps-06-sistemas-operacionais
 figma: ''
-site: alura-quiz.ofelipescherer.vercel.app
-image: https://user-images.githubusercontent.com/62115215/208798426-0b528230-530f-446f-9c1e-04df1b18835d.png
-description: Projeto APS do 6º semestre de Ciência da Computação
-images:
-  [
-    'https://user-images.githubusercontent.com/62115215/219414481-5e742828-8b76-45ef-8d0a-f98fdfba2aa1.gif',
-    'https://user-images.githubusercontent.com/62115215/219412486-cc05d257-6e7a-4c3f-b0c7-9ea58169fbeb.png',
-    'https://user-images.githubusercontent.com/62115215/219412526-7d154ee9-a50a-42cc-bc03-d4a1ed9bb78c.png',
-    'https://user-images.githubusercontent.com/62115215/219412571-adeed80b-7312-42d7-8168-c9fedda435c3.png',
-    'https://user-images.githubusercontent.com/62115215/219412604-9b51845a-e2ff-47ab-b455-6e5385436bb9.png',
-    'https://user-images.githubusercontent.com/62115215/219412638-af593bc1-0bd8-41e2-b9d6-012aee99146d.png',
-    'https://user-images.githubusercontent.com/62115215/219412678-a7654024-8cef-41e2-a0cd-011ab7daa3a3.png',
-    'https://user-images.githubusercontent.com/62115215/219412706-125e60de-96f6-4af6-8afb-de8ad085b0ff.png'
-  ]
+site: ''
+image: https://user-images.githubusercontent.com/62115215/235326317-85bfcceb-64c1-4206-8beb-01df92cce70e.png
+description: Sistema de gerenciamento de um restaurante, backup e relatório de dia e mês.
+images: []
 ---
 
-# APS 6º Semestre
+# Sistema de gerenciamento restaurante | APS 6
 
 ## Introdução
 
@@ -45,5 +35,4 @@ Entre 15h20 e 15h25, será feito um relatório do que aconteceu no dia para a m�
 Cada máquina tem um firewall cadastrado, por isso, o caixa não consegue se comunicar com o administrador
 Além disso, um proxy configurado baseado no papel de cada máquina
 
-## Gifs, Imagens e Vídeos
 
