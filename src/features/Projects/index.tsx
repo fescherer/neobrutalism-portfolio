@@ -49,14 +49,14 @@ export default function Projects({ data }: ProjectsProps) {
 
   return (
     <div className="m-auto flex max-w-project flex-col gap-5 p-1">
-      <div className="flex justify-between">
+      <div className="flex-col-reverse gap-4 px-5 px:mx-0 flex md:flex-row justify-between w-full">
         <TagFilter
           tagFilter={tagFilter}
           setTagFilter={setTagFilter}
           allTags={allTags}
         />
 
-        <SearchFilter setSearchFilter={setSearchFilter} />
+        <SearchFilter setSearchFilter={setSearchFilter} filter={searchFilter} />
       </div>
       <div className="flex flex-wrap justify-center gap-5">
         {filteredData.map((project) => (
