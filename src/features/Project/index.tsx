@@ -46,6 +46,16 @@ export default function Project({ translate, project }: ProjectProps) {
                 props: {
                   className: 'text-primary font-extrabold'
                 }
+              },
+              p: {
+                props: {
+                  className: 'indent-8'
+                }
+              },
+              a: {
+                props: {
+                  className: 'text-primary font-bold'
+                }
               }
             }
           }}
@@ -56,3 +66,4 @@ export default function Project({ translate, project }: ProjectProps) {
     </div>
   )
 }
+
