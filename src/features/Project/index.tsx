@@ -38,8 +38,20 @@ export default function Project({ translate, project }: ProjectProps) {
 
       <ImageSlider slides={project.data.images} />
 
-      <article className="prose max-w-none text-justify font-bold text-primary prose-headings:text-primary-dark">
-        <Markdown>{project.content}</Markdown>
+      <article className="prose max-w-none text-justify font-bold text-primary prose-headings:text-primary-dark ">
+        <Markdown
+          options={{
+            overrides: {
+              strong: {
+                props: {
+                  className: 'text-primary font-extrabold'
+                }
+              }
+            }
+          }}
+        >
+          {project.content}
+        </Markdown>
       </article>
     </div>
   )
