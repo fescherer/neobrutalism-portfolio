@@ -11,9 +11,8 @@ image: https://user-images.githubusercontent.com/62115215/235317699-84cade79-273
 description: FS Delivery é um projeto que reúne frontend web, mobile e backend, um sistema de deliveries fictício. Foi desenvolvido durante a 2ª edição da semana dev superior.
 images: []
 ---
-
 # FS Delivery | Semana Dev Superior 2
-
 ## Introdução
-
+Esse projeto foi desenvolvido durante a Semana Dev Superior 2.0 da [Dev Superior](https://www.youtube.com/devsuperior). Foi o primeiro projeto que tive contato com o backend. Nele utilizamos o framework [Spring](https://spring.io) em Java para construir endpoints. Além disso, também tivemos contato com frontend web e mobile, com [React](https://react.dev) e [React Native](https://reactnative.dev), ou seja, foi um projeto completo e prontinho para produção.
 ## Sobre
+O projeto se trata de um sistema de entrega de refeições em que o cliente utiliza o sistema web para realizar o pedido e configura seu endereço e localização utilizando o [Leaflet](https://leafletjs.com), após isso, o restaurante recebe o pedido e gerencia tudo dentro do app que terá informações do pedido e ações para confirmar entrega e ver localização.
