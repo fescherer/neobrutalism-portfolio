@@ -25,10 +25,9 @@ Outra coisa que aprendi, foi usar JSONs em React, pois como falei anteriormente,
 
 ## Sobre
 
-Alura Quiz é um projeto de um quiz. Os professores deixaram a nossa escolha do que seria o quiz, e naquela época, minha familia tinha acabado de adotar uma gatinha, a Luna,por isso decidi fazer sobre animais.
+Alura Quiz é um projeto de um quiz. Os professores deixaram a nossa escolha do que seria o quiz, e naquela época, minha familia tinha acabado de adotar uma gatinha, a Luna,por isso decidi fazer sobre animais. (A Luna não é o gato da foto do projeto rsrs).
 
-![Foto da minha gatinha Luna]()
-(A Luna não é o gato da foto do projeto rsrs),
+![Foto da minha gatinha Luna](https://user-images.githubusercontent.com/62115215/236096010-d82ee517-47df-4a84-84d4-6d08026a34f4.png)
 
 O quiz consiste em perguntas gerais sobre os animais, um gif para cada pergunta com apenas uma resposta correta e uma contagem dos pontos.
 

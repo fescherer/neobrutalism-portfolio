@@ -29,5 +29,5 @@ Segunda versão da ficha do sistema WHITN ou **_What Happened in That Night_** q
 
 Essa ficha é produto da simplificação do sistema WHITN, dito isso, tem muitas coisas semelhantes, mas também melhorias novas como por exemplo, a versão mobile e tema escuro. Em outros aspectos foram somente mudanças relacionadas com a necessidade dos dados dessa nova versão do WHITN.
 
-O desevolvimento dela foi muito fluído, como já havia tido mais experiência como desenvolvedor e feito uma versão V1 desse projeto, consegui me virar bem com as regras de negócio e como transportá-las para o frontend. O projeto foi feito em Angular.
+O desenvolvimento dela foi muito fluído, como já havia tido mais experiência como desenvolvedor e feito uma versão V1 desse projeto, consegui me virar bem com as regras de negócio e como transportá-las para o frontend. O projeto foi feito em Angular.
 
