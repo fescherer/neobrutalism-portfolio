@@ -38,7 +38,7 @@ export default function Project({ translate, project }: ProjectProps) {
 
       <ImageSlider slides={project.data.images} />
 
-      <article className="prose max-w-none w- text-justify font-bold text-primary prose-headings:text-primary-dark ">
+      <article className="prose max-w-none w- text-justify font-bold text-primary prose-headings:text-primary-dark">
         <Markdown
           options={{
             overrides: {
@@ -60,6 +60,16 @@ export default function Project({ translate, project }: ProjectProps) {
               img: {
                 props: {
                   className: 'w-[500px] m-auto'
+                }
+              },
+              ul: {
+                props: {
+                  className: 'list-none'
+                }
+              },
+              li: {
+                props: {
+                  className: 'text-primary before:content-["•"]'
                 }
               }
             }

@@ -3,7 +3,7 @@ slug: college-aps-1
 type: college-lesson
 tags: [html, css]
 date: '2019-03-01T10:00:00.000Z'
-title: '* APS 1 | Save the Green'
+title: 'APS 1 | Save the Green'
 github: https://github.com/ofelipescherer/college-projects/tree/main/aps/aps-01-desenvolvimento-em-ambiente-web
 figma: ''
 site: ''
@@ -31,7 +31,7 @@ APS (Atividades Práticas Supervisionadas) é um projeto de final de semestre qu
 
 Por isso é um projeto extremamente simples e bem feio rsrs, mas foi um dos primeiros projetos de programação que fiz, então tenho muito orgulho e pretendo algum dia fazer a versão "atualizada" para poder comparar o quanto melhorei na área.
 
-O projeto é super simples, é um site com apenas HTML¹ e CSS².
+O projeto é super simples, é um site com apenas HTML e CSS.
 
 Nessa época, apesar de inciante, já estava procurando mais sobre a área e já arriscava alguns códigos javascript, porém, o professor disse que o site era apenas para ter HTML e CSS, por isso lembro que um desafio foi criar o menu usando apenas essas ferramentas.
 

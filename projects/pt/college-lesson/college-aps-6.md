@@ -3,13 +3,18 @@ slug: college-aps-6
 type: college-lesson
 tags: [linux]
 date: '2021-10-01T10:00:00.000Z'
-title: '* APS 6 | Sistema de gerenciamento restaurante'
+title: 'APS 6 | Sistema de gerenciamento restaurante'
 github: https://github.com/ofelipescherer/college-projects/tree/main/aps/aps-06-sistemas-operacionais
 figma: ''
 site: ''
 image: https://user-images.githubusercontent.com/62115215/235326317-85bfcceb-64c1-4206-8beb-01df92cce70e.png
 description: Sistema de gerenciamento de um restaurante, backup e relatório de dia e mês.
-images: []
+images: [
+  https://user-images.githubusercontent.com/62115215/218895463-8f3e54ea-268f-4c6b-90a5-f118070eb61e.png,
+  https://user-images.githubusercontent.com/62115215/218895477-5997cd3a-5579-4df1-83ee-b09ad3ca738d.png,
+  https://user-images.githubusercontent.com/62115215/218895481-f9ad1b7a-163f-4286-9bbd-1cc0f1594993.png,
+  https://user-images.githubusercontent.com/62115215/218895483-0de5eff9-0f3a-4dce-809b-abc3351e112c.png
+]
 ---
 
 # Sistema de gerenciamento restaurante | APS 6
