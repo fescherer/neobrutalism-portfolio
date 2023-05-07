@@ -16,7 +16,10 @@ images: []
 
 ## Introdução
 
+Esse foi meu primeiro projeto mobile feito em React Native na NLW 05 (Next level Week 5). A experiência foi muito boa principalmente porque aprendi muito como criar e executar um projeto mobile, apesar de não ter colocado em nenhuma loja, tanto a ideia quanto a execução dele foi muito legal e pretendo fazer algum dia uma versão 2.0 desse projeto e dai sim colocar em alguma loja de aplicativo.
+
 ## Sobre
 
+O projeto como o nome diz, é um gerenciador de plantas. Nele, é cadastrado uma planta e assim conseguimos ver de quanto em quanto tempo temos que regá-la, deixar no sol e outras informações úteis de como cuidá-la. Para deixar o projeto mais interessante, foi feito com estilo de jogo, em que cada vez cuida-da a planta, é recebido um pouco de experiência que serve para subir de nível, assim dando mais motivação para cuidar de suas plantinhas.
 
 

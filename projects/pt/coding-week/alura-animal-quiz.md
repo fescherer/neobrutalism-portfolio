@@ -9,7 +9,10 @@ figma: ''
 site: https://alura-quiz-ofelipescherer.vercel.app
 image: https://user-images.githubusercontent.com/62115215/234919046-1496d5c3-44a3-4c0e-913d-97559b0cae9a.png
 description: Projeto de um quiz sobre animais desenvolvido na semana intensiva react 2ªEdição Next.js elaborada pela equipe da Alura
-images: []
+images: [
+  https://user-images.githubusercontent.com/62115215/219959310-90e2fbeb-ee51-45fd-96f6-390b0588a457.gif,
+  https://user-images.githubusercontent.com/62115215/219958670-485e5106-d4c8-44b2-a60f-699c944db648.png
+]
 ---
 
 # Alura Animal Quiz | Semana Intensiva Alura
@@ -31,13 +34,6 @@ Alura Quiz é um projeto de um quiz. Os professores deixaram a nossa escolha do 
 
 O quiz consiste em perguntas gerais sobre os animais, um gif para cada pergunta com apenas uma resposta correta e uma contagem dos pontos.
 
-Na tela incial do projeto, também temos 3 quizes de outras pessoas que participaram da semana intesiva e que foram projetos que eu achei interessante
+Na tela incial do projeto, também temos 3 quizes de outras pessoas que participaram da semana intesiva e que foram projetos que eu achei interessante.
 
-## Staks
-
-JSON, react, nextJS, networking
-
-## Gifs, Imagens e Vídeos
-
-![Vue vs React](https://www.monterail.com/hubfs/vuevsreact.jpg)
 
