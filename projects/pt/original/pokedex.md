@@ -17,7 +17,6 @@ images:
     https://user-images.githubusercontent.com/62115215/235033636-bb958a34-81d7-4ac2-9a32-fd5095d7584c.png,
     https://user-images.githubusercontent.com/62115215/235033653-c2c152b6-6a8e-4d62-b6fc-3cb840f05ccf.png,
     https://user-images.githubusercontent.com/62115215/235033675-f9f91660-0da8-4466-b00f-57d136bf086e.png
-
   ]
 ---
 
@@ -25,4 +24,10 @@ images:
 
 ## Introdução
 
+Este foi um projeto realizado para estudar sobre API's em React. Queria melhorar minhas habilidades em relação a isso, por isso utilizei uma API gratuita na internet sobre Pokémons.
+
+O desenvolvimento do projeto foi bem interessante, além de conseguir praticar minhas habilidades de design (No Figma), também consegui praticar a utilizar o [NextJS](https://nextjs.org).
+
 ## Sobre
+
+O projeto é uma pokédex, ou seja, um conjunto de informações sobre pokémons. Nela temos a listagem deles e se possuirem, também existe a animação. No detalhe de cada um, há informações sobre tipo, estatísticas, evolução e localização

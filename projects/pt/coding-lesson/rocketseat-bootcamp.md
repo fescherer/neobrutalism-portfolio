@@ -9,12 +9,16 @@ figma: ''
 site: ''
 image: https://user-images.githubusercontent.com/62115215/235316187-6bbff291-d17e-4532-897c-bf6932092b2d.jpg
 description: Este repositório contém diversos projetos desenvolvidos durante as aulas do bootcamp da Rocketseat relacionados com web, mobile e backend
-images: []
+images:
+  [
+    https://user-images.githubusercontent.com/62115215/235316187-6bbff291-d17e-4532-897c-bf6932092b2d.jpg
+  ]
 ---
 
 # Bootcamp Rocketseat
 
 ## Introdução
 
-## Sobre
+Este é um repositório que contém todos os projetos realizados durante o periodo de assinatura da plataforma [Rocketseat](https://www.rocketseat.com.br)
 
+O curso disponibiliza módulos em React, React Native e Node. Os módulos são extremamente completos.
