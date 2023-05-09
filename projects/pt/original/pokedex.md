@@ -30,4 +30,5 @@ O desenvolvimento do projeto foi bem interessante, além de conseguir praticar m
 
 ## Sobre
 
-O projeto é uma pokédex, ou seja, um conjunto de informações sobre pokémons. Nela temos a listagem deles e se possuirem, também existe a animação. No detalhe de cada um, há informações sobre tipo, estatísticas, evolução e localização
+O projeto é uma pokédex, ou seja, um conjunto de informações sobre pokémons. Nela temos a listagem deles e se possuirem, também existe a animação. No detalhe de cada um, há informações sobre tipo, estatísticas, evolução e localização.
+
