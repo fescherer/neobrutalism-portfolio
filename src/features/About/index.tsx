@@ -21,7 +21,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
           width={296}
           height={350}
           alt={translation.introduction.alt_image}
-          className="hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:block"
+          className="hidden min-w-[296px] rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:block"
         />
 
         <div className="font-bold">
@@ -46,7 +46,7 @@ export default function About({ translation, translationDefault }: AboutProps) {
           width={296}
           height={350}
           alt={translation.introduction.alt_image}
-          className="block rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:hidden"
+          className="block min-w-[296px] rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:hidden"
         />
       </div>
 
@@ -88,3 +88,4 @@ export default function About({ translation, translationDefault }: AboutProps) {
     </div>
   )
 }
+

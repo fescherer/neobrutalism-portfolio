@@ -47,7 +47,7 @@ export default function History({ translation }: HistoryProps) {
             alt="profile-image"
             className={`${
               index % 2 === 0 ? '' : 'md:block'
-            } hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5`}
+            } hidden min-w-[296px] rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5`}
           />
 
           <div className="font-bold">
@@ -63,10 +63,11 @@ export default function History({ translation }: HistoryProps) {
             alt="profile-image"
             className={`${
               index % 2 === 0 ? '' : 'block md:hidden'
-            } rounded-sm border-4  border-primary-dark bg-primary drop-shadow-neo-5`}
+            } rounded-sm border-4 min-w-[296px] border-primary-dark bg-primary drop-shadow-neo-5`}
           />
         </div>
       ))}
     </>
   )
 }
+
