@@ -12,7 +12,7 @@
 
   <br />
   <a href="https://github.com/ofelipescherer/pokedex">
-    <img src="https://user-images.githubusercontent.com/62115215/218335769-c2f3f7f4-24f6-474f-819c-71e06e6f0945.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/Ileriayo/markdown-badges/assets/62115215/2f0522cb-fdea-4a30-bc8a-4a0fa1672284" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Portifolio</h3>
@@ -113,16 +113,16 @@ To get this project up and running locally on your pc, follow the steps:
 ## 🙋 How to use 🙋
 
 The project is a web portifolio, so we have a screen for:
-  
+
   Introduction
   It's like the name said, it's just a land page to introduce the user to my site.
   ![introduction](https://github.com/ofelipescherer/portifolio/assets/62115215/ab5f7bed-510e-49f0-9640-d8853e76c311)
 
-  
+
   About me:
   It's a screen that have information about my professional and personal life and about my future plans.
   ![aboutme](https://github.com/ofelipescherer/portifolio/assets/62115215/199232b8-f70c-41c8-a3cd-3873b2020222)
-  
+
   Projects:
   This page contains all of my projects that are on github.
   ![projects](https://github.com/ofelipescherer/portifolio/assets/62115215/6068bb3d-4f1b-4a79-85f7-882abfc134d9)
