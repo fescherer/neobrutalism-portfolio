@@ -15,7 +15,7 @@ export default function Home({ translation }: HomeProps) {
         <AboutMe translation={translation.aboutme} />
       </div>
 
-      <Projects />
+      <Projects translation={translation.projects} />
     </>
   )
 }

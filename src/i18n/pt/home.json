@@ -7,8 +7,8 @@
     "explore": "Explore",
     "menu": {
       "snippets": "Snippets",
-      "projects": "Projects",
-      "aboutme": "About me"
+      "projects": "Projetos",
+      "aboutme": "Sobre mim"
     },
     "alt_image": "Foto de perfil"
   },
@@ -20,6 +20,11 @@
     "college_course": "Ciência da Computação",
     "profession": "Frontend",
     "alt_image": "Foto de Felipe Scherer",
+    "more": "Mais..."
+  },
+  "projects": {
+    "title": "Projetos",
+    "aria_next_item": "Voltar ao início",
     "more": "Mais..."
   },
   "snippets": {

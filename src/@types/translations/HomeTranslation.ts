@@ -1,6 +1,7 @@
 export type HomeTranslation = {
   introduction: IntroductionTranslation
   aboutme: AboutMeHomeTranslation
+  projects: ProjectsHomeTranslation
   snippets: SnippetsTranslation
 }
 
@@ -26,6 +27,12 @@ export type AboutMeHomeTranslation = {
   college_course: string
   profession: string
   alt_image: string
+  more: string
+}
+
+export type ProjectsHomeTranslation = {
+  title: string
+  aria_next_item: string
   more: string
 }
 

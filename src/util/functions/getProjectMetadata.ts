@@ -40,3 +40,14 @@ export function getAllProjects() {
 
   return projects
 }
+
+export function getHighlightedProjects() {
+  let projects: ProjectMetadata[] = []
+
+  i18n.locales.map((locale) => {
+    const folder = getProjectsMetadata(`projects/${locale}/highlights`)
+    projects = [...projects, ...folder]
+  })
+
+  return projects
+}
