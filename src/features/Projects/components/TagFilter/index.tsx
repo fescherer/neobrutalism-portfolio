@@ -27,7 +27,7 @@ export function TagFilter({
       })}
     >
       <Select.Root onValueChange={(tag) => filter(tag)} value={tagFilter}>
-        <Select.Trigger className="items-center  px-[15px] text-[13px] leading-none h-[35px] gap-2 bg-background  data-[placeholder]: outline-none p-4 min-w-[200px] flex justify-between border-2 rounded-full btn-base">
+        <Select.Trigger className="items-center w-full px-[15px] text-[13px] leading-none h-[35px] gap-2 bg-background  data-[placeholder]: outline-none p-4 min-w-[200px] flex justify-between border-2 rounded-full btn-base">
           {!tagFilter && <span className="font-bold">Filtro de tag...</span>}
           <Select.Value />
           <Select.Icon />

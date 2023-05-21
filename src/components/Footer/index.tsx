@@ -2,10 +2,23 @@
 
 import GithubIcon from '@/Icons/Github'
 import { appConfig } from '@/util/config'
+import Link from 'next/link'
 import { Copyright, LinkedinLogo, YoutubeLogo } from 'phosphor-react'
 
 const date = new Date()
 const currentYear = date.getFullYear()
+
+const items = [
+  { icon: <GithubIcon />, url: 'https://github.com/ofelipescherer' },
+  {
+    icon: <LinkedinLogo size={30} weight="fill" />,
+    url: 'https://www.linkedin.com/in/ofelipescherer/'
+  },
+  {
+    icon: <YoutubeLogo size={30} weight="fill" />,
+    url: 'https://github.com/ofelipescherer'
+  }
+]
 
 export default function Footer() {
   return (
@@ -23,15 +36,16 @@ export default function Footer() {
       </div>
 
       <div className=" flex gap-1">
-        <button className="opacity-30 hover:fill-[#000] hover:opacity-100">
-          <GithubIcon />
-        </button>
-        <button className="opacity-30 hover:bg-[#000] hover:opacity-100">
-          <LinkedinLogo size={30} weight="fill" />
-        </button>
-        <button className="opacity-30 hover:bg-[#000] hover:opacity-100">
-          <YoutubeLogo size={30} weight="fill" />
-        </button>
+        {items.map((item, index) => (
+          <Link
+            key={index}
+            href={item.url}
+            target="_blank"
+            className="opacity-30 hover:scale-110 transition-all hover:opacity-100"
+          >
+            {item.icon}
+          </Link>
+        ))}
       </div>
     </footer>
   )
