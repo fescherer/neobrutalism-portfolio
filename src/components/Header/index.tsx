@@ -1,6 +1,7 @@
 import { HeaderTranslation } from '@/@types/translations/HeaderTranslation'
 import FSLogo from '@/Icons/FSLogo'
 import Link from 'next/link'
+import { Menu } from './Menu'
 import MobileMenu from './MobileMenu'
 
 type HeaderProps = {
@@ -33,19 +34,7 @@ export default function Header({ translate }: HeaderProps) {
         </div>
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex flex-col p-4 md:mt-0 md:flex-row md:space-x-8 md:text-2xl">
-            <li>
-              <Link href="/projects">{translate.menu.projects}</Link>
-            </li>
-            <li>
-              <Link href="/about">{translate.menu.aboutme}</Link>
-            </li>
-
-            {/* <li>
-              <ThemeButton translation={translate.theme} />
-            </li>
-            <LangSelector translate={translate.lang} /> */}
-          </ul>
+          <Menu translate={translate} />
         </div>
       </div>
     </nav>
