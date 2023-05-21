@@ -7,6 +7,7 @@ type ItemWrapperProps = {
   buttonNextItem: string
   aria: string
   id: string
+  href: string
 }
 
 export default function ItemWrapper({
@@ -14,12 +15,13 @@ export default function ItemWrapper({
   title,
   buttonNextItem,
   aria,
-  id
+  id,
+  href
 }: ItemWrapperProps) {
   return (
     <div className="flex h-screen w-full items-center justify-center" id={id}>
       <div className="m-auto flex w-full max-w-project flex-col items-center gap-5 px-20">
-        <HomeTitle>{title}</HomeTitle>
+        <HomeTitle href={href}>{title}</HomeTitle>
         {children}
         <ButtonNextItem aria={aria} nextItem={buttonNextItem} />
       </div>

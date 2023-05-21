@@ -26,6 +26,7 @@ export type AboutMeHomeTranslation = {
   college_course: string
   profession: string
   alt_image: string
+  more: string
 }
 
 export type SnippetsTranslation = {

@@ -19,7 +19,8 @@
     "years_old": "anos",
     "college_course": "Ciência da Computação",
     "profession": "Frontend",
-    "alt_image": "Foto de Felipe Scherer"
+    "alt_image": "Foto de Felipe Scherer",
+    "more": "Mais..."
   },
   "snippets": {
     "aria_next_item": "Próximo item"

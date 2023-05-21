@@ -1,5 +1,6 @@
 import { AboutMeHomeTranslation } from '@/@types/translations/HomeTranslation'
 import Image from 'next/image'
+import Link from 'next/link'
 import ItemWrapper from '../components/ItemWrapper'
 
 type AboutMeProps = {
@@ -20,6 +21,7 @@ export default function AboutMe({ translation }: AboutMeProps) {
       aria={translation.aria_next_item}
       title={translation.title}
       id="about-me"
+      href="about"
     >
       <div className="flex w-full flex-col items-center justify-between md:flex-row ">
         <div className="flex flex-col items-center gap-5">
@@ -38,15 +40,24 @@ export default function AboutMe({ translation }: AboutMeProps) {
           <span className="w-[270px] rounded border-2 border-primary-dark bg-foreground py-1 px-2 text-3xl font-bold drop-shadow-neo-3">
             {translation.profession}
           </span>
+
+          <Link
+            href="/about"
+            className="w-[270px] rounded border-2 text-primary-dark hover:scale-110 transition-all border-primary-dark bg-foreground py-1 px-2 text-3xl font-bold drop-shadow-neo-3 uppercase tracking-widest"
+          >
+            {translation.more}
+          </Link>
         </div>
 
-        <Image
-          src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
-          width={296}
-          height={350}
-          alt={translation['alt_image']}
-          className="hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:block"
-        />
+        <Link href="/about" className="hover:scale-110 transition-all">
+          <Image
+            src="https://user-images.githubusercontent.com/62115215/233803111-83a50ab6-a510-4f92-9591-3adb410fd409.png"
+            width={296}
+            height={350}
+            alt={translation['alt_image']}
+            className="hidden rounded-sm border-4 border-primary-dark bg-primary drop-shadow-neo-5 md:block"
+          />
+        </Link>
       </div>
     </ItemWrapper>
   )

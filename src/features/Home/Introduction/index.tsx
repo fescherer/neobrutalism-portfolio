@@ -1,5 +1,6 @@
 import { IntroductionTranslation } from '@/@types/translations/HomeTranslation'
 import Image from 'next/image'
+import Link from 'next/link'
 import ButtonNextItem from '../components/ButtonNextItem'
 
 type IntroductionProps = {
@@ -10,10 +11,19 @@ function ExploreSite({ translation }: IntroductionProps) {
   return (
     <>
       <span className="opacity-80">{translation.explore}</span>
-      <div className="flex gap-2">
-        <span>{translation.menu.snippets}</span>
-        <span>{translation.menu.projects}</span>
-        <span>{translation.menu.aboutme}</span>
+      <div className="flex gap-4">
+        <Link
+          href="/projects"
+          className="hover:text-primary-dark transition-all hover:scale-110"
+        >
+          {translation.menu.projects}
+        </Link>
+        <Link
+          href="/about"
+          className="hover:text-primary-dark transition-all hover:scale-110"
+        >
+          {translation.menu.aboutme}
+        </Link>
       </div>
     </>
   )

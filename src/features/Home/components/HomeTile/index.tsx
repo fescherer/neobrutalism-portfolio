@@ -1,5 +1,17 @@
 import { Children } from '@/@types/Util'
+import Link from 'next/link'
 
-export default function HomeTitle({ children }: Children) {
-  return <h2 className="self-start text-5xl font-bold uppercase">{children}</h2>
+interface HomeTitle extends Children {
+  href: string
+}
+
+export default function HomeTitle({ children, href }: HomeTitle) {
+  return (
+    <Link
+      href={href}
+      className="self-start text-5xl font-bold uppercase hover:text-primary-dark hover:scale-110 transition-all"
+    >
+      <h2>{children}</h2>
+    </Link>
+  )
 }
