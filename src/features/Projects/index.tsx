@@ -45,7 +45,7 @@ export default function Projects({ data }: ProjectsProps) {
   useEffect(() => {
     const newData = filterData(data, tagFilter, searchFilter)
     setFilteredData(newData)
-  }, [data, tagFilter, searchFilter])
+  }, [data, tagFilter])
 
   return (
     <div className="m-auto flex max-w-project flex-col gap-5 p-1">
