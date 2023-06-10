@@ -2,7 +2,7 @@
 
 import { ProjectMetadata } from '@/@types/Metadata'
 import ProjectCard from '@/components/ProjectCard'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { SearchFilter } from './components/SearchFilter'
 import { TagFilter } from './components/TagFilter'
 
@@ -38,14 +38,10 @@ function getAllTags(data: ProjectMetadata[]) {
 export default function Projects({ data }: ProjectsProps) {
   const [tagFilter, setTagFilter] = useState('')
   const [searchFilter, setSearchFilter] = useState('')
-  const [filteredData, setFilteredData] = useState(data)
 
   const allTags = getAllTags(data)
 
-  useEffect(() => {
-    const newData = filterData(data, tagFilter, searchFilter)
-    setFilteredData(newData)
-  }, [data, tagFilter, searchFilter])
+  const filteredData = filterData(data, tagFilter, searchFilter)
 
   return (
     <div className="m-auto flex max-w-project flex-col gap-5 p-1">
