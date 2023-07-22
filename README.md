@@ -53,7 +53,7 @@ A portifolio that have information about me and about my projects. Made with Nex
 
 ## <Emoji project> About <Emoji project>
 
-My portifolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄🚀💻📃
+My portifolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄💻📃🚀
 
 This project has full accessibility and mobile support.
 
