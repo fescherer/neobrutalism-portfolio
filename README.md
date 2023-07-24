@@ -55,7 +55,7 @@ A portifolio that have information about me and about my projects. Made with Nex
 
 My portifolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄💻📃🚀
 
-This project has full accessibility and mobile support.
+This project has full accessibilityy and mobile support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
