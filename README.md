@@ -46,8 +46,6 @@ A portifolio that have information about me and about my projects. Made with Nex
 </div>
 
 
-
-
 <!-- **********************🐲About🐲********************** -->
 <a name="about"></a>
 
