@@ -11,7 +11,7 @@
   [![MIT License][license-shield]][license-url]
 
   <br />
-  <a href="https://github.com/ofelipescherer/pokedex">
+  <a href="https://github.com/ofelipescherer/portifolio">
     <img src="https://github.com/Ileriayo/markdown-badges/assets/62115215/2f0522cb-fdea-4a30-bc8a-4a0fa1672284" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,7 +22,7 @@
 A portifolio that have information about me and about my projects. Made with NextJS and Tailwind.
 
 <br />
-<a href="https://github.com/ofelipescherer/pokedex"><strong>Explore the docs »</strong></a>
+<a href="https://github.com/ofelipescherer/portifolio"><strong>Explore the docs »</strong></a>
 <br />
 <br />
 <a href="#about">About</a>
@@ -46,16 +46,14 @@ A portifolio that have information about me and about my projects. Made with Nex
 </div>
 
 
-
-
 <!-- **********************🐲About🐲********************** -->
 <a name="about"></a>
 
 ## <Emoji project> About <Emoji project>
 
-My portifolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄🚀💻📃
+My portifolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄💻📃🚀
 
-This project has full accessibility and mobile support.
+This project has full accessibilityy and mobile support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,16 +205,16 @@ My name is Felipe Scherer and you can find me at:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ofelipescherer/pokedex.svg?style=for-the-badge
-[contributors-url]: https://github.com/ofelipescherer/pokedex/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ofelipescherer/pokedex.svg?style=for-the-badge
-[forks-url]: https://github.com/ofelipescherer/pokedex/network/members
-[stars-shield]: https://img.shields.io/github/stars/ofelipescherer/pokedex.svg?style=for-the-badge
-[stars-url]: https://github.com/ofelipescherer/pokedex/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ofelipescherer/pokedex.svg?style=for-the-badge
-[issues-url]: https://github.com/ofelipescherer/pokedex/issues
-[license-shield]: https://img.shields.io/github/license/ofelipescherer/pokedex.svg?style=for-the-badge
-[license-url]: https://github.com/ofelipescherer/pokedex/blob/master/LICENSE.md
+[contributors-shield]: https://img.shields.io/github/contributors/ofelipescherer/portifolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/ofelipescherer/portifolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ofelipescherer/portifolio.svg?style=for-the-badge
+[forks-url]: https://github.com/ofelipescherer/portifolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/ofelipescherer/portifolio.svg?style=for-the-badge
+[stars-url]: https://github.com/ofelipescherer/portifolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ofelipescherer/portifolio.svg?style=for-the-badge
+[issues-url]: https://github.com/ofelipescherer/portifolio/issues
+[license-shield]: https://img.shields.io/github/license/ofelipescherer/portifolio.svg?style=for-the-badge
+[license-url]: https://github.com/ofelipescherer/portifolio/blob/master/LICENSE.md
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0E76A8
 [linkedin-url]: https://www.linkedin.com/in/ofelipescherer
