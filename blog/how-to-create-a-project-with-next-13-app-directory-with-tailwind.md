@@ -7,7 +7,8 @@ video_url: ''
 project_url: ''
 figma_url: ''
 tags: ["next-js", "react-js", "tailwind", "frontend"]
-related: ["react-js", "next-js", "DOM", "typescript", "eslint", "prettier", "lint-staged", "husky", "tailwind"]
+tagged: ["react-js", "next-js", "DOM", "typescript", "eslint", "prettier", "lint-staged", "husky", "tailwind"]
+related: ["how to create npm packaged- eslint package", "How to create more than two themes in Tailwind, tailwind themes strategy"]
 ---
 
 [NextJS](https://nextjs.org) is a powerfull framework used in a lot of sites. It can be really useful specially if you need a [SSR version](https://nextjs.org/docs/app/building-your-application/rendering) of your's [SPA react pages](https://stackoverflow.com/questions/62529631/why-is-react-js-called-as-single-page-application).
@@ -85,67 +86,102 @@ First your Eslint configuration file is located at root project and called `.esl
 
 Here you can use as JSON or a Javascript module file. Personally I like to use as JSON, the only exception were when I created my [Eslint package](https://github.com/ofelipescherer/eslint-config) that's because were more easy to create, but this is history for another time.
 
+Continuing, I recommend you to look at [Rocketseat's Eslint](https://github.com/Rocketseat/eslint-config-rocketseat), because they have a lot of good configurations and I use it as reference to make my own configurations. You can take a look at them here:
 
-
-```javascript
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    jest: true,
-  },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+```json
+{
+  "plugins": ["react", "jsx-a11y", "@typescript-eslint"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
-  },
-  plugins: [
-    'react',
-    'jsx-a11y',
-    '@typescript-eslint'
-  ],
-  rules: {
-    'prettier/prettier': ["error", {
-      'printWidth': 80,
-      'tabWidth': 2,
-      'singleQuote': true,
-      'trailingComma': 'all',
-      'arrowParens': 'always',
-      'semi': false,
-      'endOfLine': 'auto',
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/self-closing-comp": "error",
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-proptypes": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "prettier/prettier": ["error", {
+      "printWidth": 80,
+      "tabWidth": 2,
+      "singleQuote": true,
+      "trailingComma": "none",
+      "arrowParens": "always",
+      "semi": false,
+      "endOfLine": "auto",
     }],
-    'react/react-in-jsx-scope': 'off',
-    'react/prop-types': 'off',
-    'jsx-a11y/alt-text': [
-      'warn',
-      {
-        elements: ['img'],
-        img: ['Image'],
-      },
-    ],
-    'jsx-a11y/aria-props': 'warn',
-    'jsx-a11y/aria-proptypes': 'warn',
-    'jsx-a11y/aria-unsupported-elements': 'warn',
-    'jsx-a11y/role-has-required-aria-props': 'warn',
-    'jsx-a11y/role-supports-aria-props': 'warn',
   },
-  settings: {
-    react: {
-      version: 'detect',
-    },
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
-    },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es2021": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
 ```
+
+All the rules will be explaned in another article, but what you need to know is that I will use eslint with [Prettier](https://prettier.io), a code formatter that makes your code prettier, with the right identation. Besides, we have four more plugins, one of them beeing the [Typescript Eslint](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin), to enable some rules about Typescript; one for accessibility [JSX A11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)(Curiosity: A11y is Accessibility, because between A and Y has 11 letters ) and lastely two about React, one for generic [React](https://www.npmjs.com/package/eslint-plugin-react) and other for [React hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks).
+
+To make all work, you need to install them and install the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+
+```bash
+npm install eslint eslint-plugin-react-hooks eslint-config-prettier @typescript-eslint/eslint-plugin eslint-plugin-jsx-a11y --save-dev
+```
+
+Lastely we can configure to every `ctrl` + `s` pressed, run eslint with prettier, this is very helpfull and easy to do just makes VS code `source.fixAll.eslint` as true. Create a `.vscode` folder in root directory and a file `settings.json` inside with the configuration:
+
+```json
+{
+  ...
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  ...
+}
+```
+
+## Tailwind
+
+There aren't much stuff you need to do, because if you choose Tailwind on NextJS template, it will configure all automatic. There are only one thing to do:
+
+- Install a prettier plugin that reorder Tailwind classes to better organize them:
+
+```javascript
+module.exports = {
+  plugins: [require('prettier-plugin-tailwindcss')]
+}
+```
+
+```bash
+npm install prettier prettier-plugin-tailwindcss --save-dev
+```
+[](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
+
+Of course Tailwind has a lot of more configurations, but this
+
+## Lintstaged with Husky
+
+## VS code Settings
+
