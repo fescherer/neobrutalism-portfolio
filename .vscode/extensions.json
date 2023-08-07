@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "robertz.code-snapshot",
+    "formulahendry.auto-rename-tag",
+    "naumovs.color-highlight",
+    "dracula-theme.theme-dracula",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "vincaslt.highlight-matching-tag",
+    "ms-python.python",
+    "bradlc.vscode-tailwindcss",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

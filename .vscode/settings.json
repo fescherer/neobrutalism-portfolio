@@ -18,5 +18,13 @@
     "ngClass",
     "additionalClasses",
     "color"
+  ],
+  "cSpell.words": [
+    "dbaeumer",
+    "lintstagedrc",
+    "Parens",
+    "proptypes",
+    "Rocketseat's",
+    "tailwindcss"
   ]
 }
