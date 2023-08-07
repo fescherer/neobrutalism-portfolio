@@ -284,7 +284,16 @@ To do that, create a file called `settings.json` inside a folder `.vscode` at th
   ],
 
   // This is a configuration very big about exceptions in Code Spell Checker
-  "cSpell.words": []
+  "cSpell.words": [],
+
+  // VSCode color's bar change. This is used to easily differentiate projects based on bar's color
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#000000",
+    "titleBar.activeForeground": "#51C28A",
+    "titleBar.inactiveBackground": "#000000",
+    "titleBar.inactiveForeground": "#51C28A",
+    "sash.hoverBorder": "#000000"
+  }
 }
 ```
 
