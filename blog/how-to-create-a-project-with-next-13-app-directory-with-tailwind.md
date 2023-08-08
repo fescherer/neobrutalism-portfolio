@@ -297,12 +297,13 @@ To do that, create a file called `settings.json` inside a folder `.vscode` at th
 }
 ```
 
-For last, if you are using VSCode there are plenty of extensions you can use to decrease your work time. I am gonna make an article about my favorites extensions, but for now, what you need to install is the [Eslint VSCode extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and to make everyone that use your workspace install the extension make a file `extensions.json` inside `.vscode` and type:
+For last, if you are using VSCode there are plenty of extensions you can use to decrease your work time. I am gonna make an article about my favorites extensions, but for now, what you need to install is the [Eslint VSCode extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and also [TailwindCSS](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) and to make everyone that use your workspace install the extension make a file `extensions.json` inside `.vscode` and type:
 
 ```json
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss"
   ]
 }
 ```

@@ -11,6 +11,7 @@
     "vincaslt.highlight-matching-tag",
     "ms-python.python",
     "bradlc.vscode-tailwindcss",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "eamodio.gitlens"
   ]
 }
