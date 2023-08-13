@@ -15,7 +15,7 @@
     <img src="https://github.com/Ileriayo/markdown-badges/assets/62115215/2f0522cb-fdea-4a30-bc8a-4a0fa1672284" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Portifolio</h3>
+<h3 align="center">Portifolio Style Neobrutalism</h3>
 
 <p align="center">
 
