@@ -37,11 +37,11 @@ A portifolio that have information about me and about my projects. Made with Nex
 •
 <a href="#contributing">Contributing</a>
 •
-<a href="#contributors">Contributors</a>
-•
 <a href="#license">License</a>
 •
 <a href="#contact">Contact me</a>
+•
+<a href="#contributors">Contributors</a>
 </p>
 </div>
 
@@ -126,31 +126,6 @@ The project is a web portifolio, so we have a screen for:
   ![projects](https://github.com/fescherer/portifolio/assets/62115215/6068bb3d-4f1b-4a79-85f7-882abfc134d9)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- **********************🐲Report Bug / Request Feature🐲********************** -->
-<a name="issue"></a>
-
-## 🐞 Report Bug / Request Feature 🐞
-
-If you found a bug or want to request a feature, you can open an [issue](https://github.com/fescherer/boilerplate/issues)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- **********************🐲Be part of this project🐲********************** -->
-<a name="contributing"></a>
-
-## 👋 Be part of this project 👋
-
-Contributions are extremely welcome. You can see how to make one by following the file [Contributing](CONTRIBUTING.md)
-
-And don't forget to leave a star on the project if you liked it 🤩
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- **********************🐲Report Bug / Request Feature🐲********************** -->
 <a name="issue"></a>
