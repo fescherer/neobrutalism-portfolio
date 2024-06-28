@@ -13,11 +13,11 @@
     <img src="https://github.com/Ileriayo/markdown-badges/assets/62115215/2f0522cb-fdea-4a30-bc8a-4a0fa1672284" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Portifolio Style Neobrutalism</h3>
+<h3 align="center">Portfolio Style Neobrutalism</h3>
 
 <p align="center">
 
-A portifolio that have information about me and about my projects. Made with NextJS and Tailwind.
+A portfolio that have information about me and about my projects. Made with NextJS and Tailwind.
 <br />
 <a href="https://github.com/fescherer/portifolio"><strong>Explore the docs »</strong></a>
 <br />
@@ -45,9 +45,9 @@ A portifolio that have information about me and about my projects. Made with Nex
 
 ## 📕 About 📕
 
-My portifolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄💻📃🚀
+My portfolio was made with NextJS and Tailwind following the principal of maintenance and scalability, using a mix of clean code and good practices. Feel free to explore the code 😄💻📃🚀
 
-This project has full accessibilityy and mobile support.
+This project has full accessibility and mobile support.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
